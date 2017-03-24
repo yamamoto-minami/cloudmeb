@@ -1,0 +1,479 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "page_ptr": 1,
+        "price_ptr": 1,
+        "solution_ptr": 1,
+        "solution_categories": [
+            1
+        ],
+        "solution_benefits": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "product_order": 1,
+        "product_url": "http://www.xero.com",
+        "price_inputs": [
+            12
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "page_ptr": 12,
+        "price_ptr": 3,
+        "solution_ptr": 11,
+        "solution_categories": [
+            4
+        ],
+        "solution_benefits": [
+            18,
+            19,
+            20,
+            21
+        ],
+        "solution_values": [
+            1,
+            4
+        ],
+        "product_order": 20,
+        "product_url": "http://www.deputy.com",
+        "price_inputs": [
+            8,
+            9
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "page_ptr": 13,
+        "price_ptr": 4,
+        "solution_ptr": 12,
+        "solution_categories": [
+            2
+        ],
+        "solution_benefits": [
+            22,
+            23,
+            24,
+            25
+        ],
+        "solution_values": [
+            2,
+            11
+        ],
+        "product_order": 30,
+        "product_url": "http://www.expensify.com",
+        "price_inputs": [
+            8
+        ],
+        "product_featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "page_ptr": 14,
+        "price_ptr": 5,
+        "solution_ptr": 13,
+        "solution_categories": [
+            20
+        ],
+        "solution_benefits": [
+            26,
+            27,
+            28,
+            29
+        ],
+        "solution_values": [
+            2,
+            4,
+            11
+        ],
+        "product_order": 40,
+        "product_url": "http://www.fathomhq.com",
+        "price_inputs": [],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "page_ptr": 15,
+        "price_ptr": 6,
+        "solution_ptr": 14,
+        "solution_categories": [
+            7
+        ],
+        "solution_benefits": [
+            30,
+            31,
+            32,
+            33,
+            34
+        ],
+        "solution_values": [
+            3,
+            5
+        ],
+        "product_order": 50,
+        "product_url": "http://www.geoop.com/",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "page_ptr": 16,
+        "price_ptr": 7,
+        "solution_ptr": 15,
+        "solution_categories": [
+            5
+        ],
+        "solution_benefits": [
+            35,
+            36,
+            37,
+            38,
+            39
+        ],
+        "solution_values": [
+            2
+        ],
+        "product_order": 60,
+        "product_url": "http://www.getharvest.com",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "page_ptr": 17,
+        "price_ptr": 8,
+        "solution_ptr": 16,
+        "solution_categories": [
+            10
+        ],
+        "solution_benefits": [
+            43,
+            44,
+            45,
+            46,
+            47
+        ],
+        "solution_values": [
+            2,
+            4
+        ],
+        "product_order": 70,
+        "product_url": "http://cloudbilt.com/mapanything/",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "page_ptr": 18,
+        "price_ptr": 9,
+        "solution_ptr": 17,
+        "solution_categories": [
+            6
+        ],
+        "solution_benefits": [
+            48,
+            49,
+            50,
+            51
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "product_order": 80,
+        "product_url": "http://www.paymentevolution.com",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "page_ptr": 19,
+        "price_ptr": 10,
+        "solution_ptr": 18,
+        "solution_categories": [
+            2
+        ],
+        "solution_benefits": [
+            55,
+            56,
+            57,
+            58
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            5,
+            11
+        ],
+        "product_order": 90,
+        "product_url": "http://www.receipt-bank.com/",
+        "price_inputs": [
+            7,
+            14
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "page_ptr": 20,
+        "price_ptr": 11,
+        "solution_ptr": 19,
+        "solution_categories": [
+            12
+        ],
+        "solution_benefits": [
+            59,
+            60,
+            61,
+            62
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            5,
+            11
+        ],
+        "product_order": 100,
+        "product_url": "http://www.ringcentral.ca",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "page_ptr": 21,
+        "price_ptr": 12,
+        "solution_ptr": 20,
+        "solution_categories": [
+            10
+        ],
+        "solution_benefits": [
+            63,
+            64,
+            65,
+            66,
+            67
+        ],
+        "solution_values": [
+            2,
+            4,
+            11
+        ],
+        "product_order": 110,
+        "product_url": "http://www.salesforce.com",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "page_ptr": 22,
+        "price_ptr": 13,
+        "solution_ptr": 21,
+        "solution_categories": [
+            9
+        ],
+        "solution_benefits": [
+            68,
+            69,
+            70
+        ],
+        "solution_values": [
+            4,
+            11
+        ],
+        "product_order": 120,
+        "product_url": "http://www.shopify.com",
+        "price_inputs": [],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "page_ptr": 23,
+        "price_ptr": 14,
+        "solution_ptr": 22,
+        "solution_categories": [
+            6
+        ],
+        "solution_benefits": [
+            71,
+            72,
+            73
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "product_order": 130,
+        "product_url": "http://www.simplepay.ca",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "product_featured": false
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "page_ptr": 24,
+        "price_ptr": 15,
+        "solution_ptr": 23,
+        "solution_categories": [
+            3,
+            9
+        ],
+        "solution_benefits": [
+            85,
+            86,
+            87,
+            88,
+            89
+        ],
+        "solution_values": [
+            1,
+            4
+        ],
+        "product_order": 140,
+        "product_url": "http://www.vendhq.com",
+        "price_inputs": [
+            9
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "page_ptr": 25,
+        "price_ptr": 16,
+        "solution_ptr": 24,
+        "solution_categories": [
+            8
+        ],
+        "solution_benefits": [
+            77,
+            78,
+            79,
+            80,
+            81
+        ],
+        "solution_values": [
+            1
+        ],
+        "product_order": 150,
+        "product_url": "http://www.gettimely.com",
+        "price_inputs": [
+            7
+        ],
+        "product_featured": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "page_ptr": 26,
+        "price_ptr": 17,
+        "solution_ptr": 25,
+        "solution_categories": [
+            6
+        ],
+        "solution_benefits": [
+            90,
+            91,
+            92,
+            93,
+            94
+        ],
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "product_order": 160,
+        "product_url": "http://www.wagepoint.com",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "product_featured": false
+    }
+}
+]

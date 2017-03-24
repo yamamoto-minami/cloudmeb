@@ -1,0 +1,71 @@
+{% load i18n %}
+
+<div class="container growler">
+    <div class="growl"></div>
+    <div class="price-popup">
+        <div class="alert fade in animated bounceInDown">
+            <p class="new-monthly">Your new monthly price is <span class="unit">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}</span><span class="value">1000</span><span class="unit">{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</span></p>
+            <p class="new-onetime">Your new one time price is <span class="unit">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}</span><span class="value">1000</span><span class="unit">{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</span></p>
+        </div>
+    </div>
+
+</div>
+
+<nav class="navbar {{ class_names }} navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                data-target="#navbar" aria-expanded="false" aria-controls="navbar" title="{% trans 'Close' %}">
+                <span class="sr-only">{% trans "Toggle navigation" %}</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="mobile-menu-add">
+                <li><a href="tel:+18003554936">+1 800 355 4936</a></li>
+                <li><a href="/{{ LANGUAGE_CODE }}{% trans '/book-now/' %}">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.1.shared_txt_name_fr }}{% else%}{{ shared_txts.1.shared_txt_name_en }}{% endifequal %}</a></li>
+            </ul>
+            <a class="navbar-brand-customizing" href="/{{ LANGUAGE_CODE }}" title="{% trans 'Cloudmeb' %}"></a>
+            <a class="navbar-brand" href="/{{ LANGUAGE_CODE }}" title="{% trans 'Cloudmeb' %}">{% trans "Cloudmeb" %}</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-customizing">
+                <li {% ifequal active_page "why_cloudmeb" %} class="active" {% endifequal %}><a href="/{{ LANGUAGE_CODE }}" title="{% trans 'why cloudmeb' %}">{% trans "Home" %}</a></li>
+                <li {% ifequal active_page "solutions" %} class="active" {% endifequal %}><a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'products' %}" title="{% trans 'solutions' %}">{% trans "Solutions" %}</a></li>
+                <li {% ifequal active_page "plug_in_your_business" %} class="active" {% endifequal %}><a href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'pricing' %}">{% trans "Pricing" %}</a></li>
+                <li {% ifequal active_page "become_a_partner" %} class="active" {% endifequal %}><a href="/{{ LANGUAGE_CODE }}{% trans '/become-a-partner/' %}" title="{% trans 'become a partner' %}">{% trans "Become a partner" %}</a></li>
+                <li {% ifequal active_page "contact_us" %} class="active" {% endifequal %}><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'Contact us' %}">{% trans "Contact us" %}</a></li>
+                <li><a href="/{{ LANGUAGE_CODE }}{% trans '/frequently-asked-questions/' %}" title="{% trans 'frequently asked questions' %}">{% trans "FAQ" %}</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="/{{ LANGUAGE_CODE }}{% trans '/admin/' %}">{% trans "Administration" %}</a></li>
+                {% endif %}
+                <li style="position: absolute; bottom: 145px; left: 0;">
+                    <ul class="mobile-menu-add">
+                        <li>
+                            <a {% ifequal LANGUAGE_CODE "fr" %} data-lang="en" {% else %} data-lang="fr" {% endifequal %} href="#" title="{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'english' %} {% else%} {% trans 'français' %} {% endifequal %}">
+                            {% ifequal LANGUAGE_CODE "fr" %} {% trans "English" %} {% else%} {% trans "Français" %} {% endifequal %}
+                            </a>
+                        </li>
+                        <li><a href="tel:+18003554936">+1 800 355 4936</a></li>
+                        <li><a href="/{{ LANGUAGE_CODE }}{% trans '/book-now/' %}">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.1.shared_txt_name_fr }}{% else%}{{ shared_txts.1.shared_txt_name_en }}{% endifequal %}</a></li>
+                    </ul>
+                </li>
+
+                <!--<li>
+                    <a {% ifequal LANGUAGE_CODE "fr" %} data-lang="en" {% else %} data-lang="fr" {% endifequal %} href="#" title="{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'english' %} {% else%} {% trans 'français' %} {% endifequal %}">
+                        {% ifequal LANGUAGE_CODE "fr" %} {% trans "english" %} {% else%} {% trans "français" %} {% endifequal %}
+                    </a>
+                </li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-right-customizing">
+                <li>
+                    <a {% ifequal LANGUAGE_CODE "fr" %} data-lang="en" {% else %} data-lang="fr" {% endifequal %} href="#" title="{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'english' %} {% else%} {% trans 'français' %} {% endifequal %}">
+                        {% ifequal LANGUAGE_CODE "fr" %} {% trans "English" %} {% else%} {% trans "Français" %} {% endifequal %}
+                    </a>
+                </li>
+                <li><a href="tel:+18003554936">+1 800 355 4936</a></li>
+                <li><a href="/{{ LANGUAGE_CODE }}{% trans '/book-now/' %}">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.1.shared_txt_name_fr }}{% else%}{{ shared_txts.1.shared_txt_name_en }}{% endifequal %}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

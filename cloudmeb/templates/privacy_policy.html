@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+	{% include "nav.html" with active_page="privacy_policy" class_names="navbar-default" %}
+{% endblock %}
+{% block content %}
+<div class="container padded">
+
+	<div class="row legal-text">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 class="blue-heading margin-bottom-heading margin-top-heading text-center">{% trans "Privacy policy" %}</h1>
+
+			<h2 class="untransformed-heading">{% trans 'Introduction and Acceptance' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Welcome to the Cloudmeb&trade; website located at http://cloudmeb.com/ (the “Website”) which includes all subdomains present and future. We hope you enjoy your visit and / or use of the Website. By visiting and / or using the Website you agree to be bound by the terms of the present Privacy Policy (the “Policy”).
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Website is owned and operated by meb Inc., a duly incorporated company in the province of Québec, Canada. Where the present Policy refers to “Cloudmeb&trade;”, it may refer to the Website or meb Inc. (and / or its officers, directors, employees, agents or representatives) or both, depending on the context.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Policy was last modified on September 10, 2015. Cloudmeb&trade; reserves the right, at any time and without prior notice, to modify or replace any of the Policy. Any changes to the Policy can be found at this URL. It is your responsibility to check the Policy periodically for changes. Your use of the Website following the posting of any changes to the Policy constitutes acceptance of those changes.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Policy should be read in conjunction with the terms of use, as both these documents govern your use of the Website.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					In this Policy, a Website visitor or user may be referred to as “you”. Cloudmeb&trade; may sometimes be referred to as “we” or “us”.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'General Statement of Privacy and Protection of Personal Information' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; takes your privacy and security of personal information very seriously. We have provided a secure environment and this strict Policy that describes the limited ways the information is used and the limited access to such information.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'What Does This Privacy Policy Cover?' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					This Policy covers the treatment of personally identifiable information (“Personal Information”) and other information gathered by Cloudmeb&trade; when you are using or accessing the Website. This Policy also covers Cloudmeb&trade;’s treatment of any Personal Information that Cloudmeb&trade; may share with its business partners or other third parties under very limited circumstances.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					This Policy does not apply to the general practices and treatment of information (whether personal or not) by third parties that Cloudmeb&trade; does not own or control, including but not limited to any third party websites or services that you elect to access through the Website or via a link from the Website (“Third Party Website”), or to individuals that Cloudmeb&trade; does not manage or employ. While we attempt to facilitate access or link to only to those Third Party Websites that share our respect for your privacy, we cannot take responsibility for the content or privacy policies of those Third Party Websites. We encourage you to carefully review the privacy policies of any Third Party Website you access. We have named and provided links to the most important of these Third Party Websites further in this Policy.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Finally, this Policy does not cover any Personal Information you send to Cloudmeb&trade; via any non-secured mode of communications such as email, instant messenger or Twitter, as communications via these methods may be subject to interception, loss, or alteration. While we welcome your comments, inquiries and suggestions sent to us in this manner, we encourage you to carefully examine what Personal Information you send to Cloudmeb&trade; via these methods.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'No Collection of Personal Information as a Matter of Course' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; does not, as a matter of course, gather any of your Personal Information while you are visiting or using the Website, unless you are asked to provide such information, for example by complete the contact us form and / or submit quote form and / or apply now form. Personal Information is only gathered with your informed consent. Where you have provided Personal Information, it will only be used for the stated purpose, for example to respond to your inquiry.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Security and Encryption of Information' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; uses only industry best practices (physical, electronic and procedural) in keeping any data collected (including Personal Information) secure. In addition, Cloudmeb&trade; uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Website, and these third parties have been selected for their high standards of security, both electronic and physical.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Limited Gathering of Information for Statistical, Analytical and Security Purposes' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; automatically collects certain information using third-party analytics programs Google Analytics to help us understand how our users use the Website, but none of this information identifies you personally. For example, each time you visit the Website, we automatically collect your IP address, browser and computer type, access times, the web page from which you came, and the web page(s) you access (as applicable). We use information collected in this manner only to better understand your needs and the needs of the Website users in the aggregate. Cloudmeb&trade; also makes use of information gathered for statistical purposes to keep track of the number of visits to the Website and the specific pages on the Website with a view to introducing improvements.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Your IP address and other relevant information may be used in order to trace any fraudulent or criminal activity, or any activity in violation of the Terms of Use.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Non-disclosure of Personal Information to Third Parties' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Except as provided in the next paragraph and the next section in this Policy entitled Third Party Services, Cloudmeb&trade; does not divulge any Personal Information gathered via the Website to third parties. Moreover, Cloudmeb&trade; does not sell, rent, trade or license any Personal Information regarding its users to third parties.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Only the employees, representatives, subcontractors, officers, agents, or assigns of Cloudmeb&trade; are responsible for the management and development of the Website, and only these individuals have access to the information collected there. These employees, representatives, subcontractors, officers, agents or assigns all have been instructed to comply with the Policy.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Notwithstanding anything in the Policy to the contrary, we may share any information we have collected about you or that you have submitted: (1) in response to subpoenas, court orders, or legal process, or to establish, protect, or exercise our legal rights or defend against legal claims or demands; (2) if we believe it is necessary in order to investigate, prevent, or take action regarding illegal activities, fraud, or situations involving potential threats to the safety of any person, or any violation of the Terms of Use; (3) if we believe it is necessary to investigate, prevent, or take action regarding situations that involve abuse of the Website infrastructure or the Internet in general (such as voluminous spamming, denial of service attacks, or attempts to compromise the security of the Website infrastructure or the Website generally); (4) to a parent company, subsidiaries, joint ventures, or other companies under common control with Cloudmeb&trade; (in which case we will require such entities to honour this Policy); (5) if Cloudmeb&trade; is acquired by or merged with another entity (in which case we will require such entity to assume our obligations under this Policy, or inform you that you are covered by a new privacy policy).
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Third Party Services' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; uses certain third party services in order to augment the Website. Personal information may be transferred from Cloudmeb&trade; to these third party services, but only to the extent required in order for them to function properly, and only upon your express submission of such information. These third party services include Facebook, Twitter, LinkedIn and Google+ for sharing of content, specifically blog posts. If you are not already logged in to these third party services, your Personal Information required to log in to those accounts is transferred securely from Cloudmeb&trade; to the third party services. When your Personal Information is transferred to these third party services, it is covered by their respective privacy policies, which we encourage you to read.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					In addition, Cloudmeb&trade; uses certain third party services to add functionalities to the Website. Personal information may be transferred from Cloudmeb&trade; to these third party services, but only to the extent required in order for them to function properly, and only upon your express submission of such information. These third party services are limited to: (1) Salesforce for Customer Relationship Management (CRM) which accepts data (including Personal Information) directly from the Contact form, Partner form, and Submit Quote form. While we store Personal Information collected via these forms with Salesforce’s CRM software, this information is only used to respond to your inquiries and / or to follow-up as required. All Cloudmeb&trade;’s email activities are in compliance with Canada’s Anti-Spam Legislation (“CASL”, S.C. 2010, c. 23). Cloudmeb&trade; also uses Salesforce to send out their newsletter, and we store your email address with Salesforce for that purpose.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The third party services listed in this section are currently the only third party services used on the Website at the present time. However, Cloudmeb&trade; reserves the right to add additional third party services in the future. In the event we add third party services, this section will be updated accordingly.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Access and Deletion of Personal Information' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					If you wish to review the Personal Information Cloudmeb&trade; holds about you, and / or have all your Personal Information permanently deleted from our records, please contact us using the online form or the contact information further up in this Policy.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Tracking Technology (“Cookies”)' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; uses tracking technology (“cookies”) on the Website and by using the Website you agree to their use. Cookies are small text files placed on your hard drive when you visit a website, in order to track use of the site and to improve the user experience by storing certain data on your computer. The Website uses “session cookies,” which improve your user experience by storing certain information from your current visit on your computer. Other cookies are also used, for example to store your email address or other information (such as your name) in certain form fields so it does not have to be re-entered in other forms.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Your browser can be set to refuse cookies or delete them after they have been stored. Please refer to your browser’s help section for instructions. Please note that deleting these cookies may reduce your user experience on the Website by requiring you to re-enter certain information, such as your email address. Cloudmeb&trade; shall not be held responsible for any function that may not operate after you delete cookies, or any damages (pecuniary or otherwise) arising from those functions not operating, or having reduced functionality.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Risks Associated with the Internet' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Despite Cloudmeb&trade;’s best efforts to ensure that third parties will not access or obtain your Personal Information through your use of the Website, complete confidentiality and security cannot currently be guaranteed on the Internet. Communication via the Internet is subject to interception, loss, or alteration. You acknowledge and agree that Cloudmeb&trade; cannot be held responsible for damages resulting from the transmission of confidential information or Personal Information over the Internet and that such communications are at your own risk.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Limitation of Liability' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade;, and / or its respective officers, directors, owners, officials, partners, partnerships, principals, employees, affiliates and other related entities, servants, agents, representatives, successors and assigns, will not be held liable for any damages, direct or indirect, pecuniary or otherwise, resulting from the misuse of any information collected by any third party, or any misuse of any information collected through the Website not in violation of the Policy.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Compliance with Privacy Laws' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					This Policy and Cloudmeb&trade;’s practices in general are designed to be in compliance with Canada’s Personal Information Protection and Electronic Documents Act (“PIPEDA”, S.C. 2000, c. 5) and Quebec’s An Act Respecting the Protection Of Personal Information in the Private Sector (R.S.Q. c. P-39.1). If you have any questions regarding this compliance, please contact us using the contact us form.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; 2015
+				{% endblocktrans %}
+			</p>
+		</div>
+	</div>
+</div>
+{% endblock%}

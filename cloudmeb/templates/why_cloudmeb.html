@@ -1,0 +1,803 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block nav %}
+	{% include "nav.html" with active_page="why_cloudmeb" class_names="navbar-scroll" %}
+{% endblock %}
+
+{% block content %}
+<div class="hero-unit hero-overlayed">
+	<div class="lead container text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-sm-12 col-xs-12"></div>
+				<div class="col-md-8 col-sm-12 col-xs-12 mobile-head-txt">
+					<!--<h1 class="strong-heading">{% trans "Simplify your business<br> in the cloud" %}</h1>-->
+					<h1 class="strong-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_header_title_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_header_title_en }}{% endifequal %}</h1>
+					<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_header_subtitle_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_header_subtitle_en }}{% endifequal %}</h3>
+					<a class="btn btn-default btn-plug btn-lg banner-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+						{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.0.shared_txt_name_fr }}{% else%}{{ shared_txts.0.shared_txt_name_en }}{% endifequal %}
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12"></div>
+				<div class="col-md-12 col-sm-12 col-xs-12 banner-plugin-btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<video autoplay loop poster="{% static 'image/hero-home.png' %}">
+    	<source src="{% static 'video/hero.mp4' %}" type="video/mp4">
+    	<source src="{% static 'video/hero.ogv' %}" type="video/ogg">
+    	<source src="{% static 'video/hero.webm' %}" type="video/webm">
+    </video>
+</div>
+
+<div class="container-fluid">
+	<div class="row running-business">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 title-tag">
+					<div class="title">
+						<img src="{% static 'image/running-business.png' %}" class="">
+						<p>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_introduce_title_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_introduce_title_en }}{% endifequal %}</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text-detail">
+						<!--<p>
+							Cloudmeb’s solutions will simplify and<br> support your day-to-day, letting you<br> focus on what’s important. <a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'products' %}" title="{% trans 'solutions' %}"><span class="bold">More→</span></a>
+						</p>-->
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_introduce_text_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_introduce_text_en }}{% endifequal %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row why-cloudbeb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-7 col-sm-7 col-xs-12">
+					<h2 class="untransformed-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{why_cloudmeb_txt.why_cloudmeb_txt_why_introduce_title_fr}}{% else%}{{why_cloudmeb_txt.why_cloudmeb_txt_why_introduce_title_en}}{% endifequal %}</h2>
+					<h3 class="untransformed-heading">
+						{% ifequal LANGUAGE_CODE 'fr' %}{{why_cloudmeb_txt.why_cloudmeb_txt_why_introduce_text_fr}}{% else%}{{why_cloudmeb_txt.why_cloudmeb_txt_why_introduce_text_en}}{% endifequal %}
+					</h3>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wheelbox-area">
+					<img src="{% static 'image/cloubmeb-mark.png' %}" class="img-responsive">
+					<div class="wheelbox">
+						<div class="wheel one">
+							<div class="wheel-inner">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div class="wheel two">
+							<div class="wheel-inner">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row before-after-tag">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="before-after-main-header">{% ifequal LANGUAGE_CODE 'fr' %}{{why_cloudmeb_txt.why_cloudmeb_txt_whytab_title_fr}}{% else%}{{why_cloudmeb_txt.why_cloudmeb_txt_whytab_title_en}}{% endifequal %}</h1>
+					<h2 class="before-after-sub-header">{% ifequal LANGUAGE_CODE 'fr' %}{{why_cloudmeb_txt.why_cloudmeb_txt_whytab_subtitle_fr}}{% else%}{{why_cloudmeb_txt.why_cloudmeb_txt_whytab_subtitle_en}}{% endifequal %}</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 tab-header">
+					<ul class="grid click-animate">
+						{% for whytab in whytabs %}
+							<li class="{{ whytab.whytab_class_name }}"><button class="icobutton icobutton--thumbs-up"><p>{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_menu_name_fr }} {% else%} {{ whytab.whytab_menu_name_en }} {% endifequal %}</p></button></li>
+						{% endfor %}
+					</ul>
+					<!--<ul class="grid click-animate">
+						<li class="invoicing-tag active"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Invoicing' %}</p></button></li>
+						<li class="Accounting-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Accounting & Payroll' %}</p></button></li>
+						<li class="receipts-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Receipts' %}</p></button></li>
+						<li class="support-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Support' %}</p></button></li>
+						<li class="add-ons-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Add-ons' %}</p></button></li>
+					</ul>-->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 tab-content">
+					{% for whytab in whytabs %}
+						<div id="{{ whytab.whytab_class_name }}">
+							<div class="mobile-version">
+								<div class="row why-flip-tag">
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+											<div class="row first-face">
+												<img src="{{ whytab.whytab_left_icon.url }}" style="width: 77px;">
+												<span>{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_left_title_fr }} {% else%} {{ whytab.whytab_left_title_en }} {% endifequal %}</span>
+												<p class="space">{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_left_content_fr }} {% else%} {{ whytab.whytab_left_content_en }} {% endifequal %}</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+											<div class="row second-face">
+												<img src="{{ whytab.whytab_right_icon.url }}" style="width: 77px;">
+												<span>{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_right_title_fr }} {% else%} {{ whytab.whytab_right_title_en }} {% endifequal %}</span>
+												<p class="space">{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_right_content_fr }} {% else%} {{ whytab.whytab_right_content_en }} {% endifequal %}</p>
+												<a href="/{{ LANGUAGE_CODE }}/{% ifequal LANGUAGE_CODE 'fr' %}{{ whytab.whytab_right_slug_fr }}{% else%}{{ whytab.whytab_right_slug_en }}{% endifequal %}">{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'Savoir plus' %} {% else%} {% trans 'Learn more' %} {% endifequal %}</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 mobile-card-tab">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="card-bottom-txt">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.4.shared_txt_name_fr }}{% else%}{{ shared_txts.4.shared_txt_name_en }}{% endifequal %}</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="card-bottom-txt active">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.5.shared_txt_name_fr }}{% else%}{{ shared_txts.5.shared_txt_name_en }}{% endifequal %}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="desktop-version">
+								<div class="row why-flip-tag">
+									<div class="col-md-3 col-md-offset-2 ">
+										<div class="row first-face">
+											<img src="{{ whytab.whytab_left_icon.url }}" style="width: 77px;">
+											<span>{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_left_title_fr }} {% else%} {{ whytab.whytab_left_title_en }} {% endifequal %}</span>
+											<p class="space">{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_left_content_fr }} {% else%} {{ whytab.whytab_left_content_en }} {% endifequal %}</p>
+										</div>
+										<p class="card-bottom-txt">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.4.shared_txt_name_fr }}{% else%}{{ shared_txts.4.shared_txt_name_en }}{% endifequal %}</p>
+									</div>
+									<div class="col-md-2">
+										<div class="flip-arrow">
+											<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="row second-face">
+											<img src="{{ whytab.whytab_right_icon.url }}" style="width: 77px;">
+											<span>{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_right_title_fr }} {% else%} {{ whytab.whytab_right_title_en }} {% endifequal %}</span>
+											<p class="space">{% ifequal LANGUAGE_CODE 'fr' %} {{ whytab.whytab_right_content_fr }} {% else%} {{ whytab.whytab_right_content_en }} {% endifequal %}</p>
+											<a href="/{{ LANGUAGE_CODE }}/{% ifequal LANGUAGE_CODE 'fr' %}{{ whytab.whytab_right_slug_fr }}{% else%}{{ whytab.whytab_right_slug_en }}{% endifequal %}">{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'Savoir plus' %} {% else%} {% trans 'Learn more' %} {% endifequal %}</a>
+										</div>
+										<p class="card-bottom-txt">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.5.shared_txt_name_fr }}{% else%}{{ shared_txts.5.shared_txt_name_en }}{% endifequal %}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+					<!--<div id="invoicing-tag" class="active">
+						<div id="f1_container" class="mobile-version">
+							<div id="f1_card" class="shadow">
+							  <div class="front face-other">
+								<img src="{% static 'image/paper.png' %}">
+								<span>{% trans 'Paper' %}</span>
+								<p class="space">{% trans 'Difficulty tracking invoice payments' %}</p>
+								<p>{% trans 'Managing manually created versions of documents over email' %}</p>
+								<p>{% trans 'No reports or search capabilities' %}</p>
+							  </div>
+							  <div class="back face-other center">
+								<img src="{% static 'image/invoicing.png' %}">
+								<span>{% trans 'Invoicing' %}</span>
+								<p class="space">{% trans 'Automatic bank feeds notify you when invoices are opened and ' %}</p>
+								<p>{% trans 'One constantly updated version of financials, available anytime, anywhere' %}</p>
+								<p>{% trans 'Recurring invoices & accurate, searchable business reports' %}</p>
+							  </div>
+							</div>
+						</div>
+						<div class="desktop-version">
+							<div class="row why-flip-tag">
+								<div class="col-md-3 col-md-offset-2">
+									<div class="row first-face">
+										<img src="{% static 'image/paper.png' %}">
+										<span>{% trans 'Paper' %}</span>
+										<p class="space">{% trans 'Difficulty tracking invoice payments' %}</p>
+										<p>{% trans 'Managing manually created versions of documents over email' %}</p>
+										<p>{% trans 'No reports or search capabilities' %}</p>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="flip-arrow">
+										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="row second-face">
+										<img src="{% static 'image/invoicing.png' %}">
+										<span>{% trans 'Invoicing' %}</span>
+										<p class="space">{% trans 'Automatic bank feeds notify you when invoices are opened and ' %}</p>
+										<p>{% trans 'One constantly updated version of financials, available anytime, anywhere' %}</p>
+										<p>{% trans 'Recurring invoices & accurate, searchable business reports' %}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="Accounting-tag">
+						<div class="accounting-content">
+							<img src="{% static 'image/accounting.png' %}">
+							<span>{% trans 'Accounting & Payroll' %}</span>
+							<p>{% trans 'Pair Xero with Cloudmeb 24/7 bookkeeping for the ultimate in business simplification.' %}</p>
+							<p>{% trans 'Time to go hassle-free. Organized and punctual accounting from certified Xero accountants.' %}</p>
+							<p>{% trans 'No more guesswork. Stay up to date with monthly financial and tax reports.' %}</p>
+							<p>{% trans 'Over-complicated payroll? Let us handle it. We make payroll simple and accurate.' %}</p>
+						</div>
+					</div>
+					<div id="receipts-tag">
+						<div id="f1_container" class="mobile-version">
+							<div id="f1_card" class="shadow">
+							  <div class="front face-other">
+								<img src="{% static 'image/paper.png' %}">
+								<span>{% trans 'Paper' %}</span>
+								<p class="space">{% trans 'Excessive time spent calculationg expeness' %}</p>
+								<p>{% trans 'Frequent receipt loss Boxes of paper in storage' %}</p>
+								<p>{% trans 'Excessive time spent calculating expenses' %}</p>
+							  </div>
+							  <div class="back face-other center">
+								<img src="{% static 'image/receipts.png' %}">
+								<span>{% trans 'Receipts' %}</span>
+								<p class="space">{% trans 'No more data entry, take a snapshot and send it from your smartphone' %}</p>
+								<p>{% trans 'Receipt information automatically extracted and coded to Xero' %}</p>
+								<p>{% trans 'Submit receipts in under 5 seconds, keep your boxes for moving to a bigger office' %}</p>
+							  </div>
+							</div>
+						</div>
+						<div class="desktop-version">
+							<div class="row why-flip-tag">
+								<div class="col-md-3 col-md-offset-2">
+									<div class="row first-face">
+										<img src="{% static 'image/paper.png' %}">
+										<span>{% trans 'Paper' %}</span>
+										<p class="space">{% trans 'Excessive time spent calculationg expeness' %}</p>
+										<p>{% trans 'Frequent receipt loss Boxes of paper in storage' %}</p>
+										<p>{% trans 'Excessive time spent calculating expenses' %}</p>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="flip-arrow">
+										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="row second-face">
+										<img src="{% static 'image/receipts.png' %}">
+										<span>{% trans 'Receipts' %}</span>
+										<p class="space">{% trans 'No more data entry, take a snapshot and send it from your smartphone' %}</p>
+										<p>{% trans 'Receipt information automatically extracted and coded to Xero' %}</p>
+										<p>{% trans 'Submit receipts in under 5 seconds, keep your boxes for moving to a bigger office' %}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="support-tag">
+						<div class="support-content">
+							<img src="{% static 'image/support.png' %}">
+							<span>{% trans 'Support' %}</span>
+							<p><span class="bold">{% trans 'Generic systems falling short of your specific needs?</span> Let us tailor a cloud solution to fit your unique business.' %}</p>
+							<p><span class="bold">{% trans 'Overwhelmed by the task of switching systems?</span> Cloudmeb will handle the entire integration process, cleaning up and migrating your precious data.' %}</p>
+							<p>{% trans 'Learning a new system, no matter how simple, can be daunting. We offer full training and support services to make sure you get the most out of your cloud solution.' %}</p>
+						</div>
+					</div>
+					<div id="add-ons-tag">
+						<div class="add-ons-content">
+							<img src="{% static 'image/add-ons.png' %}">
+							<span>{% trans 'Support' %}</span>
+							<p>{% trans 'We’ve scoured the market for the best-of-breed cloud business applications. From Point of sale to mobile job management, we’ll get you up and running in no time.' %}</p>
+							<p>{% trans 'Visit our <span class="underline">solutions page</span> to see how else we can simplify your business.' %}</p>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--
+<div class="container-fluid before-after product">
+	<h3 class="text-center strong-heading">{% trans "invoicing" %}</h3>
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 before" data-text="{% trans 'before' %}">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+				<li>{% trans "Manually creating Word, Pdf" %}</li>
+				<li>{% trans "Managing versions over email" %}</li>
+				<li>{% trans "Difficulty tracking payments" %}</li>
+				<li>{% trans "No reports or searching capability" %}</li>
+			</ul>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/invoicing.png' %}" alt="{% trans 'invoicing' %}">
+		</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-6 after" data-text="cloudmeb&trade;">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/xero.png' %}" alt="{% trans 'xero' %}">
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+				<li>{% trans "Get paid faster with online invoicing" %}</li>
+				<li>{% trans "Get notified when customer opened or paid your invoice with automatic bank feeds" %}</li>
+				<li>{% trans "Reoccurring invoices and accurate business reports" %}</li>
+				<li>{% trans "Mobile version helps you reconciliate and send invoices on the go" %}</li>
+				<li>{% trans "And so much more..." %}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid before-after service">
+	<h3 class="text-center strong-heading">{% trans "accounting &amp; payroll" %}</h3>
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 before" data-text="{% trans 'before' %}">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+				<li>{% trans "No visibility on your business numbers" %}</li>
+				<li>{% trans "Wasted time working spreadsheets" %}</li>
+				<li>{% trans "Difficulty managing your cash flow and expenses" %}</li>
+				<li>{% trans "Accounting financials are not in real time" %}</li>
+			</ul>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/accounting.png' %}" alt="{% trans 'accounting' %}">
+		</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-6 after" data-text="cloudmeb&trade;">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/payroll2.png' %}" alt="{% trans 'payroll' %}">
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+				<li>{% trans "Dedicated &amp; certified bookkeeper available 24/7" %}</li>
+				<li>{% trans "Monthly financial reports and tax reports" %}</li>
+				<li>{% trans "Accurate, simple payroll - Always on top of you numbers" %}</li>
+				<li>{% trans "Organized, Ontime hassle-free accounting with certified Xero advisors" %}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid before-after product">
+	<h3 class="text-center strong-heading">{% trans "receipts" %}</h3>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 before" data-text="{% trans 'before' %}">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+				<li>{% trans "Shoeboxed with loss of receipts" %}</li>
+				<li>{% trans "Time spent calculating expenses" %}</li>
+				<li>{% trans "Have to see your accountant in person" %}</li>
+				<li>{% trans "Storing boxes of paper in a closet" %}</li>
+			</ul>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/receipts.png' %}" alt="{% trans 'receipts' %}">
+		</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-6 after" data-text="cloudmeb&trade;">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/receiptbank.png' %}" alt="{% trans 'receiptbank' %}">
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+				<li>{% trans "No more data entry. Take a snapshot and send it from your smartphone" %}</li>
+				<li>{% trans "Receipt information automatically extracted and coded to Xero" %}</li>
+				<li>{% trans "Submit a receipt in less 5 secs and keep your boxes for moving to a bigger office" %}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid before-after service">
+	<h3 class="text-center strong-heading">{% trans "implementation, training &amp; on-going support" %}</h3>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 before" data-text="{% trans 'before' %}">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+				<li>{% trans "Frustrated with Outdated desktop software" %}</li>
+				<li>{% trans "Copying information from one system to another" %}</li>
+				<li>{% trans "Too much time spent on administrative tasks" %}</li>
+			</ul>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/implementation.png' %}" alt="{% trans 'implementation' %}">
+		</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-6 after" data-text="cloudmeb&trade;">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+			<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/bookkeeping.png' %}" alt="{% trans 'bookkeeping' %}">
+
+			<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+				<li>{% trans "Cloud solution designed for your business" %}</li>
+				<li>{% trans "Simplified processes with Integrations" %}</li>
+				<li>{% trans "Data clean up and migration" %}</li>
+				<li>{% trans "Always available to answer your questions and provide guidance" %}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid before-after product">
+	<h3 class="text-center strong-heading">{% trans "add-ons" %}</h3>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6 before" data-text="{% trans 'before' %}">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+				<div class="addons active">
+					<div class="addon-wrapper">
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+							<li>{% trans "Old cash register, Printer and software" %}</li>
+							<li>{% trans "Loss of inventory control" %}</li>
+							<li>{% trans "Unable to track product sales" %}</li>
+						</ul>
+
+						<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/addons2.png' %}" alt="{% trans 'addons' %}">
+					</div>
+				</div>
+
+				<div class="addons">
+					<div class="addon-wrapper">
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+							<li>{% trans "Reception with a master calendar that isn't shared" %}</li>
+							<li>{% trans "Clients missing appointments" %}</li>
+							<li>{% trans "Double booking staff" %}</li>
+						</ul>
+
+						<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/addons3.png' %}" alt="{% trans 'addons' %}">
+					</div>
+				</div>
+
+				<div class="addons">
+					<div class="addon-wrapper">
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInLeft">
+							<li>{% trans "Onsite job sheets with clip pads" %}</li>
+							<li>{% trans "Difficulty managing quote history and job details" %}</li>
+							<li>{% trans "Tracking parts and labor on paper or spreadsheets" %}</li>
+						</ul>
+
+						<img data-animate-on-scroll="true" data-animation-name="fadeInLeft" src="{% static 'image/icons/addons4.png' %}" alt="{% trans 'addons' %}">
+					</div>
+				</div>
+		</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-6 after" data-text="cloudmeb&trade;">
+			<a role="button" class="close-btn pull-right" title="{% trans 'Close' %}"></a>
+			<a role="button" class="expand-before-after" title="{% trans 'expand' %}"><span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span></a>
+
+				<div class="addons active">
+					<div class="addon-wrapper">
+						<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/vend.png' %}" alt="{% trans 'vend' %}">
+
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+							<li>{% trans "Vend the world's easiest POS system with ipad register, wireless scanner" %}</li>
+							<li>{% trans "Comprehensive dashboards to gain deeper insights" %}</li>
+							<li>{% trans "Manage inventory levels and supplier orders" %}</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="addons">
+					<div class="addon-wrapper">
+						<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/timely.png' %}" alt="{% trans 'timely' %}">
+
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+							<li>{% trans "Timely Online booking software for smart business" %}</li>
+							<li>{% trans "Take back control of your calendar" %}</li>
+							<li>{% trans "Automated text and email reminders" %}</li>
+							<li>{% trans "Online booking through your own website and Facebook" %}</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="addons">
+					<div class="addon-wrapper">
+						<img data-animate-on-scroll="true" data-animation-name="fadeInRight" src="{% static 'image/icons/geoop.png' %}" alt="{% trans 'geoop' %}">
+
+						<ul data-animate-on-scroll="true" data-animation-name="fadeInRight">
+							<li>{% trans "GeoOp Job management made easy" %}</li>
+							<li>{% trans "Manage all your jobs and mobile resources in one place" %}</li>
+							<li>{% trans "Easy Quoting and Invoicing on the go" %}</li>
+							<li>{% trans "GPS Tracking with Maps and Directions" %}</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+-->
+<div class="container-fluid text-center plug-in">
+	<div class="container">
+		<div class="row spliter-lines">
+			<div class="col-md-6 col-sm-12 col-xs-12 text-explain-tag">
+				<div class="text-explain">
+					<img src="{% static 'image/intelligent.png' %}" class="img-responsive">
+					<p>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_cta_text_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_cta_text_en }}{% endifequal %}</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+					{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.0.shared_txt_name_fr }}{% else%}{{ shared_txts.0.shared_txt_name_en }}{% endifequal %}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid experience-tag">
+	<div class="row">
+		<div class="menu-tab">
+			<div class="col-md-12">
+				<h2>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_experience_title_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_experience_title_en }}{% endifequal %}</h2>
+				<ul class="grid click-animate-sec">
+				{% for experience in experiences %}
+					<li class="{{ experience.experience_class_name }}" data-percentage="{{ experience.experience_order }}"><button class="icobutton icobutton--thumbs-up"><p>{{ experience.experience_menu_tab_name_en }}</p></button></li>
+				{% endfor %}
+				</ul>
+				<!--<ul class="grid click-animate-sec">
+					<li class="retail-tag active"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Retail' %}</p></button></li>
+					<li class="professional-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Professional Service' %}</p></button></li>
+					<li class="start-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Start-up' %}</p></button></li>
+					<li class="other-tag"><button class="icobutton icobutton--thumbs-up"><p>{% trans 'Other' %}</p></button></li>
+				</ul>-->
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row experience-detail">
+				{% for experience in experiences %}
+					<div class="{{ experience.experience_class_name }} order" style="background-image: url({{ experience.experience_background.url }});" data-percentage="{{ experience.experience_order }}">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6"></div>
+								<div class="col-md-6 text-content">
+									<h4><!--{{ experience.experience_menu_tab_name_en }}--></h4>
+									<p>
+										{{ experience.experience_body_top_en }}
+									</p>
+									<p>
+										{{ experience.experience_body_bottom_en }}
+									</p>
+									<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.0.shared_txt_name_fr }}{% else%}{{ shared_txts.0.shared_txt_name_en }}{% endifequal %}
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+				<!--<div class="retail-tag active">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6 text-content">
+								<h4>Retail</h4>
+								<p>
+									We recognize the importance of delivering a consistent retail experience that meets and exceeds the expectations of your clientele.
+								</p>
+								<p>
+									This means having up-to-date financials, sales data and trend analysis, simple and effective point of sale, dependable employee management, multiple channels.
+								</p>
+								<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+									{% trans "Plug in your business" %}
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="professional-tag">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6 text-content">
+								<h4>Professional Service</h4>
+								<p>
+									It pains us to see skilled hands and minds distracted by the tedious and monotonous tasks of traditional back-offices.
+								</p>
+								<p>
+									We can’t stress enough how strongly we believe that professionals should be able to focus on their profession; without worrying about inefficiencies of their dated systems.
+								</p>
+								<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+									{% trans "Plug in your business" %}
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="start-tag">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6 text-content">
+								<h4>Start-up</h4>
+								<p>
+									As a start-up, you have a rare opportunity to do things right the first time. You have a lot of work ahead of you, even without the burden of running your back office.
+								</p>
+								<p>
+									Simplifying your business in the cloud means having the ultimate freedom to focus on what’s important.
+								</p>
+								<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+									{% trans "Plug in your business" %}
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="other-tag">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6"></div>
+							<div class="col-md-6 text-content">
+								<h4>Other</h4>
+								<p>
+									We’ve successfully dealt with beauty professionals, home and repair services, construction and contractors, online businesses and more.
+								</p>
+								<p>
+									Cloudmeb solutions are intelligently designed to maximize the efficiency of your specific business.
+								</p>
+								<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+									{% trans "Plug in your business" %}
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+	</div>
+	<div class="row" id="partner-certifications">
+		<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_logo_slider_title_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_logo_slider_title_en }}{% endifequal %}</h3>
+		<div class="owl-carousel" id="partner-carousel">
+			{% for product in products %}
+			<div style="width: 150px;">
+				<a href="/{{ LANGUAGE_CODE }}{% trans '/products/' %}{{ product.solution_slug }}" title="{{ product.solution_name }}" data-toggle="tooltip" data-placement="top">
+					<img class="media-object color-overlay" src="{{ product.solution_logo.url }}" alt="{{ product.solution_name }}" />
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% if testimonials %}
+<div class="container-fluid text-center testemonials">
+	<h1>{% ifequal LANGUAGE_CODE 'fr' %}{{ why_cloudmeb_txt.why_cloudmeb_txt_testimonial_title_fr }}{% else%}{{ why_cloudmeb_txt.why_cloudmeb_txt_testimonial_title_en }}{% endifequal %}</h1>
+
+	<div class="container">
+		<div class="owl-carousel" id="testemonial-carousel">
+		    {% for testimonial in testimonials %}
+		    <div class="flip front-unbind {% if forloop.first %} current {% endif %}" data-index="{{ forloop.counter0 }}">
+		        <div class="card">
+		            <div class="face front">
+		                <p>
+		                	“{{ testimonial.testimonial_body }}”
+		                </p>
+		            </div>
+		            <div class="face back">
+		            	<div class="row">
+		            		{% for solution in testimonial.testimonial_solutions.all|slice:'8' %}
+		            		<div class="col-md-3 col-sm-3 col-xs-3">
+			                	<img src="{{ solution.solution_icon.url }}" alt="{{ solution.solution_name }}" title="{{ solution.solution_name }}" data-toggle="tooltip" data-placement="top"/>
+			                </div>
+		            		{% endfor %}
+			            </div>
+		            </div>
+		        </div>
+				<div class="name-info">
+					<img src="{{ testimonial.testimonial_mugshot.url }}" alt="{{ testimonial.testimonial_full_name }}"
+		        	title="{{ testimonial.testimonial_full_name }}" data-toggle="tooltip" data-placement="right" />
+					<p>{{ testimonial.testimonial_full_name }} </p>
+					<p>{{ testimonial.testimonial_position }}, {{ testimonial.testimonial_company_name }}</p>
+					<ul class="solution-tag">
+						<li class="solu-txt">Solutions</li>
+						<li>
+							<ul>
+								{% for solution in testimonial.testimonial_solutions.all|slice:'4' %}
+									<li><img src="{{ solution.solution_icon.url }}" alt="{{ solution.solution_name }}" title="{{ solution.solution_name }}" data-toggle="tooltip" data-placement="top"/></li>
+								{% endfor %}
+								<!--<li><img src="{% static 'image/solution-1.png' %}" class="img-responsive"></li>
+								<li><img src="{% static 'image/solution-2.png' %}" class="img-responsive"></li>
+								<li><img src="{% static 'image/solution-3.png' %}" class="img-responsive"></li>-->
+							</ul>
+						</li>
+					</ul>
+			    </div>
+		    </div>
+		    {% endfor %}
+		</div>
+	</div>
+</div>
+<div class="service-category-list" style="display: none;">
+	{% for service in services %}
+	<div class="footer-menu-category-list">
+		<p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+		<p class="service-slug">{{ service.solution_slug }}</p>
+	</div>
+	{% endfor %}
+</div>
+{% endif %}
+
+<!--
+<div class="container-fluid text-center process">
+	<h1>{% trans "moving to the cloud" %}</h1>
+
+	<div class="container">
+		<div class="row one-two-three">
+			<div class="col-md-4">
+				<div data-step="1">
+					<h3>{% trans "assess your needs" %}</h3>
+					<p>
+						{% trans "Your digital journey starts with an overview of your current situation so we can better understand your objectives and areas for improvement." %}
+					</p>
+					<p>
+						{% trans "It's critical to know where you are today and where you want to be." %}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div data-step="2">
+					<h3>{% trans "tailored solution" %}</h3>
+					<p>
+						{% trans "We will design a personalized solution that will allow you to simplify your business and take back control of your numbers." %}
+					</p>
+					<p>
+						{% trans "It's finally time for you to get to know your business." %}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div data-step="3">
+					<h3>{% trans "implementation &amp; training" %}</h3>
+					<p>
+						{% trans "Cloudmeb&trade; will deliver a fully functional solution with your data and provide all the training necessary to get your business onboard quickly." %}
+					</p>
+					<p>
+						{% trans "We will help you every step of the way until you are running smoothly." %}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a class="btn btn-default btn-plug btn-plug-transparent btn-lg" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+    	<span class="plug"></span> {% trans "plug-in your business" %}
+  	</a>
+</div>
+
+<div class="container-fluid text-center get-started">
+	<h1>{% trans "let's get you started" %}</h1>
+
+	<a class="btn btn-default btn-plug btn-plug-transparent btn-lg" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+    	<span class="plug"></span> {% trans "plug-in your business" %}
+  	</a>
+</div>
+-->
+{% endblock%}

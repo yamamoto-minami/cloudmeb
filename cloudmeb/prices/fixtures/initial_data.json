@@ -1,0 +1,320 @@
+[
+{
+    "pk": 1,
+    "fields": {
+        "price_formula": "%(multicurrency)s = true ? 47 : 35",
+        "price_currency": "CAD",
+        "price_inputs": [
+            12
+        ],
+        "price_name": "Xero Price",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 2,
+    "fields": {
+        "price_formula": "%{bankTransactions)s = 1 to 50 ? 100\r\n%{bankTransactions)s = 51 to 100 ? 150\r\n%{bankTransactions)s = 101 to 250 ? 200\r\n%{bankTransactions)s = 251 to 500 ? 300\r\n%{bankTransactions)s = 500+? 500",
+        "price_currency": "CAD",
+        "price_inputs": [
+            4
+        ],
+        "price_name": "Bookkeeping price",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 3,
+    "fields": {
+        "price_formula": "3$ * employee",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8,
+            9
+        ],
+        "price_name": "Deputy",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 4,
+    "fields": {
+        "price_formula": "5$ * employee",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8
+        ],
+        "price_name": "Expensify",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 5,
+    "fields": {
+        "price_formula": "50",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Fathom",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 6,
+    "fields": {
+        "price_formula": "User < 3 48$\r\nUser < 6 72$\r\nUser <16 170$\r\nUser < 51 490$\r\n\r\n",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "GeoOp",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 7,
+    "fields": {
+        "price_formula": "user < 4 15$\r\nUser < 11 60$\r\nuser > 10 120$",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "Harvest",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 8,
+    "fields": {
+        "price_formula": "30 *  User",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "MapAnything",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 9,
+    "fields": {
+        "price_formula": "if frequency = bi-weekly : 26$ + 2$ * employee\r\nif frequency = monthly : 26$ + 1$ * employee",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "price_name": "Payment Evolution",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 10,
+    "fields": {
+        "price_formula": "Users: >1, Receipts:<50\t\t32\r\nUsers: >1, Receipts:>50 AND <100\t\t50\r\nUsers: >1, Receipts:>100 AND <150\t\t70\r\nUsers: >1, Receipts:>150 AND <300\t\t125\r\nUsers: >1, Receipts:>300\t\t275\r\nUsers: 1, Receipts:<50\t\t29\r\nUsers: 1, Receipts:>50 AND <100\t\t38\r\nUsers: 1, Receipts:>100 AND <150\t\t57\r\nUsers: 1, Receipts:>150 AND <300\t\t115\r\nUsers: 1, Receipts:>300 AND <675\t\t260",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7,
+            14
+        ],
+        "price_name": "Receipt Bank",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 11,
+    "fields": {
+        "price_formula": "user = 1 45$\r\nuser > 20 = 38$ * user \r\nUser > 21 = 35$ * user",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "Ring Central",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 12,
+    "fields": {
+        "price_formula": "user * 80$",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "Salesforce",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 13,
+    "fields": {
+        "price_formula": "36",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Shopify",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 14,
+    "fields": {
+        "price_formula": "if frequency = biweekly: 15$ + 4$ * employee\r\nif frequency = monthly: 10 +2$ * employee\r\n",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "price_name": "Simplepay",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 15,
+    "fields": {
+        "price_formula": "Location < 2 Products < 500 75$\r\nlocation < 2 Products > 500 105$\r\nlocation > 1 Products > 500 205$",
+        "price_currency": "CAD",
+        "price_inputs": [
+            9
+        ],
+        "price_name": "Vend",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 16,
+    "fields": {
+        "price_formula": "user < 2 = 24$\r\nUser <11 = 24$+(6$*users)\r\nUsers >10 = 78$",
+        "price_currency": "CAD",
+        "price_inputs": [
+            7
+        ],
+        "price_name": "Timely",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 17,
+    "fields": {
+        "price_formula": "if biweekly: 20$ + 4$ * employee\r\nif monthly: 20 +2$ * employee",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "price_name": "Wagepoint",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 18,
+    "fields": {
+        "price_formula": "financial frequency = monthly : 250\r\nfinancial frequency = quarterly : 125\r\nfinancial frequency = semi annual : 75\r\nfinancial frequency = annual : 50",
+        "price_currency": "CAD",
+        "price_inputs": [
+            13
+        ],
+        "price_name": "Advisory Services",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 19,
+    "fields": {
+        "price_formula": "500",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Consultation Services",
+        "price_frequency": "ONE_TIME"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 20,
+    "fields": {
+        "price_formula": "if bank transactions > 150 and business type = Freelancer : 150\r\nif bank transactions > 150 and business type = Registered : 150\r\nif bank transactions > 150 and business type = Corporation : 350\r\nif bank transactions > 150 and business type - start up : 300\r\n\r\nif bank transactions < 150 and business type = Freelancer : 75\r\nif bank transactions < 150 and business type = Registered : 75\r\nif bank transactions < 150 and business type = Corporation : 175\r\nif bank transactions < 150 and business type - start up : 150\r\n\r\n",
+        "price_currency": "CAD",
+        "price_inputs": [
+            3,
+            4
+        ],
+        "price_name": "Compliance Services",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 21,
+    "fields": {
+        "price_formula": "250",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Set up and conversion",
+        "price_frequency": "ONE_TIME"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 22,
+    "fields": {
+        "price_formula": "750",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Incorporation",
+        "price_frequency": "ONE_TIME"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 23,
+    "fields": {
+        "price_formula": "payroll frequency = monthly : 25 + (5*employee)\r\npayroll frequency = bi-weekly : 50 + (5*employee)",
+        "price_currency": "CAD",
+        "price_inputs": [
+            8,
+            10
+        ],
+        "price_name": "Payroll Services",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 24,
+    "fields": {
+        "price_formula": "50",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Support",
+        "price_frequency": "MONTHLY"
+    },
+    "model": "prices.price"
+},
+{
+    "pk": 25,
+    "fields": {
+        "price_formula": "250",
+        "price_currency": "CAD",
+        "price_inputs": [],
+        "price_name": "Training",
+        "price_frequency": "ONE_TIME"
+    },
+    "model": "prices.price"
+}
+]

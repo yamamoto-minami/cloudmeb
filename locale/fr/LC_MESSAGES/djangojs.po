@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-14 19:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: assets/js/app.js:55 assets/js/app.min.js:2
+msgid "Close"
+msgstr "Fermer"
+
+#: assets/js/app.js:583 assets/js/app.js:584 assets/js/app.min.js:4
+#: assets/js/app.min.js:5
+msgid "products"
+msgstr "produits"
+
+#: assets/js/app.js:587 assets/js/app.js:588 assets/js/app.min.js:5
+msgid "services"
+msgstr "services"
+
+#: assets/js/app.js:1123 assets/js/app.min.js:34
+msgid "selected"
+msgstr "sélectionné"
+
+#: assets/js/app.js:1123 assets/js/app.js:1129 assets/js/app.min.js:34
+#: assets/js/app.min.js:35
+msgid "select"
+msgstr "sélectionner"
+
+#: assets/js/app.js:1177 assets/js/app.js:1214 assets/js/app.min.js:36
+#: assets/js/app.min.js:38
+msgid "added!"
+msgstr "ajouté!"
+
+#: assets/js/app.js:1177 assets/js/app.js:1271 assets/js/app.min.js:36
+#: assets/js/app.min.js:40
+msgid "removed!"
+msgstr "enlevé!"
+
+#: assets/js/app.js:1419 assets/js/app.min.js:15
+msgid "%(fieldName)s is not valid!"
+msgstr "%(fieldName)s n'est pas valide!"
+
+#: assets/js/app.js:1506 assets/js/app.min.js:46
+msgid "configured!"
+msgstr "configuré!"
+
+#: assets/js/app.js:1550 assets/js/app.min.js:48
+msgid "Thanks for reaching out %(fname)s, we'll get back to you shortly."
+msgstr "Merci de nous contacter, %(fname)s, nous vous répondrons sous peu."
+
+#: assets/js/app.js:1555 assets/js/app.min.js:48
+msgid "We were unable to deliver your message, please try again later."
+msgstr ""
+"Nous avons été incapables de livrer votre message, s'il vous plaît réessayer "
+"plus tard."
+
+#: assets/js/app.js:1589 assets/js/app.js:1632 assets/js/app.min.js:50
+#: assets/js/app.min.js:52
+msgid "Thanks for reaching out %(first_name)s, we'll get back to you shortly."
+msgstr ""
+"Merci de nous contacter, %(first_name)s, nous vous répondrons sous peu."
+
+#: assets/js/app.js:1594 assets/js/app.min.js:50
+msgid ""
+"We were unable to deliver your partnership request, please try again later."
+msgstr ""
+"Nous avons été incapables de livrer votre demande de partenariat, s'il vous "
+"plaît réessayer plus tard."
+
+#: assets/js/app.js:1637 assets/js/app.min.js:52
+msgid "We were unable to deliver your quote request, please try again later."
+msgstr ""
+"Nous avons été incapables de livrer votre demande de devis, s'il vous plaît "
+"réessayer plus tard."
+
+#: assets/js/app.js:1707 assets/js/app.min.js:54
+msgid "You have unsaved changes."
+msgstr "Vous avez des modifications non enregistrées."

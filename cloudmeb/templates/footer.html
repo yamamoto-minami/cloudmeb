@@ -1,0 +1,161 @@
+{% load i18n %}
+
+<footer class="navbar navbar-inner navbar-fixed-bottom">
+	<div class="container desktop-version">
+		<div class="row" style="display: inline-block">
+			<div class="footer-content">
+				<ul class="nav nav-pills nav-stacked footer-customizing">
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">{% trans "Pricing" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/become-a-partner/' %}" title="{% trans 'become a partner' %}">{% trans "become a partner" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'contact us' %}">{% trans "Contact us" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/frequently-asked-questions/' %}" title="{% trans 'frequently asked questions' %}">{% trans "FAQ" %}</a></li>
+					<li>
+						<a {% ifequal LANGUAGE_CODE "fr" %} data-lang="en" {% else %} data-lang="fr" {% endifequal %} href="#" title="{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'english' %} {% else%} {% trans 'français' %} {% endifequal %}">
+						{% ifequal LANGUAGE_CODE "fr" %} {% trans "English" %} {% else%} {% trans "Français" %} {% endifequal %}
+						</a>
+					</li>
+					{% if user.is_authenticated %}
+					<li><a href="{% trans '/admin/' %}" title="{% trans 'Administration' %}">{% trans "Administration" %}</a></li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="footer-content">
+				<ul class="nav nav-pills nav-stacked footer-customizing">
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'products' %}" title="{% trans 'solutions' %}#{% trans 'products' %}">{% trans "solutions" %}</a></li>
+				</ul>
+				<ul class="nav nav-pills nav-stacked footer-customizing service-list-add">
+					<!--<li class="no-links"><a href="" title="{% trans 'bookkeeping' %}">{% trans "Bookkeeping" %}</a></li>
+					<li class="no-links"><a href="#" title="{% trans 'tax' %}">{% trans "Tax" %}</a></li>
+					<li class="no-links"><a href="#" title="{% trans 'payroll' %}">{% trans "Payroll" %}</a></li>
+					<li class="no-links"><a href="#" title="{% trans 'advisory' %}">{% trans "Advisory service" %}</a></li>
+					<li class="no-links"><a href="#" title="{% trans 'bookkeeping' %}">{% trans "Website development" %}</a></li>
+					<li class="no-links"><a href="#">{% trans "Cloud support" %}</a></li>
+					<li class="no-links"><a href="#">{% trans "Consulting" %}</a></li>
+					<li class="no-links"><a href="#">{% trans "Accounting" %}</a></li>
+					<li class="no-links"><a href="#" title="{% trans 'bookkeeping' %}">{% trans "Cloud training" %}</a></li>
+					<li class="no-links"><a href="#">{% trans "Legal service" %}</a></li>
+					<li class="no-links"><a href="#">{% trans "Integration" %}</a></li>-->
+				</ul>
+			</div>
+			<div class="footer-content">
+				<ul class="nav nav-pills nav-stacked footer-customizing">
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'contact-us' %}">{% trans "Contact us" %}</a></li>
+					<li class="no-links"><a href="tel:+18003554936" title="{% trans 'bookkeeping' %}">{% trans "+1 800 355 4936" %}</a></li>
+					<li class="no-links"><a href="/{{ LANGUAGE_CODE }}{% trans '/book-now/' %}">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.1.shared_txt_name_fr }}{% else%}{{ shared_txts.1.shared_txt_name_en }}{% endifequal %}</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="display: inline-flex">
+			<div class="footer-info-text">
+				<p class="muted credit">
+					{% ifequal LANGUAGE_CODE 'en' %}&copy; 2016 cloudmeb.com All rights reserved. We are proudly Canadian owned and operated.{% else%}&copy; 2016 cloudmeb.com Tous droits réservés. Nous sommes fiers d'être une entreprise entièrement canadienne.{% endifequal %}
+				</p>
+				<div class="policy-terms">
+					<p><a href="/{{ LANGUAGE_CODE }}{% trans '/privacy-policy/' %}">{% ifequal LANGUAGE_CODE 'fr' %}Politique de confidentialité{% else%}Privacy policy{% endifequal %}</a></p>
+					<p><a href="/{{ LANGUAGE_CODE }}{% trans '/terms-of-use/' %}">{% ifequal LANGUAGE_CODE 'fr' %}Conditions d'utilisation{% else%}Terms of use{% endifequal %}</a></p>
+				</div>
+			</div>
+			<div class="footer-info-icon">
+				<ul class="nav nav-pills pull-right social-links">
+					<li class="facebook"><a href="{{ website.facebook_url }}" target="_blank" title="{% trans 'Like us on Facebook' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li class="twitter"><a href="{{ website.twitter_url }}" target="_blank" title="{% trans 'Follow us on Twitter' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li class="linkedin"><a href="{{ website.linkedin_url }}" target="_blank" title="{% trans 'Connect with us on LinkedIn' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li class="google"><a href="{{ website.google_plus_url }}" target="_blank" title="{% trans 'Connect with us on Google+' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li class="other addthis_sharing_toolbox" title="{% trans 'Share this page' %}" data-toggle="tooltip" data-placement="top" style="clear: initial !important;"></li>
+				</ul>
+			</div>
+		</div>
+		<!--<div class="col-md-4">
+			<ul class="nav nav-pills nav-stacked footer-customizing">
+			  	<li><a href="/{{ LANGUAGE_CODE }}" title="{% trans 'why cloudmeb&trade;' %}">{% trans "why cloudmeb&trade;" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">{% trans "plug-in your business" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'products' %}" title="{% trans 'solutions' %}#{% trans 'products' %}">{% trans "solutions" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'pricing' %}">{% trans "pricing" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/become-a-partner/' %}" title="{% trans 'become a partner' %}">{% trans "become a partner" %}</a></li>
+			  	{% if user.is_authenticated %}
+                <li><a href="{% trans '/admin/' %}" title="{% trans 'Administration' %}">{% trans "Administration" %}</a></li>
+                {% endif %}
+			</ul>
+		</div>
+
+		<div class="col-md-4">
+			<ul class="nav nav-pills nav-stacked footer-customizing">
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'contact us' %}">{% trans "contact us" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/frequently-asked-questions/' %}" title="{% trans 'frequently asked questions' %}">{% trans "frequently asked questions" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/terms-of-use/' %}" title="{% trans 'terms of use' %}">{% trans "terms of use" %}</a></li>
+			  	<li><a href="/{{ LANGUAGE_CODE }}{% trans '/privacy-policy/' %}" title="{% trans 'privacy policy' %}">{% trans "privacy policy" %}</a></li>
+			  	<li><a href="{{ website.shop_url }}" target="_blank" title="{% trans 'Shop' %}">{% trans "Shop" %}</a></li>
+			  	<!-- <li><a href="/sitemap.xml">{% trans "Sitemap" %}</a></li>
+			</ul>
+		</div>
+
+		<div class="col-md-4">
+			<ul class="nav nav-pills social-media pull-right social-links">
+			  	<li class="facebook"><a href="{{ website.facebook_url }}" target="_blank" title="{% trans 'Like us on Facebook' %}" data-toggle="tooltip" data-placement="top">{% trans "facebook" %}</a></li>
+			  	<li class="twitter"><a href="{{ website.twitter_url }}" target="_blank" title="{% trans 'Follow us on Twitter' %}" data-toggle="tooltip" data-placement="top">{% trans "twitter" %}</a></li>
+			  	<li class="linkedin"><a href="{{ website.linkedin_url }}" target="_blank" title="{% trans 'Connect with us on LinkedIn' %}" data-toggle="tooltip" data-placement="top">{% trans "linkedin" %}</a></li>
+			  	<li class="google"><a href="{{ website.google_plus_url }}" target="_blank" title="{% trans 'Connect with us on Google+' %}" data-toggle="tooltip" data-placement="top">{% trans "google+" %}</a></li>
+			  	<li class="other addthis_sharing_toolbox" title="{% trans 'Share this page' %}" data-toggle="tooltip" data-placement="top" style="clear: initial !important;"></li>
+			</ul>
+		</div>-->
+	</div>
+	<div class="container mobile-version">
+		<div class="row">
+			<div class="col-sm-6 col-xs-6">
+				<ul class="nav nav-pills nav-stacked footer-customizing">
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">{% trans "Pricing" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/become-a-partner/' %}" title="{% trans 'become a partner' %}">{% trans "become a partner" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'contact us' %}">{% trans "Contact us" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/frequently-asked-questions/' %}" title="{% trans 'frequently asked questions' %}">{% trans "FAQ" %}</a></li>
+					<li>
+						<a {% ifequal LANGUAGE_CODE "fr" %} data-lang="en" {% else %} data-lang="fr" {% endifequal %} href="#" title="{% ifequal LANGUAGE_CODE 'fr' %} {% trans 'english' %} {% else%} {% trans 'français' %} {% endifequal %}">
+						{% ifequal LANGUAGE_CODE "fr" %} {% trans "English" %} {% else%} {% trans "Français" %} {% endifequal %}
+						</a>
+					</li>
+					{% if user.is_authenticated %}
+					<li><a href="{% trans '/admin/' %}" title="{% trans 'Administration' %}">{% trans "Administration" %}</a></li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="col-sm-6 col-xs-6">
+				<ul class="nav nav-pills nav-stacked footer-customizing">
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'products' %}" title="{% trans 'solutions' %}#{% trans 'products' %}">{% trans "solutions" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/solutions/' %}#{% trans 'services' %}" title="{% trans 'solutions' %}#{% trans 'products' %}">{% trans "services" %}</a></li>
+					<li><a href="/{{ LANGUAGE_CODE }}{% trans '/contact-us/' %}" title="{% trans 'products' %}">{% trans "Contact us" %}</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 footer-info-text">
+				<p class="muted credit">
+					{% ifequal LANGUAGE_CODE "en" %}
+					&copy; 2016 cloudmeb.com All rights reserved.
+					We are proudly Canadian owned and operated.{% else %}
+					&copy; 2016 cloudmeb.com Tous droits réservés.
+					Nous sommes fiers d'être une entreprise entièrement canadienne.
+					{% endifequal %}
+				</p>
+				<div class="policy-terms">
+					<p><a href="/{{ LANGUAGE_CODE }}{% trans '/privacy-policy/' %}">{% ifequal LANGUAGE_CODE 'fr' %}Politique de confidentialité{% else%}Privacy policy{% endifequal %}</a></p>
+					<p><a href="/{{ LANGUAGE_CODE }}{% trans '/terms-of-use/' %}">{% ifequal LANGUAGE_CODE 'fr' %}Conditions d'utilisation{% else%}Terms of use{% endifequal %}</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xs-6">
+					<ul class="nav nav-pills pull-right social-links">
+						<li class="facebook"><a href="{{ website.facebook_url }}" target="_blank" title="{% trans 'Like us on Facebook' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="twitter"><a href="{{ website.twitter_url }}" target="_blank" title="{% trans 'Follow us on Twitter' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="linkedin"><a href="{{ website.linkedin_url }}" target="_blank" title="{% trans 'Connect with us on LinkedIn' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="google"><a href="{{ website.google_plus_url }}" target="_blank" title="{% trans 'Connect with us on Google+' %}" data-toggle="tooltip" data-placement="top"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="other addthis_sharing_toolbox" title="{% trans 'Share this page' %}" data-toggle="tooltip" data-placement="top" style="clear: initial !important;"></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-xs-6" style="margin-top: 20px;">
+					<ul class="nav nav-pills nav-stacked footer-customizing">
+						<li class="no-links"><a href="tel:+18003554936" title="{% trans 'bookkeeping' %}" style="text-align: center;">{% trans "+1 800 355 4936" %}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

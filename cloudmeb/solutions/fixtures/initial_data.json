@@ -1,0 +1,1027 @@
+[
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            1
+        ],
+        "solution_image_en": "solutions/solution-01.png",
+        "solution_short_name_en": "Beautiful Accounting",
+        "solution_logo_fr": "solutions/Xero_Partner_stq04SW.png",
+        "solution_short_description_en": "Best Cloud Accounting & Bookkeeping System for Canadian Small & Midsize Businesses",
+        "solution_name_fr": "Xero",
+        "solution_icon_en": "solutions/LOGO_XERO.jpg",
+        "solution_short_name_fr": "Comptabilit\u00e9 en beaut\u00e9",
+        "solution_benefits": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "solution_short_description_fr": "Le meilleur syst\u00e8me de comptabilit\u00e9 et tenue de livres en nuage informatique pour petite et moyenne entreprise canadienne.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Cloud-based accounting & bookkeeping software that can be customly integrated with other apps to simplify your small and midsize business processes. Integrate Cloudmeb with Xero to increase business productivity. ",
+        "solution_medium_description_fr": "Logiciel de tenue de livres et comptabilit\u00e9 qui peut s'int\u00e9grer \u00e0 d'autres applications pour simplifier les processus de votre petite et moyenne entreprise. Int\u00e9grez Cloudmeb avec Xero pour augmenter votre productivit\u00e9 commerciale.",
+        "solution_image_fr": "solutions/solution-01_6JgLldY.png",
+        "solution_slug_fr": "xero-nuage-comptabilite-logiciel",
+        "solution_banner_fr": "solutions/solution-02_cRQGaCq.png",
+        "solution_icon_fr": "solutions/LOGO_XERO_4hjXraa.jpg",
+        "solution_logo_en": "solutions/Xero_Partner.png",
+        "solution_description_fr": "Logiciel de tenue de livres et comptabilit\u00e9 qui peut s'int\u00e9grer \u00e0 d'autres applications pour simplifier les processus de votre petite et moyenne entreprise. Int\u00e9grez Cloudmeb avec Xero pour augmenter votre productivit\u00e9 commerciale.",
+        "solution_banner_en": "solutions/solution-02.png",
+        "solution_name_en": "Xero",
+        "solution_slug_en": "xero-cloud-accounting-software",
+        "solution_medium_description_en": "Cloud-based accounting & bookkeeping software that can be customly integrated with other apps to simplify your small and midsize business processes. Integrate Cloudmeb with Xero to increase business productivity. "
+    },
+    "pk": 1
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            1
+        ],
+        "solution_image_en": "placeholders/300x300.gif",
+        "solution_short_name_en": "A dedicated concierge for your business.",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Bookkeeping, tax services and much more. Consult the Cloudmeb Configurator to see your best fit.",
+        "solution_name_fr": "Services de tenue de livres sans souci",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Un gardien d\u00e9vou\u00e9 pour votre entreprise.",
+        "solution_benefits": [
+            9,
+            10,
+            11
+        ],
+        "solution_short_description_fr": "Tenue de livres, services d'imp\u00f4t, et plus. Consultez le configurateur Cloudmeb pour d\u00e9couvrir ce qui vous convient le mieux.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Cloudmeb provides the best bookkeeping tools and services to grow your business. Learn more and consult the Cloudmeb Configurator to find your best fit.",
+        "solution_medium_description_fr": "Cloudmeb vous offre les meilleurs outils et services pour d\u00e9velopper votre entreprise. Apprenez-en davantage et consultez le Configurateur Cloudmeb pour trouver ce qui correspond le mieux \u00e0 vos besoins.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "tenue-de-livres-services",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Cloudmeb vous offre les meilleurs outils et services pour d\u00e9velopper votre entreprise. Apprenez-en davantage et consultez le Configurateur Cloudmeb pour trouver ce qui correspond le mieux \u00e0 vos besoins.",
+        "solution_banner_en": "solutions/PeopleImages.com-ID460961.jpg",
+        "solution_name_en": "Hassle Free Bookkeeping Services",
+        "solution_slug_en": "bookkeping-services",
+        "solution_medium_description_en": "Cloudmeb provides the best bookkeeping tools and services to grow your business. Learn more and consult the Cloudmeb Configurator to find your best fit."
+    },
+    "pk": 2
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            1
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1219528.jpg",
+        "solution_short_name_en": "Grow your business intelligently",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Get the best advisory services in terms of strategic financial planning, budgeting, forecasting and much more. ",
+        "solution_name_fr": "Services Conseils de nouvelle g\u00e9n\u00e9ration",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "D\u00e9veloppez votre entreprise intelligemment",
+        "solution_benefits": [
+            6,
+            7,
+            8
+        ],
+        "solution_short_description_fr": "Obtenez les meilleurs conseils en planification financi\u00e8re, pr\u00e9visions budg\u00e9taires et financi\u00e8res, et bien plus.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Cloudmeb's tailor-made advisory & finance services will be sure to give your business a solid boost. Help it grow based on the best recommendations you can receive in terms of strategic financial planning, budgeting, forecasting, reviews and much more.",
+        "solution_medium_description_fr": "Les services-conseils et financiers sur mesure de Cloudmeb donneront un s\u00e9rieux coup de main \u00e0 votre entreprise. D\u00e9veloppez-la gr\u00e2ce aux meilleures recommandations en mati\u00e8re de planification financi\u00e8re, pr\u00e9visions budg\u00e9taires et financi\u00e8res, v\u00e9rifications, et bien plus.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "conseils-services",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Les services-conseils et financiers sur mesure de Cloudmeb donneront un s\u00e9rieux coup de main \u00e0 votre entreprise. D\u00e9veloppez-la gr\u00e2ce aux meilleures recommandations en mati\u00e8re de planification financi\u00e8re, pr\u00e9visions budg\u00e9taires et financi\u00e8res, v\u00e9rifications, et bien plus.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "Next Generation Advisory Services",
+        "solution_slug_en": "advisory-services",
+        "solution_medium_description_en": "Cloudmeb's tailor-made advisory & finance services will be sure to give your business a solid boost. Help it grow based on the best recommendations you can receive in terms of strategic financial planning, budgeting, forecasting, reviews and much more."
+    },
+    "pk": 3
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            15
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1233353.jpg",
+        "solution_short_name_en": "Get a clear picture of what your business requires",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Business analysis starts with prioritizing your needs. Discover our fully-tested solutions and best consultants.",
+        "solution_name_fr": "Services professionnels de consultation",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Ayez une id\u00e9e pr\u00e9cise des besoins de votre entrprise",
+        "solution_benefits": [
+            95,
+            96,
+            97
+        ],
+        "solution_short_description_fr": "L'analyse d'affaires doit prioriser vos besoins. D\u00e9couvrez les meilleurs consultants et nos solutions enti\u00e8rement \u00e9prouv\u00e9es.",
+        "solution_values": [
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Your business can benefit from the best, fully-tested solutions! The best business analysis & consultation starts with identifying the key cloud solution areas that would meet your personalized requirements. See how Cloudmeb helps you understand your business's needs and prioritize them for better results.",
+        "solution_medium_description_fr": "Votre entreprise peut b\u00e9n\u00e9ficier des meilleures solutions enti\u00e8rement \u00e9prouv\u00e9es! Le meilleur proc\u00e9d\u00e9 d\u2019analyse et de consultation d\u00e9bute par l'identification des domaines de solution infonuagique cl\u00e9s qui pourraient r\u00e9pondre aux conditions sp\u00e9cifiques de votre entreprise. D\u00e9couvrez comment Cloudmeb peut vous aider \u00e0 comprendre et prioriser vos besoins pour obtenir de meilleurs r\u00e9sultats.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "consultation-services-nuage-logiciel",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Votre entreprise peut b\u00e9n\u00e9ficier des meilleures solutions enti\u00e8rement \u00e9prouv\u00e9es! Le meilleur proc\u00e9d\u00e9 d\u2019analyse et de consultation d\u00e9bute par l'identification des domaines de solution infonuagique cl\u00e9s qui pourraient r\u00e9pondre aux conditions sp\u00e9cifiques de votre entreprise. D\u00e9couvrez comment Cloudmeb peut vous aider \u00e0 comprendre et prioriser vos besoins pour obtenir de meilleurs r\u00e9sultats.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "Professional Consultation Services",
+        "solution_slug_en": "consultation-services-cloud-software",
+        "solution_medium_description_en": "Your business can benefit from the best, fully-tested solutions! The best business analysis & consultation starts with identifying the key cloud solution areas that would meet your personalized requirements. See how Cloudmeb helps you understand your business's needs and prioritize them for better results."
+    },
+    "pk": 4
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            1
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1249136.jpg",
+        "solution_short_name_en": "Never miss a deadline again.",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Is tax management still a challenge for your business? Let Cloudmeb help you sort out all of that tax compliance hassle as you grow.",
+        "solution_name_fr": "Services de conformit\u00e9 fiscale ponctuels",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Ne d\u00e9passez plus jamais les d\u00e9lais",
+        "solution_benefits": [
+            12,
+            13,
+            14
+        ],
+        "solution_short_description_fr": "La gestion des imp\u00f4ts est encore un d\u00e9fi pour votre entreprise? Laissez Cloudmeb d\u00e9m\u00ealer toute cette conformit\u00e9 fiscale.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Is tax management still a challenge for your business? Is it hard to keep up with deadlines? Cloudmeb's objective is to help you sort out all of that tax compliance hassle as you grow. We provide tax services to small businesses, self employed workers, startups, independent contractors and consultants.",
+        "solution_medium_description_fr": "Est-ce que la gestion des imp\u00f4ts est toujours un d\u00e9fi pour votre entreprise? Avez-vous de la difficult\u00e9 \u00e0 respecter les \u00e9ch\u00e9anciers? L'objectif de Cloudmeb est de vous aider \u00e0 d\u00e9m\u00ealer toute cette conformit\u00e9 fiscale pendant que votre entreprise prosp\u00e8re. Nous offrons des services d'imp\u00f4ts aux petites et jeunes entreprises, aux travailleurs autonomes et aux consultants et entrepreneurs ind\u00e9pendants.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "logiciel-impot-canada-audit-services",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Est-ce que la gestion des imp\u00f4ts est toujours un d\u00e9fi pour votre entreprise? Avez-vous de la difficult\u00e9 \u00e0 respecter les \u00e9ch\u00e9anciers? L'objectif de Cloudmeb est de vous aider \u00e0 d\u00e9m\u00ealer toute cette conformit\u00e9 fiscale pendant que votre entreprise prosp\u00e8re. Nous offrons des services d'imp\u00f4ts aux petites et jeunes entreprises, aux travailleurs autonomes et aux consultants et entrepreneurs ind\u00e9pendants.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "On Time Tax Compliance Services",
+        "solution_slug_en": "tax-software-canada-audit-services",
+        "solution_medium_description_en": "Is tax management still a challenge for your business? Is it hard to keep up with deadlines? Cloudmeb's objective is to help you sort out all of that tax compliance hassle as you grow. We provide tax services to small businesses, self employed workers, startups, independent contractors and consultants."
+    },
+    "pk": 5
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            13
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1174780.jpg",
+        "solution_short_name_en": "Configuration and Integration for your business",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Discover our personalized business analysis, change management, configuration & integration processes.",
+        "solution_name_fr": "Passer au nuage infornmatique est facile",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Configuration et int\u00e9gration pour votre entreprise",
+        "solution_benefits": [
+            15,
+            16,
+            17
+        ],
+        "solution_short_description_fr": "D\u00e9couvrez nos processus d'analyse d'affaires, de gestion du changement, de configuration et d'int\u00e9gration sur mesure.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Moving your business to the cloud is easy. Cloudmeb's business configuration and integration, change management processes have been finely tuned to accelerate transition while maintaining high-level business security and performance. Come and discover our new configuration and integration design that is secure, efficient, mobile and bug-free.",
+        "solution_medium_description_fr": "Passer au nuage informatique est facile. La configuration, l'int\u00e9gration et les processus de gestion du changement de Cloudmeb ont \u00e9t\u00e9 minutieusement r\u00e9gl\u00e9s afin d'acc\u00e9l\u00e9rer la transition tout en conservant un niveau \u00e9lev\u00e9 de s\u00e9curit\u00e9 et de performance. D\u00e9couvrez notre nouvelle conception de configuration et d'int\u00e9gration s\u00e9curitaire, efficace, mobile et sans erreurs.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "affaires-configuration-execution-add-ons",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Passer au nuage informatique est facile. La configuration, l'int\u00e9gration et les processus de gestion du changement de Cloudmeb ont \u00e9t\u00e9 minutieusement r\u00e9gl\u00e9s afin d'acc\u00e9l\u00e9rer la transition tout en conservant un niveau \u00e9lev\u00e9 de s\u00e9curit\u00e9 et de performance. D\u00e9couvrez notre nouvelle conception de configuration et d'int\u00e9gration s\u00e9curitaire, efficace, mobile et sans erreurs.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "Moving to the cloud is easy",
+        "solution_slug_en": "business-configuration-implementation-add-ons",
+        "solution_medium_description_en": "Moving your business to the cloud is easy. Cloudmeb's business configuration and integration, change management processes have been finely tuned to accelerate transition while maintaining high-level business security and performance. Come and discover our new configuration and integration design that is secure, efficient, mobile and bug-free."
+    },
+    "pk": 6
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            19
+        ],
+        "solution_image_en": "placeholders/300x300.gif",
+        "solution_short_name_en": "Set up your business properly at an affordable price",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Federal or provincial legal services on business incorporation, registration, and audits, everywhere across Canada.",
+        "solution_name_fr": "INCORPORATION ET SERVICES JURIDIQUES",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Configurez votre entreprise correctement \u00e0 un prix abordable",
+        "solution_benefits": [
+            40,
+            41,
+            42
+        ],
+        "solution_short_description_fr": "Services juridiques au niveau provincial et f\u00e9d\u00e9ral pour l'incorporation, l'enregistrement et la v\u00e9rification, partout au Canada.",
+        "solution_values": [
+            31,
+            32
+        ],
+        "solution_description_en": "Cloudmeb's legal services range from business incorporation and registration to audits, at either federal and provincial level, everywhere across Canada. We'll give your business a solid boost before it can run smoothly in the cloud.",
+        "solution_medium_description_fr": "Les services juridiques de Cloudmeb s\u2019\u00e9tendent de l'incorporation et l\u2019enregistrement d'entreprise \u00e0 la v\u00e9rification, que ce soit au niveau provincial ou f\u00e9d\u00e9ral, partout au Canada. Nous donnerons un s\u00e9rieux coup de main \u00e0 votre entreprise afin qu'elle puisse op\u00e9rer ais\u00e9ment au sein du nuage informatique.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "incorporation-juridique-services-audit",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Les services juridiques de Cloudmeb s\u2019\u00e9tendent de l'incorporation et l\u2019enregistrement d'entreprise \u00e0 la v\u00e9rification, que ce soit au niveau provincial ou f\u00e9d\u00e9ral, partout au Canada. Nous donnerons un s\u00e9rieux coup de main \u00e0 votre entreprise afin qu'elle puisse op\u00e9rer ais\u00e9ment au sein du nuage informatique.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "INCORPORATION AND LEGAL SERVICES",
+        "solution_slug_en": "incorporation-legal-services-audit",
+        "solution_medium_description_en": "Cloudmeb's legal services range from business incorporation and registration to audits, at either federal and provincial level, everywhere across Canada. We'll give your business a solid boost before it can run smoothly in the cloud."
+    },
+    "pk": 7
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            6
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1254571.jpg",
+        "solution_short_name_en": "Accurate, on time payroll.",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Accurate, on-time cloud-based payroll services that provides an efficient way of managing salaries/expense reports.",
+        "solution_name_fr": "Services de paie infonuagiques",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Gestion de paie pr\u00e9cise et ponctuelle",
+        "solution_benefits": [
+            52,
+            53,
+            54
+        ],
+        "solution_short_description_fr": "Services de gestion de la paie pr\u00e9cis qui permettent une gestion efficace des rapports de salaires et de d\u00e9penses.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "solution_description_en": "Accurate, on-time cloud-based payroll services that puts your payruns on auto pilot and provides you an efficient way of managing your employee salaries/expense reimbursements.",
+        "solution_medium_description_fr": "Services de gestion de paie infonuagique pr\u00e9cis et sans d\u00e9lais qui offrent une fa\u00e7on efficace de g\u00e9rer les salaires et les remboursements de d\u00e9penses de votre personnel. Passez en mode automatique.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "paie-services-dans-le-nuage",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Services de gestion de paie infonuagique pr\u00e9cis et sans d\u00e9lais qui offrent une fa\u00e7on efficace de g\u00e9rer les salaires et les remboursements de d\u00e9penses de votre personnel. Passez en mode automatique.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "Cloud Payroll Services",
+        "solution_slug_en": "payroll-services-in-the-cloud",
+        "solution_medium_description_en": "Accurate, on-time cloud-based payroll services that puts your payruns on auto pilot and provides you an efficient way of managing your employee salaries/expense reimbursements."
+    },
+    "pk": 8
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            13,
+            17
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1161270.jpg",
+        "solution_short_name_en": "Support to take your business to the next level",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Our highly trained customer service and cloud solutions support team is always ready to help you and your company.",
+        "solution_name_fr": "ON S'OCCUPE DE VOUS",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Une \u00e9quipe de soutien qui tient votre r\u00e9ussite \u00e0 coeur",
+        "solution_benefits": [
+            74,
+            75,
+            76
+        ],
+        "solution_short_description_fr": "Notre \u00e9quipe de service \u00e0 la client\u00e8le et de soutien pour les solutions infonuagiques est ultra qualifi\u00e9e et toujours pr\u00eate \u00e0 vous aider, vous et votre entreprise.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Cloudmeb support is your fastest path to success. We answer all your questions about products, services, configurations, integrations or anything else. Our highly trained staff is always ready to help you and your company.",
+        "solution_medium_description_fr": "Le soutien Cloudmeb est le meilleur chemin vers la r\u00e9ussite. Nous r\u00e9pondons \u00e0 toutes vos questions sur les produits, les services, la configuration, l'int\u00e9gration et tout le reste. Notre personnel ultra comp\u00e9tent est toujours pr\u00eat \u00e0 vous aider, vous et votre entreprise.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "nuage-soutien",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Le soutien Cloudmeb est le meilleur chemin vers la r\u00e9ussite. Nous r\u00e9pondons \u00e0 toutes vos questions sur les produits, les services, la configuration, l'int\u00e9gration et tout le reste. Notre personnel ultra comp\u00e9tent est toujours pr\u00eat \u00e0 vous aider, vous et votre entreprise.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "WE'VE GOT YOU COVERED",
+        "solution_slug_en": "cloud-support",
+        "solution_medium_description_en": "Cloudmeb support is your fastest path to success. We answer all your questions about products, services, configurations, integrations or anything else. Our highly trained staff is always ready to help you and your company."
+    },
+    "pk": 9
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            13
+        ],
+        "solution_image_en": "solutions/PeopleImages.com-ID1260498.jpg",
+        "solution_short_name_en": "Training wheels for your feature-packed business cloud",
+        "solution_logo_fr": "placeholders/100x100.gif",
+        "solution_short_description_en": "Let your digital journey begin. // Learn to maximize your business productivity",
+        "solution_name_fr": "UTILISEZ VOTRE NUAGE TOUS LES JOURS",
+        "solution_icon_en": "placeholders/300x300.gif",
+        "solution_short_name_fr": "Un mentor pour votre entreprise infonuagique riche en fonctionnalit\u00e9s",
+        "solution_benefits": [
+            82,
+            83,
+            84
+        ],
+        "solution_short_description_fr": "Que votre exp\u00e9rience digitale commence! // Apprenez \u00e0 maximiser la productivit\u00e9 de votre entreprise.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Need help to set your business up or simply use the cloud every day? We\u2019re here to offer support.\r\nGet the most from your feature-packed software quickly. Cloudmeb will provide you software training sessions that will take you from the initial business set-up to managing your everyday professional activities more efficiently.",
+        "solution_medium_description_fr": "Vous avez besoin d'aide pour d\u00e9marrer votre entreprise ou simplement pour utiliser le nuage informatique quotidiennement? Nous sommes l\u00e0 pour vous offrir de l\u2019assistance. Profitez des nombreuses fonctionnalit\u00e9s de votre logiciel, et ce rapidement. Cloudmeb vous fournira des s\u00e9ances de formation qui vous m\u00e8neront de la configuration initiale de votre entreprise jusqu'\u00e0 la gestion quotidienne de vos activit\u00e9s professionnelles de fa\u00e7on efficace.",
+        "solution_image_fr": "placeholders/300x300.gif",
+        "solution_slug_fr": "formation-entreprise-dans-le-nuage",
+        "solution_banner_fr": "placeholders/1600x500.gif",
+        "solution_icon_fr": "placeholders/300x300.gif",
+        "solution_logo_en": "placeholders/100x100.gif",
+        "solution_description_fr": "Vous avez besoin d'aide pour d\u00e9marrer votre entreprise ou simplement pour utiliser le nuage informatique quotidiennement? Nous sommes l\u00e0 pour vous offrir de l\u2019assistance. Profitez des nombreuses fonctionnalit\u00e9s de votre logiciel, et ce rapidement. Cloudmeb vous fournira des s\u00e9ances de formation qui vous m\u00e8neront de la configuration initiale de votre entreprise jusqu'\u00e0 la gestion quotidienne de vos activit\u00e9s professionnelles de fa\u00e7on efficace.",
+        "solution_banner_en": "placeholders/1600x500.gif",
+        "solution_name_en": "USING YOUR CLOUD EVERYDAY",
+        "solution_slug_en": "training-business-in-the-cloud",
+        "solution_medium_description_en": "Need help to set your business up or simply use the cloud every day? We\u2019re here to offer support.\r\nGet the most from your feature-packed software quickly. Cloudmeb will provide you software training sessions that will take you from the initial business set-up to managing your everyday professional activities more efficiently."
+    },
+    "pk": 10
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            4
+        ],
+        "solution_image_en": "solutions/solution-17.png",
+        "solution_short_name_en": "The Ultimate Employee Management App",
+        "solution_logo_fr": "solutions/LOGO_Deputy_Cekkqql.png",
+        "solution_short_description_en": "All-in-one web-based employee roster, timesheets and communication service.",
+        "solution_name_fr": "Feuille de temps Deputy",
+        "solution_icon_en": "solutions/deputy_logo.png",
+        "solution_short_name_fr": "L'application ultime de gestion des employ\u00e9s",
+        "solution_benefits": [
+            18,
+            19,
+            20,
+            21
+        ],
+        "solution_short_description_fr": "Service en ligne tout-en-un pour les listes d'employ\u00e9s, les feuilles de temps et la communication.",
+        "solution_values": [
+            1,
+            4
+        ],
+        "solution_description_en": "Hands-on management of your employees' schedules wherever you are with Deputy's web-based mobile solution. Filter staff based on availability, assign and manage tasks, capture and approve timesheets, and many more.",
+        "solution_medium_description_fr": "Une gestion pratique de l'horaire de vos employ\u00e9s peu importe o\u00f9 vous \u00eates gr\u00e2ce \u00e0 la solution Web mobile Deputy. Filtrez le personnel en fonction de sa disponibilit\u00e9, assignez et g\u00e9rez des t\u00e2ches, saisissez et approuvez des feuilles de temps, et bien plus.",
+        "solution_image_fr": "solutions/solution-17_0tydTuu.png",
+        "solution_slug_fr": "deputy-employes-horaire-logiciel",
+        "solution_banner_fr": "solutions/solution-18_P69GmY5.png",
+        "solution_icon_fr": "solutions/deputy_logo_1e6Azgz.png",
+        "solution_logo_en": "solutions/LOGO_Deputy_QyzvWpD.png",
+        "solution_description_fr": "Une gestion pratique de l'horaire de vos employ\u00e9s peu importe o\u00f9 vous \u00eates gr\u00e2ce \u00e0 la solution Web mobile Deputy. Filtrez le personnel en fonction de sa disponibilit\u00e9, assignez et g\u00e9rez des t\u00e2ches, saisissez et approuvez des feuilles de temps, et bien plus.",
+        "solution_banner_en": "solutions/solution-18.png",
+        "solution_name_en": "Deputy Timesheets",
+        "solution_slug_en": "deputy-employee-scheduling-software",
+        "solution_medium_description_en": "Hands-on management of your employees' schedules wherever you are with Deputy's web-based mobile solution. Filter staff based on availability, assign and manage tasks, capture and approve timesheets, and many more."
+    },
+    "pk": 11
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            2
+        ],
+        "solution_image_en": "solutions/solution-29.png",
+        "solution_short_name_en": "Simplified expense reporting your employees will love.",
+        "solution_logo_fr": "solutions/Expensify_Partner_p7duOnK.png",
+        "solution_short_description_en": "Get all your business expenses in one place, analyze, and track them painlessly.",
+        "solution_name_fr": "Expensify",
+        "solution_icon_en": "solutions/LOGO_Expensify.jpg",
+        "solution_short_name_fr": "Des rapports de d\u00e9penses simplifi\u00e9s qui feront le bonheur de vos employ\u00e9s",
+        "solution_benefits": [
+            22,
+            23,
+            24,
+            25
+        ],
+        "solution_short_description_fr": "Rassemblez toutes vos d\u00e9penses commerciales au m\u00eame endroit et faites-en l'analyse et le suivi sans effort.",
+        "solution_values": [
+            2,
+            11
+        ],
+        "solution_description_en": "Get all your business expenses in one place, analyze, and track them painlessly. From staff, to receipts, and expense reports, keep a track and manage all of them in one spot, in the cloud.",
+        "solution_medium_description_fr": "Rassemblez toutes vos d\u00e9penses commerciales et faites-en l'analyse et le suivi sans effort. Du personnel aux re\u00e7us et rapports de finances, faites le suivi et g\u00e9rez le tout en seul endroit: votre nuage informatique.",
+        "solution_image_fr": "solutions/solution-29_jGzf5nH.png",
+        "solution_slug_fr": "expensify-frais-rapports-nuage",
+        "solution_banner_fr": "solutions/solution-30.png",
+        "solution_icon_fr": "solutions/LOGO_Expensify_9Ciwfkx.jpg",
+        "solution_logo_en": "solutions/Expensify_Partner.png",
+        "solution_description_fr": "Rassemblez toutes vos d\u00e9penses commerciales et faites-en l'analyse et le suivi sans effort. Du personnel aux re\u00e7us et rapports de finances, faites le suivi et g\u00e9rez le tout en seul endroit: votre nuage informatique.",
+        "solution_banner_en": "solutions/solution-30_ti0Be4Z.png",
+        "solution_name_en": "Expensify",
+        "solution_slug_en": "expensify-expense-reports-cloud",
+        "solution_medium_description_en": "Get all your business expenses in one place, analyze, and track them painlessly. From staff, to receipts, and expense reports, keep a track and manage all of them in one spot, in the cloud."
+    },
+    "pk": 12
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            20
+        ],
+        "solution_image_en": "solutions/solution-31.png",
+        "solution_short_name_en": "Understand your business in new ways",
+        "solution_logo_fr": "solutions/download_1_JINsVQZ.jpg",
+        "solution_short_description_en": "Powerful business analysis and in-depth metrics management tool that lets you drill into your company's data and better assess your key performance indicators (KPIs).",
+        "solution_name_fr": "Rapports financiers Fathom",
+        "solution_icon_en": "solutions/download_1.jpg",
+        "solution_short_name_fr": "D\u00e9couvrez les nouvelles facettes de votre enterprise.",
+        "solution_benefits": [
+            26,
+            27,
+            28,
+            29
+        ],
+        "solution_short_description_fr": "Un outil d'analyse d'affaires approfondies et de gestion des indicateurs qui vous permet de creuser dans vos donn\u00e9es et de mieux \u00e9valuer votre indicateur de rendement cl\u00e9.",
+        "solution_values": [
+            2,
+            4,
+            11
+        ],
+        "solution_description_en": "Fathom is an easy to use management reporting and financial analysis tool, which helps you to assess business performance, monitor trends and identify improvement opportunities.",
+        "solution_medium_description_fr": "Fathom est un outil financier de gestion des rapports facile \u00e0 utiliser qui vous aide \u00e0 \u00e9valuer le rendement de votre entreprise, \u00e0 suivre les tendances et \u00e0 identifier les opportunit\u00e9s d'am\u00e9lioration.",
+        "solution_image_fr": "solutions/solution-31_qyshfDg.png",
+        "solution_slug_fr": "fathom-gestion-rapport-financier-outil",
+        "solution_banner_fr": "solutions/solution-32_WQEePC9.png",
+        "solution_icon_fr": "solutions/download_1_Mv3Doqc.jpg",
+        "solution_logo_en": "solutions/download_1_53s6rYW.jpg",
+        "solution_description_fr": "Fathom est un outil financier de gestion des rapports facile \u00e0 utiliser qui vous aide \u00e0 \u00e9valuer le rendement de votre entreprise, \u00e0 suivre les tendances et \u00e0 identifier les opportunit\u00e9s d'am\u00e9lioration.",
+        "solution_banner_en": "solutions/solution-32.png",
+        "solution_name_en": "Fathom Financial Reports",
+        "solution_slug_en": "fathom-management-reporting-financial-tool",
+        "solution_medium_description_en": "Fathom is an easy to use management reporting and financial analysis tool, which helps you to assess business performance, monitor trends and identify improvement opportunities."
+    },
+    "pk": 13
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            7
+        ],
+        "solution_image_en": "solutions/solution-05.png",
+        "solution_short_name_en": "GeoOp",
+        "solution_logo_fr": "solutions/Geoop_Partner_B1nUlfU.jpg",
+        "solution_short_description_en": "Increase profitability and save time: manage all of your jobs and mobile resources in one place.",
+        "solution_name_fr": "Job management made easy",
+        "solution_icon_en": "solutions/LOGO_GEOOP.png",
+        "solution_short_name_fr": "La gestion de t\u00e2che simplifi\u00e9e",
+        "solution_benefits": [
+            30,
+            31,
+            32,
+            33,
+            34
+        ],
+        "solution_short_description_fr": "Augmentez la rentabilit\u00e9 et sauvez du temps: g\u00e9rez toutes vos t\u00e2ches et vos ressources au m\u00eame endroit.",
+        "solution_values": [
+            3,
+            5
+        ],
+        "solution_description_en": "Easily manage field workers, track jobs in real-time, quote on the spot and invoice same day. GeoOp means a huge reduction in time consuming admin work which will increase profitability, free time and delight customers.",
+        "solution_medium_description_fr": "G\u00e9rez facilement les travailleurs sur le terrain, suivez les travaux en temps r\u00e9el, faites l'estimation sur place et la facturation le m\u00eame jour. GeoOp vous fera sauver beaucoup de temps en r\u00e9duisant le travail administratif, ce qui augmentera la rentabilit\u00e9, vous donnera plus de temps libre et fera le bonheur de vos clients.",
+        "solution_image_fr": "solutions/solution-05_AjwtDwP.png",
+        "solution_slug_fr": "geoop-gestion-entreprise-app",
+        "solution_banner_fr": "solutions/solution-06_sU6DrRl.png",
+        "solution_icon_fr": "solutions/LOGO_GEOOP_JVd7zpz.png",
+        "solution_logo_en": "solutions/Geoop_Partner.jpg",
+        "solution_description_fr": "G\u00e9rez facilement les travailleurs sur le terrain, suivez les travaux en temps r\u00e9el, faites l'estimation sur place et la facturation le m\u00eame jour. GeoOp vous fera sauver beaucoup de temps en r\u00e9duisant le travail administratif, ce qui augmentera la rentabilit\u00e9, vous donnera plus de temps libre et fera le bonheur de vos clients. ",
+        "solution_banner_en": "solutions/solution-06.png",
+        "solution_name_en": "GeoOp",
+        "solution_slug_en": "geoop-manage-business-app",
+        "solution_medium_description_en": "Easily manage field workers, track jobs in real-time, quote on the spot and invoice same day. GeoOp means a huge reduction in time consuming admin work which will increase profitability, free time and delight customers."
+    },
+    "pk": 14
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            5
+        ],
+        "solution_image_en": "solutions/solution-25.png",
+        "solution_short_name_en": "Spend less time tracking and more time doing",
+        "solution_logo_fr": "solutions/harvest_app_aujZjMx.png",
+        "solution_short_description_en": "Tracking time has never been easier! Intuitive interface, powerful reporting, easy, accurate and fast billing.",
+        "solution_name_fr": "Harvest",
+        "solution_icon_en": "solutions/harvest.png",
+        "solution_short_name_fr": "Passez moins de temps \u00e0 surveiller et plus \u00e0 g\u00e9n\u00e9rer",
+        "solution_benefits": [
+            35,
+            36,
+            37,
+            38,
+            39
+        ],
+        "solution_short_description_fr": "Suivre le temps est si facile! Interface intuitive, rapports puissants, facturation rapide, facile et pr\u00e9cise.",
+        "solution_values": [
+            2
+        ],
+        "solution_description_en": "Whether it\u2019s from the web, your smartphone or another application, it\u2019s never been so easy to track time. With a simple, intuitive interface, getting you and your team on board is fast and easy. With it's powerful reporting system, Harvest makes billing easy, accurate and fast.",
+        "solution_medium_description_fr": "Que ce soit \u00e0 partir du Web, d'un t\u00e9l\u00e9phone intelligent ou d'une autre application, faire le suivi de temps n'a jamais \u00e9t\u00e9 aussi facile. Avec une interface intuitive et simple, vous et votre \u00e9quipe serez rapidement des n\u00f4tres. Avec son syst\u00e8me de \u00ab reporting \u00bb puissant, Harvest rend la facturation simple, rapide et pr\u00e9cise.",
+        "solution_image_fr": "solutions/solution-25_60JxVfy.png",
+        "solution_slug_fr": "harvest-suivi-temps-facile-feuille-de-temps",
+        "solution_banner_fr": "solutions/solution-26_tsXlPAR.png",
+        "solution_icon_fr": "solutions/harvest_FPKiklL.png",
+        "solution_logo_en": "solutions/harvest_app.png",
+        "solution_description_fr": "Que ce soit \u00e0 partir du Web, d'un t\u00e9l\u00e9phone intelligent ou d'une autre application, faire le suivi de temps n'a jamais \u00e9t\u00e9 aussi facile. Avec une interface intuitive et simple, vous et votre \u00e9quipe serez rapidement des n\u00f4tres. Avec son syst\u00e8me de \u00ab reporting \u00bb puissant, Harvest rend la facturation simple, rapide et pr\u00e9cise.",
+        "solution_banner_en": "solutions/solution-26.png",
+        "solution_name_en": "Harvest",
+        "solution_slug_en": "harvest-track-time-easy-timesheet",
+        "solution_medium_description_en": "Whether it\u2019s from the web, your smartphone or another application, it\u2019s never been so easy to track time. With a simple, intuitive interface, getting you and your team on board is fast and easy. With it's powerful reporting system, Harvest makes billing easy, accurate and fast."
+    },
+    "pk": 15
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            10
+        ],
+        "solution_image_en": "solutions/solution-13.png",
+        "solution_short_name_en": "Map your Salesforce data with the most comprehensive geoanalytics app.",
+        "solution_logo_fr": "solutions/download_iXFaYkj.jpg",
+        "solution_short_description_en": "Mapanything - anywhere! Map your Salesforce data with the most comprehensive geoanalytics app, work directly from the Map.",
+        "solution_name_fr": "MapAnything",
+        "solution_icon_en": "solutions/download.jpg",
+        "solution_short_name_fr": "Cartographiez vos donn\u00e9es Salesforce \u00e0 l'aide de l'app g\u00e9o-analytique la plus compl\u00e8te.",
+        "solution_benefits": [
+            43,
+            44,
+            45,
+            46,
+            47
+        ],
+        "solution_short_description_fr": "Mapanything - partout! Cartographiez vos donn\u00e9es Salesforce avec l'application la plus compl\u00e8te de g\u00e9o-analytique, directement \u00e0 partir de Plan.",
+        "solution_values": [
+            2,
+            4
+        ],
+        "solution_description_en": "Mapanything - anywhere! Map your Salesforce data with the most comprehensive geoanalytics app, work directly from the Map, filter your data, create trip itineraries, create custom boundaries and constrain data within a specific boundary and much more.",
+        "solution_medium_description_fr": "Mapanything - partout! Cartographiez vos donn\u00e9es Salesforce avec l'application la plus compl\u00e8te de g\u00e9o-analytique, directement \u00e0 partir de Plan. Filtrez vos donn\u00e9es, cr\u00e9ez des itin\u00e9raires, limitez des donn\u00e9es \u00e0 l'int\u00e9rieur de fronti\u00e8res sp\u00e9cifiques, et bien plus.",
+        "solution_image_fr": "solutions/solution-13_PCMk8VO.png",
+        "solution_slug_fr": "mapanything-plan-salesforce-donnees",
+        "solution_banner_fr": "solutions/solution-14_rXDVAGW.png",
+        "solution_icon_fr": "solutions/download_mUH7d10.jpg",
+        "solution_logo_en": "solutions/download_JuEGLdI.jpg",
+        "solution_description_fr": "Mapanything - partout! Cartographiez vos donn\u00e9es Salesforce avec l'application la plus compl\u00e8te de g\u00e9o-analytique, directement \u00e0 partir de Plan. Filtrez vos donn\u00e9es, cr\u00e9ez des itin\u00e9raires, limitez des donn\u00e9es \u00e0 l'int\u00e9rieur de fronti\u00e8res sp\u00e9cifiques, et bien plus.",
+        "solution_banner_en": "solutions/solution-14.png",
+        "solution_name_en": "MapAnything",
+        "solution_slug_en": "mapanything-map-salesforce-data",
+        "solution_medium_description_en": "Mapanything - anywhere! Map your Salesforce data with the most comprehensive geoanalytics app, work directly from the Map, filter your data, create trip itineraries, create custom boundaries and constrain data within a specific boundary and much more."
+    },
+    "pk": 16
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            6
+        ],
+        "solution_image_en": "solutions/solution-21.png",
+        "solution_short_name_en": "Fast, simple payroll for your business",
+        "solution_logo_fr": "solutions/LOGO_Payment_Evolution_MHIyVLm.png",
+        "solution_short_description_en": "Cloud\u2010based payroll service & employee management software for your business.",
+        "solution_name_fr": "Payment Evolution",
+        "solution_icon_en": "solutions/LOGO_Payment_Evolution.png",
+        "solution_short_name_fr": "Gestion de paie facile et rapide pour votre entreprise",
+        "solution_benefits": [
+            48,
+            49,
+            50,
+            51
+        ],
+        "solution_short_description_fr": "Logiciel infonuagique de gestion de la paie et des employ\u00e9s pour votre entreprise.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Cloud\u2010based payroll service & employee management software for Canadian small and midsize businesses that eliminates the need for paper forms, payslips and printed records.",
+        "solution_medium_description_fr": "Logiciel infonuagique de gestion de la paie et des employ\u00e9s pour les petites et moyennes entreprises canadiennes qui \u00e9limine le recours aux formulaires papier, aux feuilles de paie et aux registres imprim\u00e9s.",
+        "solution_image_fr": "solutions/solution-21_adLsr2f.png",
+        "solution_slug_fr": "payment-evolution-paie-logiciel-canada",
+        "solution_banner_fr": "solutions/solution-22_6Qx1v9A.png",
+        "solution_icon_fr": "solutions/LOGO_Payment_Evolution_CFVhs81.png",
+        "solution_logo_en": "solutions/LOGO_Payment_Evolution_fqEdVi8.png",
+        "solution_description_fr": "Logiciel infonuagique de gestion de la paie et des employ\u00e9s pour les petites et moyennes entreprises canadiennes qui \u00e9limine le recours aux formulaires papier, aux feuilles de paie et aux registres imprim\u00e9s.",
+        "solution_banner_en": "solutions/solution-22.png",
+        "solution_name_en": "Payment Evolution",
+        "solution_slug_en": "payment-evolution-payroll-software-canada",
+        "solution_medium_description_en": "Cloud\u2010based payroll service & employee management software for Canadian small and midsize businesses that eliminates the need for paper forms, payslips and printed records."
+    },
+    "pk": 17
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            2
+        ],
+        "solution_image_en": "solutions/solution-27.png",
+        "solution_short_name_en": "Say good bye to your paper receipts",
+        "solution_logo_fr": "solutions/Receipt_Bank_Partner_VvHysAH.png",
+        "solution_short_description_en": "Receipt scanner & expense tracker: extracts key information from your bills, receipts and invoices.",
+        "solution_name_fr": "Receipt Bank",
+        "solution_icon_en": "solutions/LOGO_RECEIPT_BANK.jpg",
+        "solution_short_name_fr": "Dites adieu \u00e0 vos re\u00e7us en papier",
+        "solution_benefits": [
+            55,
+            56,
+            57,
+            58
+        ],
+        "solution_short_description_fr": "Un scanner de re\u00e7us et tracker de d\u00e9penses pour extraire l'information cl\u00e9 de vos factures et re\u00e7us.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            5,
+            11
+        ],
+        "solution_description_en": "Receipt scanner & expense tracker that extracts key information from your bills, receipts and invoices, removing the need for manual data entry. Reduce clutter and be free.",
+        "solution_medium_description_fr": "Un scanner de re\u00e7us et tracker de d\u00e9penses qui extrait l'information cl\u00e9 de vos factures et re\u00e7us, \u00e9liminant ainsi toute saisie manuelle. Sauvez de l'espace et du temps.",
+        "solution_image_fr": "solutions/solution-27_4ILt7fb.png",
+        "solution_slug_fr": "receipt-bank-nuage-recus-scanner-logiciel",
+        "solution_banner_fr": "solutions/solution-28_Y28jXvm.png",
+        "solution_icon_fr": "solutions/LOGO_RECEIPT_BANK_pLBTQxP.jpg",
+        "solution_logo_en": "solutions/Receipt_Bank_Partner.png",
+        "solution_description_fr": "Un scanner de re\u00e7us et tracker de d\u00e9penses qui extrait l'information cl\u00e9 de vos factures et re\u00e7us, \u00e9liminant ainsi toute saisie manuelle. Sauvez de l'espace et du temps.",
+        "solution_banner_en": "solutions/solution-28.png",
+        "solution_name_en": "Receipt Bank",
+        "solution_slug_en": "receipt-bank-cloud-receipt-scanning-software",
+        "solution_medium_description_en": "Receipt scanner & expense tracker that extracts key information from your bills, receipts and invoices, removing the need for manual data entry. Reduce clutter and be free."
+    },
+    "pk": 18
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            12
+        ],
+        "solution_image_en": "solutions/solution-11.png",
+        "solution_short_name_en": "Your complete cloud communications system",
+        "solution_logo_fr": "solutions/Ring_Central_partner_d5X24vY.jpg",
+        "solution_short_description_en": "Your complete cloud communications system.",
+        "solution_name_fr": "Ring Central",
+        "solution_icon_en": "solutions/LOGO_RingCentral.jpg",
+        "solution_short_name_fr": "Votre syst\u00e8me cmplet de communication infonuagique",
+        "solution_benefits": [
+            59,
+            60,
+            61,
+            62
+        ],
+        "solution_short_description_fr": "Votre syst\u00e8me de communication infonuagique complet.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            5,
+            11
+        ],
+        "solution_description_en": "RingCentral delivers the high quality, reliability, and value expected by enterprise businesses with RingCentral Office\u2014an all-inclusive cloud phone system featuring HD video meetings, unified voice, fax, text, and audio conferencing.",
+        "solution_medium_description_fr": "RingCentral offre un niveau de qualit\u00e9 et fiabilit\u00e9 sup\u00e9rieur exig\u00e9 les entreprises gr\u00e2ce \u00e0 RingCentral Office\u2014un syst\u00e8me tout inclus de t\u00e9l\u00e9phonie infonuagique comprenant : r\u00e9union vid\u00e9o HD, voix int\u00e9gr\u00e9e, fax, texte et conf\u00e9rence audio.",
+        "solution_image_fr": "solutions/solution-11_iTTsnaY.png",
+        "solution_slug_fr": "ring-central-nuage-informatique-telephonie",
+        "solution_banner_fr": "solutions/solution-12_1fonjZr.png",
+        "solution_icon_fr": "solutions/LOGO_RingCentral_qUCNORD.jpg",
+        "solution_logo_en": "solutions/Ring_Central_partner.jpg",
+        "solution_description_fr": "RingCentral offre un niveau de qualit\u00e9 et fiabilit\u00e9 sup\u00e9rieur exig\u00e9 les entreprises gr\u00e2ce \u00e0 RingCentral Office\u2014un syst\u00e8me tout inclus de t\u00e9l\u00e9phonie infonuagique comprenant : r\u00e9union vid\u00e9o HD, voix int\u00e9gr\u00e9e, fax, texte et conf\u00e9rence audio.",
+        "solution_banner_en": "solutions/solution-12.png",
+        "solution_name_en": "Ring Central",
+        "solution_slug_en": "ring-central-cloud-telephony",
+        "solution_medium_description_en": "RingCentral delivers the high quality, reliability, and value expected by enterprise businesses with RingCentral Office\u2014an all-inclusive cloud phone system featuring HD video meetings, unified voice, fax, text, and audio conferencing."
+    },
+    "pk": 19
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            10
+        ],
+        "solution_image_en": "solutions/solution-15.png",
+        "solution_short_name_en": "The world's #1 CRM.",
+        "solution_logo_fr": "solutions/Salesforce_Partner_1VZkpJE.jpg",
+        "solution_short_description_en": "Grow sales faster with the best cloud CRM app for Canadian small & midsized businesses.",
+        "solution_name_fr": "Salesforce",
+        "solution_icon_en": "solutions/download.png",
+        "solution_short_name_fr": "L'application CRM no1 au monde.",
+        "solution_benefits": [
+            63,
+            64,
+            65,
+            66,
+            67
+        ],
+        "solution_short_description_fr": "Augmentez vos ventes plus rapidement avec la meilleure application infonuagique CRM pour petite et moyenne entreprise.",
+        "solution_values": [
+            2,
+            4,
+            11
+        ],
+        "solution_description_en": "A new world, and a better way to sell. Where field sales sells only on mobile devices. And inside sales is fed nothing less than the best leads. Its sales managers knowing which deals will close. And when. A world where lead and contact information is always fresh and complete. And everyone performs like an \u201cA\u201d player.",
+        "solution_medium_description_fr": "Une nouvelle \u00e8re, une mani\u00e8re de vendre am\u00e9lior\u00e9e. Quand les ventes sur le terrain s'effectuent sur les appareils mobiles seulement. Quand le service des ventes dispose rien de moins que des meilleures pistes. Ce n'est pas tout. C'est un monde o\u00f9 les informations sur les pistes et les contacts sont toujours actuelles et compl\u00e8tes.",
+        "solution_image_fr": "solutions/solution-15_hZbxsXh.png",
+        "solution_slug_fr": "salesforce-croissance-ventes-crm-app",
+        "solution_banner_fr": "solutions/solution-16_t3SjAJt.png",
+        "solution_icon_fr": "solutions/download_RxbIHCd.png",
+        "solution_logo_en": "solutions/Salesforce_Partner.jpg",
+        "solution_description_fr": "Une nouvelle \u00e8re, une mani\u00e8re de vendre am\u00e9lior\u00e9e. Quand les ventes sur le terrain s'effectuent sur les appareils mobiles seulement. Quand le service des ventes dispose rien de moins que des meilleures pistes. Ce n'est pas tout. C'est un monde o\u00f9 les informations sur les pistes et les contacts sont toujours actuelles et compl\u00e8tes.",
+        "solution_banner_en": "solutions/solution-16.png",
+        "solution_name_en": "Salesforce",
+        "solution_slug_en": "salesforce-grow-sales-crm-app",
+        "solution_medium_description_en": "A new world, and a better way to sell. Where field sales sells only on mobile devices. And inside sales is fed nothing less than the best leads. Its sales managers knowing which deals will close. And when. A world where lead and contact information is always fresh and complete. And everyone performs like an \u201cA\u201d player."
+    },
+    "pk": 20
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            9
+        ],
+        "solution_image_en": "solutions/solution-09.png",
+        "solution_short_name_en": "Everything you need to sell anywhere",
+        "solution_logo_fr": "solutions/Shopify_Partner_dH6F5NY.jpg",
+        "solution_short_description_en": "Sell anything, anywhere with Shopify's cloud-based e-commerce platform. Integrate it with Cloudmeb's add-ons to grow your business.",
+        "solution_name_fr": "Shopify",
+        "solution_icon_en": "solutions/LOGO_Shopify.jpg",
+        "solution_short_name_fr": "Tout ce dont vous avez besoin pour vendre partout",
+        "solution_benefits": [
+            68,
+            69,
+            70
+        ],
+        "solution_short_description_fr": "Vendez n'importe quoi, n'importe o\u00f9 avec la plateforme e-commerce infonuagique Shopify. Int\u00e9grez-la avec les \u00ab add-ons \u00bb de Cloudmeb pour d\u00e9velopper votre entreprise.",
+        "solution_values": [
+            4,
+            11
+        ],
+        "solution_description_en": "Set up and manage your online store to sell anything, anywhere. Discover how you can integrate Shopify's feature-rich e-commerce platform with Cloudmeb's add-ons to grow your business.",
+        "solution_medium_description_fr": "Configurez et g\u00e9rez votre magasin en ligne pour vendre n'importe quoi, n'importe o\u00f9. D\u00e9couvrez comment vous pouvez int\u00e9grer la plateforme e-commerce Shopify hautement performante avec les \u00ab add-ons \u00bb Cloudmeb pour d\u00e9velopper votre entreprise.",
+        "solution_image_fr": "solutions/solution-09_0uYlsEr.png",
+        "solution_slug_fr": "shopify-e-commerce-plateforme",
+        "solution_banner_fr": "solutions/solution-10_ZuIDTJ3.png",
+        "solution_icon_fr": "solutions/LOGO_Shopify_S3YzB0g.jpg",
+        "solution_logo_en": "solutions/Shopify_Partner.jpg",
+        "solution_description_fr": "Configurez et g\u00e9rez votre magasin en ligne pour vendre n'importe quoi, n'importe o\u00f9. D\u00e9couvrez comment vous pouvez int\u00e9grer la plateforme e-commerce Shopify hautement performante avec les \u00ab add-ons \u00bb Cloudmeb pour d\u00e9velopper votre entreprise.",
+        "solution_banner_en": "solutions/solution-10.png",
+        "solution_name_en": "Shopify",
+        "solution_slug_en": "shopify-e-commerce-platform",
+        "solution_medium_description_en": "Set up and manage your online store to sell anything, anywhere. Discover how you can integrate Shopify's feature-rich e-commerce platform with Cloudmeb's add-ons to grow your business."
+    },
+    "pk": 21
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            6
+        ],
+        "solution_image_en": "solutions/solution-19.png",
+        "solution_short_name_en": "Finally Process Payroll Effortlessly",
+        "solution_logo_fr": "solutions/LOGO_Simplepay_16Qdwvn.png",
+        "solution_short_description_en": "Reduce your payroll processing time with Simplepay's paperless and easy-to-use service for Canadian small & midsized businesses.",
+        "solution_name_fr": "Simplepay",
+        "solution_icon_en": "solutions/LOGO_Simplepay.png",
+        "solution_short_name_fr": "Vous pouvez enfin g\u00e9rer les salaires sans effort",
+        "solution_benefits": [
+            71,
+            72,
+            73
+        ],
+        "solution_short_description_fr": "G\u00e9rez plus rapidement les salaires avec le service facile \u00e0 utiliser et sans papier Simplepay pour les petites et moyennes entreprises canadiennes.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Simplepay's cloud, rich payroll features include direct deposit, automated deductions remittance, and one-click T4\u2019s, TD1\u2019s, and ROEs for Canadian small & midsized businesses.",
+        "solution_medium_description_fr": "Les nombreuses fonctionnalit\u00e9s de l'outil infonuagique Simplepay incluent le d\u00e9p\u00f4t direct, les remises automatiques de retenues et les T4, TD1 et RCP maintenant disponibles en seul clic pour les petites et moyennes entreprises canadiennes.",
+        "solution_image_fr": "solutions/solution-19_LuIRX62.png",
+        "solution_slug_fr": "simplepay-employes-gestion-salaires",
+        "solution_banner_fr": "solutions/solution-20_Zvc4W4t.png",
+        "solution_icon_fr": "solutions/LOGO_Simplepay_aTKJLh8.png",
+        "solution_logo_en": "solutions/LOGO_Simplepay_orzo4NK.png",
+        "solution_description_fr": "Les nombreuses fonctionnalit\u00e9s de l'outil infonuagique Simplepay incluent le d\u00e9p\u00f4t direct, les remises automatiques de retenues et les T4, TD1 et RCP maintenant disponibles en seul clic pour les petites et moyennes entreprises canadiennes.",
+        "solution_banner_en": "solutions/solution-20.png",
+        "solution_name_en": "Simplepay",
+        "solution_slug_en": "simplepay-employee-mangement-payroll",
+        "solution_medium_description_en": "Simplepay's cloud, rich payroll features include direct deposit, automated deductions remittance, and one-click T4\u2019s, TD1\u2019s, and ROEs for Canadian small & midsized businesses."
+    },
+    "pk": 22
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            3,
+            9
+        ],
+        "solution_image_en": "solutions/solution-03.png",
+        "solution_short_name_en": "Join the retail revolution with the world's easiest POS system",
+        "solution_logo_fr": "solutions/VEND_Partner_tIF1VoH.jpg",
+        "solution_short_description_en": "Sell in\u2010store, online & on\u2010the\u2010go with Vend.",
+        "solution_name_fr": "Vend",
+        "solution_icon_en": "solutions/LOGO_VEND.png",
+        "solution_short_name_fr": "La r\u00e9volution avec le syst\u00e8me PDV le plus simple au monde",
+        "solution_benefits": [
+            85,
+            86,
+            87,
+            88,
+            89
+        ],
+        "solution_short_description_fr": "Vendez en magasin, en ligne et sur la route avec Vend.",
+        "solution_values": [
+            1,
+            4
+        ],
+        "solution_description_en": "Vend is retail POS software, product management, e-commerce & customer loyalty for iPad, Mac and PC. Easily manage and grow your business in the cloud.",
+        "solution_medium_description_fr": "Vend est un logiciel de vente POS, gestion de produits, e-commerce et fid\u00e9lit\u00e9 pour iPad, Mac et PC. D\u00e9veloppez et g\u00e9rez facilement votre entreprise au sein du nuage informatique.",
+        "solution_image_fr": "solutions/solution-03_uz3xBhn.png",
+        "solution_slug_fr": "vend-nuage-pdv-logiciel",
+        "solution_banner_fr": "solutions/solution-04_2v2IwPD.png",
+        "solution_icon_fr": "solutions/LOGO_VEND_Hsp6bUw.png",
+        "solution_logo_en": "solutions/VEND_Partner.jpg",
+        "solution_description_fr": "Vend est un logiciel de vente POS, gestion de produits, e-commerce et fid\u00e9lit\u00e9 pour iPad, Mac et PC. D\u00e9veloppez et g\u00e9rez facilement votre entreprise au sein du nuage informatique.",
+        "solution_banner_en": "solutions/solution-04.png",
+        "solution_name_en": "Vend",
+        "solution_slug_en": "vend-cloud-pos-software",
+        "solution_medium_description_en": "Vend is retail POS software, product management, e-commerce & customer loyalty for iPad, Mac and PC. Easily manage and grow your business in the cloud."
+    },
+    "pk": 23
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            8
+        ],
+        "solution_image_en": "solutions/solution-07.png",
+        "solution_short_name_en": "Online booking software for smart business",
+        "solution_logo_fr": "solutions/LOGO_TIMELY_remove_partner_QcU3sO5.png",
+        "solution_short_description_en": "Cloud-based, mobile booking & scheduling app to manage your calendar better.",
+        "solution_name_fr": "Timely",
+        "solution_icon_en": "solutions/LOGO_TIMELY_remove_partner.png",
+        "solution_short_name_fr": "Logiciel de r\u00e9servation en ligne pour une entreprise intelligente",
+        "solution_benefits": [
+            77,
+            78,
+            79,
+            80,
+            81
+        ],
+        "solution_short_description_fr": "Application mobile infonuagique de rendez-vous et d'horaire pour vous aider \u00e0 mieux g\u00e9rer votre calendier.",
+        "solution_values": [
+            1
+        ],
+        "solution_description_en": "Timely is a cloud-based, mobile booking & scheduling app that helps you manage your business events and calendar easily and securely, either through your own website or Facebook.",
+        "solution_medium_description_fr": "Timely est une application infonuagique mobile qui vous aide \u00e0 g\u00e9rer vos \u00e9v\u00e9nements et votre calendrier d'affaires de fa\u00e7on simple et s\u00e9curitaire, que ce soit \u00e0 partir de votre propre site Web ou votre compte Facebook.",
+        "solution_image_fr": "solutions/solution-07_rczBc1D.png",
+        "solution_slug_fr": "timely-reservation-app",
+        "solution_banner_fr": "solutions/solution-08_bNlxPew.png",
+        "solution_icon_fr": "solutions/LOGO_TIMELY_remove_partner_OGYXSLr.png",
+        "solution_logo_en": "solutions/LOGO_TIMELY_remove_partner_9rN3fJa.png",
+        "solution_description_fr": "Timely est une application infonuagique mobile qui vous aide \u00e0 g\u00e9rer vos \u00e9v\u00e9nements et votre calendrier d'affaires de fa\u00e7on simple et s\u00e9curitaire, que ce soit \u00e0 partir de votre propre site Web ou votre compte Facebook.",
+        "solution_banner_en": "solutions/solution-08.png",
+        "solution_name_en": "Timely",
+        "solution_slug_en": "timely-booking-app",
+        "solution_medium_description_en": "Timely is a cloud-based, mobile booking & scheduling app that helps you manage your business events and calendar easily and securely, either through your own website or Facebook."
+    },
+    "pk": 24
+},
+{
+    "model": "solutions.solution",
+    "fields": {
+        "solution_categories": [
+            6
+        ],
+        "solution_image_en": "solutions/solution-23.png",
+        "solution_short_name_en": "The Simple, Fast & Friendly way to pay your employees",
+        "solution_logo_fr": "solutions/LOGO_Wagepoint_9Q080Lu.jpg",
+        "solution_short_description_en": "The Simple, Fast & Friendly way to pay your employees.",
+        "solution_name_fr": "WagePoint",
+        "solution_icon_en": "solutions/LOGO_Wagepoint.jpg",
+        "solution_short_name_fr": "La fa\u00e7on rapide, simple et agr\u00e9able de payer vos employ\u00e9s",
+        "solution_benefits": [
+            90,
+            91,
+            92,
+            93,
+            94
+        ],
+        "solution_short_description_fr": "La fa\u00e7on simple, effficace et rapide de payer vos employ\u00e9s.",
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_description_en": "Wagepoint is a simple, fast and friendly online payroll software for small businesses across North America. It can handle everything from direct deposits, government remittances, year\u2010end reporting and everything else a small business needs all in one simple plan.",
+        "solution_medium_description_fr": "Wagepoint est un logiciel de gestion de paie simple, efficace et agr\u00e9able pour les petites entreprises en Am\u00e9rique du Nord. Il peut tout faire, du d\u00e9p\u00f4t direct aux remises gouvernementales, aux rapports de fin d'ann\u00e9e, en plus de tout ce dont une petite entreprise a besoin, et ce, en un seul et m\u00eame plan.",
+        "solution_image_fr": "solutions/solution-23_DnMLssi.png",
+        "solution_slug_fr": "wagepoint-en-ligne-gestion-de-paie-petite-entreprise",
+        "solution_banner_fr": "solutions/solution-24_JcBOlaI.png",
+        "solution_icon_fr": "solutions/LOGO_Wagepoint_VhHIaoZ.jpg",
+        "solution_logo_en": "solutions/LOGO_Wagepoint_ZOh4BZq.jpg",
+        "solution_description_fr": "Wagepoint est un logiciel de gestion de paie simple, efficace et agr\u00e9able pour les petites entreprises en Am\u00e9rique du Nord. Il peut tout faire, du d\u00e9p\u00f4t direct aux remises gouvernementales, aux rapports de fin d'ann\u00e9e, en plus de tout ce dont une petite entreprise a besoin, et ce, en un seul et m\u00eame plan.",
+        "solution_banner_en": "solutions/solution-24.png",
+        "solution_name_en": "WagePoint",
+        "solution_slug_en": "wagepoint-online-payroll-small-businesses",
+        "solution_medium_description_en": "Wagepoint is a simple, fast and friendly online payroll software for small businesses across North America. It can handle everything from direct deposits, government remittances, year\u2010end reporting and everything else a small business needs all in one simple plan."
+    },
+    "pk": 25
+}
+]

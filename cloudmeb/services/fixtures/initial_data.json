@@ -1,0 +1,222 @@
+[
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            1
+        ],
+        "service_order": 1,
+        "solution_ptr": 2,
+        "page_ptr": 2,
+        "solution_benefits": [
+            9,
+            10,
+            11
+        ]
+    },
+    "model": "services.service",
+    "pk": 1
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            1
+        ],
+        "service_order": 2,
+        "solution_ptr": 3,
+        "page_ptr": 4,
+        "solution_benefits": [
+            6,
+            7,
+            8
+        ]
+    },
+    "model": "services.service",
+    "pk": 2
+},
+{
+    "fields": {
+        "solution_values": [
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            15
+        ],
+        "service_order": 3,
+        "solution_ptr": 4,
+        "page_ptr": 5,
+        "solution_benefits": [
+            95,
+            96,
+            97
+        ]
+    },
+    "model": "services.service",
+    "pk": 3
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            1
+        ],
+        "service_order": 4,
+        "solution_ptr": 5,
+        "page_ptr": 6,
+        "solution_benefits": [
+            12,
+            13,
+            14
+        ]
+    },
+    "model": "services.service",
+    "pk": 4
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            13
+        ],
+        "service_order": 5,
+        "solution_ptr": 6,
+        "page_ptr": 7,
+        "solution_benefits": [
+            15,
+            16,
+            17
+        ]
+    },
+    "model": "services.service",
+    "pk": 5
+},
+{
+    "fields": {
+        "solution_values": [
+            31,
+            32
+        ],
+        "solution_categories": [
+            19
+        ],
+        "service_order": 6,
+        "solution_ptr": 7,
+        "page_ptr": 8,
+        "solution_benefits": [
+            40,
+            41,
+            42
+        ]
+    },
+    "model": "services.service",
+    "pk": 6
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "solution_categories": [
+            6
+        ],
+        "service_order": 7,
+        "solution_ptr": 8,
+        "page_ptr": 9,
+        "solution_benefits": [
+            52,
+            53,
+            54
+        ]
+    },
+    "model": "services.service",
+    "pk": 7
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            13,
+            17
+        ],
+        "service_order": 8,
+        "solution_ptr": 9,
+        "page_ptr": 10,
+        "solution_benefits": [
+            74,
+            75,
+            76
+        ]
+    },
+    "model": "services.service",
+    "pk": 8
+},
+{
+    "fields": {
+        "solution_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+        ],
+        "solution_categories": [
+            13
+        ],
+        "service_order": 9,
+        "solution_ptr": 10,
+        "page_ptr": 11,
+        "solution_benefits": [
+            82,
+            83,
+            84
+        ]
+    },
+    "model": "services.service",
+    "pk": 9
+}
+]

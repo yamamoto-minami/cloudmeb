@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+venv/*
+conf/.vagrant/*
+*.log
+*.pot
+*.mo
+*.db
+static/*

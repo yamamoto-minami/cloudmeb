@@ -1,0 +1,23 @@
+[
+{
+    "model": "websites.website",
+    "fields": {
+        "smtp_from_email": "info@cloudmeb.com",
+        "linkedin_id": "1",
+        "shop_url": "http://cloudmeb.myshopify.com/",
+        "smtp_server": "http://smtp.gmail.com",
+        "smtp_password": "R3B09BxX99GY67tp99XRqRjo3cNrRYmp/DXKn8V5Vz4=",
+        "twitter_id": "1",
+        "google_analytics_id": "1",
+        "smtp_tls": true,
+        "google_addwords_id": "1",
+        "facebook_id": "1",
+        "smtp_user": "info@cloudmeb.com",
+        "site_ptr": 1,
+        "smtp_port": 587,
+        "google_plus_id": "1",
+        "salesforce_id": "00DG0000000jYzW"
+    },
+    "pk": 1
+}
+]

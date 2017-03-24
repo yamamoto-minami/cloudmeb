@@ -1,0 +1,184 @@
+[
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Quelle est votre industrie?",
+        "input_placeholder_fr": "Quelle est votre industrie?",
+        "input_name": "industryType",
+        "input_type": "OPTIONS",
+        "input_default_value": null,
+        "input_placeholder_en": "What is your industry?",
+        "input_label_en": "What is your industry?"
+    },
+    "pk": 1
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Quel est votre segment?",
+        "input_placeholder_fr": "Quel est votre segment?",
+        "input_name": "industrySubtype",
+        "input_type": "OPTIONS",
+        "input_default_value": null,
+        "input_placeholder_en": "What is your segment?",
+        "input_label_en": "What is your segment?"
+    },
+    "pk": 2
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Quelle est votre type d'entreprise?",
+        "input_placeholder_fr": "Quelle est votre type d'entreprise?",
+        "input_name": "businessType",
+        "input_type": "OPTIONS",
+        "input_default_value": null,
+        "input_placeholder_en": "What is your business Type?",
+        "input_label_en": "What is your business Type?"
+    },
+    "pk": 3
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Transactions bancaires",
+        "input_placeholder_fr": "Combien de transactions mensuelles dans votre compte de banque?",
+        "input_name": "bankTransactions",
+        "input_type": "OPTIONS",
+        "input_default_value": 33,
+        "input_placeholder_en": "How many transactions in your bank account each month?",
+        "input_label_en": "Bank Transactions"
+    },
+    "pk": 4
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Comptes Bancaires",
+        "input_placeholder_fr": "Combien de comptes sont associ\u00e9s \u00e0 votre entreprise? (Banque, CC)",
+        "input_name": "bankAccounts",
+        "input_type": "NUMBER",
+        "input_default_value": 47,
+        "input_placeholder_en": "How many accounts does your business have?(Banks, Credit Cards, paypal)",
+        "input_label_en": "Bank Accounts"
+    },
+    "pk": 5
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Volume de clients annuels?",
+        "input_placeholder_fr": "Volume de clients annuels?",
+        "input_name": "customerAmount",
+        "input_type": "OPTIONS",
+        "input_default_value": 39,
+        "input_placeholder_en": "Annual customer volume?",
+        "input_label_en": "Annual customer volume?"
+    },
+    "pk": 6
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Nombre d'usagers",
+        "input_placeholder_fr": "Combien d\u2019utilisateurs?",
+        "input_name": "userCount",
+        "input_type": "NUMBER",
+        "input_default_value": 47,
+        "input_placeholder_en": "How many users?",
+        "input_label_en": "User Amount"
+    },
+    "pk": 7
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Nombre d\u2019employ\u00e9s?",
+        "input_placeholder_fr": "Nombre d\u2019employ\u00e9s?",
+        "input_name": "employeeAmount",
+        "input_type": "NUMBER",
+        "input_default_value": 47,
+        "input_placeholder_en": "Amount of Employees?",
+        "input_label_en": "Employee Amount"
+    },
+    "pk": 8
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Nombre d\u2019\u00e9tablissements",
+        "input_placeholder_fr": "Combien d\u2019\u00e9tablissements d\u2019affaires?",
+        "input_name": "businessLocations",
+        "input_type": "NUMBER",
+        "input_default_value": 47,
+        "input_placeholder_en": "How many business locations?",
+        "input_label_en": "Business Locations"
+    },
+    "pk": 9
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Fr\u00e9quence des salaires",
+        "input_placeholder_fr": "Fr\u00e9quence des salaires",
+        "input_name": "payrollFrequency",
+        "input_type": "OPTIONS",
+        "input_default_value": 42,
+        "input_placeholder_en": "Payroll Frequency",
+        "input_label_en": "Payroll Frequency"
+    },
+    "pk": 10
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Fr\u00e9quence des rapports de taxe de vente",
+        "input_placeholder_fr": "Fr\u00e9quence des rapports de taxe de vente",
+        "input_name": "salestaxFrequency",
+        "input_type": "OPTIONS",
+        "input_default_value": 46,
+        "input_placeholder_en": "Sales tax Frequency",
+        "input_label_en": "Sales tax Frequency"
+    },
+    "pk": 11
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Devises multiples",
+        "input_placeholder_fr": "Devises multiples",
+        "input_name": "multicurrency",
+        "input_type": "RADIO",
+        "input_default_value": 51,
+        "input_placeholder_en": "Multi Currency",
+        "input_label_en": "Multi Currency"
+    },
+    "pk": 12
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "Fr\u00e9quence des rapports financiers",
+        "input_placeholder_fr": "Fr\u00e9quence des rapports financiers",
+        "input_name": "financialFrequency",
+        "input_type": "OPTIONS",
+        "input_default_value": 55,
+        "input_placeholder_en": "Financial reporting frequency",
+        "input_label_en": "Financial reporting frequency"
+    },
+    "pk": 13
+},
+{
+    "model": "inputs.input",
+    "fields": {
+        "input_label_fr": "# de recu par mois",
+        "input_placeholder_fr": "Nombre",
+        "input_name": "Monthly Receipts",
+        "input_type": "NUMBER",
+        "input_default_value": null,
+        "input_placeholder_en": "Amount",
+        "input_label_en": "# of Receipts per month"
+    },
+    "pk": 14
+}
+]

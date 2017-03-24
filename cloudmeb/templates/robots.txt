@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Sitemap: cloudmeb.com/sitemap.xml
+Host: cloudmeb.com

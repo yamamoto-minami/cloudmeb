@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+	{% include "nav.html" with active_page="solutions" class_names="navbar-scroll" %}
+{% endblock %}
+
+{% block content %}
+<div class="hero-unit hero-overlayed solutions-banner">
+	<div class="lead container text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-5 mobile-head-txt">
+					<h1 class="strong-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{ solution_page_txt.solution_page_txt_header_title_fr }}{% else%}{{ solution_page_txt.solution_page_txt_header_title_en }}{% endifequal %}</h1>
+					<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ solution_page_txt.solution_page_txt_header_subtitle_fr }}{% else%}{{ solution_page_txt.solution_page_txt_header_subtitle_en }}{% endifequal %}</h3>
+					<a class="btn btn-default btn-plug btn-lg banner-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+						{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.0.shared_txt_name_fr }}{% else%}{{ shared_txts.0.shared_txt_name_en }}{% endifequal %}
+					</a>
+				</div>
+				<div class="col-md-6 right-img">
+					<img src="{{ STATIC_URL }}image/solution-banner.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid solutions-content">
+	<div class="padded">
+		<div class="row">
+			<div class="btn-group solutions-toggles col-md-12" data-toggle="btns" style="display: none;">
+				<a class="btn-default btn-customizing btn" href="#{% trans 'products' %}" data-toggle="tab" title="{% trans 'Products' %}">
+					 {% trans "Products" %}<span class="badge">{{ products | length }}</span>
+				</a>
+
+			  	<a class="btn-default btn-customizing btn" href="#{% trans 'services' %}" data-toggle="tab" title="{% trans 'services' %}">
+			  		 {% trans "Services" %}<span class="badge">{{ services | length }}</span>
+			  	</a>
+			</div>
+
+			<!-- <div class="col-md-6">
+				<div class="input-group solutions-filter pull-right">
+			      	<input type="text" class="form-control" placeholder="{% trans 'Search for...' %}">
+			      	<span class="input-group-btn">
+			        	<button class="btn btn-default" type="button" title="{% trans 'Search for...' %}">
+			        		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			        	</button>
+			      	</span>
+			    </div>
+			</div> -->
+		</div>
+
+		<div class="solutions-filter-empty">
+			<h4>{% trans "No results found for "%}</h4>
+			<span></span>
+		</div>
+
+		<div class="tab-content row">
+			<h1 class="card-customizing-header">{% ifequal LANGUAGE_CODE 'fr' %}{{ solution_page_txt.solution_page_txt_product_title_fr }}{% else%}{{ solution_page_txt.solution_page_txt_product_title_en }}{% endifequal %}</h1>
+	        <div class="card-customizing products-cards">
+				<div class="tab-pane card-list-customizing active owl-carousel solution-lists" id="{% trans 'products' %}">
+					{% for product in products %}
+					<div class="filp front-unbind media solutions-item sort-solution-item"
+						 data-solution-id="{{ product.solution_id }}"
+						 itemscope itemtype="http://schema.org/Product">
+						<div class="col-md-12 customizing-tag">
+							<div class="row">
+								<div class="col-md-12">
+									<a href="/{{ LANGUAGE_CODE }}{% trans '/products/' %}{{ product.solution_slug }}" itemprop="url" title="{{ product.solution_name }}">
+										<img class="media-object" src="{{ product.solution_icon.url }}" alt="{{ product.solution_name }}" itemprop="image">
+									</a>
+									<h4 class="media-heading" itemprop="name">{{ product.solution_name }}</h4>
+									<h5 class="media-heading" itemprop="alternateName">{{ product.solution_tagline }}</h5>
+								</div>
+								<div class="col-md-12">
+									<p itemprop="description">{{ product.solution_short_description }}</p>
+								</div>
+							</div>
+							<div class="row" style="position: absolute; bottom: 10px;">
+								<div class="col-md-12">
+									<div class="actions">
+										<a class="btn btn-default btn-transparent btn-lg pull-right solution-readmore" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/products/' %}{{ product.solution_slug }}" title="{% trans 'read more' %}">
+											{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.2.shared_txt_name_fr }}{% else%}{{ shared_txts.2.shared_txt_name_en }}{% endifequal %}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="container-fluid text-center plug-in" style="margin-top: -20px; padding-top: 120px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-12 col-xs-12 text-explain-tag">
+							<div class="text-explain">
+								<img src="{{ STATIC_URL }}image/intelligent.png" class="img-responsive">
+								<p>{% ifequal LANGUAGE_CODE 'fr' %}{{ solution_page_txt.solution_page_txt_cta_text_fr }}{% else%}{{ solution_page_txt.solution_page_txt_cta_text_en }}{% endifequal %}</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12">
+							<a class="btn btn-default btn-plug btn-lg explain-cutomizing-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+								{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.0.shared_txt_name_fr }}{% else%}{{ shared_txts.0.shared_txt_name_en }}{% endifequal %}
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1 class="card-customizing-header">{% ifequal LANGUAGE_CODE 'fr' %}{{ solution_page_txt.solution_page_txt_service_title_fr }}{% else%}{{ solution_page_txt.solution_page_txt_service_title_en }}{% endifequal %}</h1>
+			<div class="card-customizing services-cards" style="margin-bottom: 110px;">
+				<div class="tab-pane card-list-customizing active owl-carousel solution-lists" id="{% trans 'services' %}">
+					{% for service in services %}
+					<div class="media solutions-item sort-solution-item"
+						 data-id="{{ service.id }}"
+						 itemscope itemtype="http://schema.org/Service"">
+						<h2 class="sort-alphabet">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</h2>
+						<div class="col-md-12 customizing-tag">
+							<div class="row">
+								<div class="col-md-12">
+									<a href="/{{ LANGUAGE_CODE }}{% trans '/services/' %}{{ service.solution_slug }}" itemprop="url" title="{{ service.solution_name }}">
+										<img class="media-object" src="{{ service.solution_icon.url }}" alt="{{ service.solution_name }}" itemprop="image">
+									</a>
+									<h4 class="media-heading" itemprop="name">{{ service.solution_name }}</h4>
+									<h5 class="media-heading" itemprop="alternateName">{{ service.solution_tagline }}</h5>
+								</div>
+								<div class="col-md-12">
+									<p itemprop="description">{{ service.solution_short_description }}</p>
+								</div>
+							</div>
+							<div class="row" style="position: absolute; bottom: 10px;">
+								<div class="col-md-12">
+									<div class="actions">
+										<a class="btn btn-default btn-transparent btn-lg pull-right solution-readmore" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/services/' %}{{ service.solution_slug }}" title="{% trans 'read more' %}">
+											{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.2.shared_txt_name_fr }}{% else%}{{ shared_txts.2.shared_txt_name_en }}{% endifequal %}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="service-category-list" style="display: none;">
+	{% for service in services %}
+		<div class="footer-menu-category-list">
+			<p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+			<p class="service-slug">{{ service.solution_slug }}</p>
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

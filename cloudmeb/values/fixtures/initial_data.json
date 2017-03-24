@@ -1,0 +1,563 @@
+[
+{
+    "pk": 1,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Professionnels de la beaut\u00e9",
+        "value_related_value": null,
+        "value_name_en": "Beauty Professionals",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 2,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Services professionnels",
+        "value_related_value": null,
+        "value_name_en": "Professional Services",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 3,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Services d\u2019entretien et r\u00e9paration de maison",
+        "value_related_value": null,
+        "value_name_en": "Home and Repair Services",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 4,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Vente au d\u00e9tail",
+        "value_related_value": null,
+        "value_name_en": "Retail",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 5,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Construction et entrepreneurs",
+        "value_related_value": null,
+        "value_name_en": "Construction and Contractors",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 6,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Hair Salon",
+        "value_related_value": 1,
+        "value_name_en": "Hair Salon",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 7,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Massage Therapist",
+        "value_related_value": 1,
+        "value_name_en": "Massage Therapist",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 11,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Entreprise en ligne",
+        "value_related_value": null,
+        "value_name_en": "Online Business",
+        "value_type": "STRING",
+        "value_input": 1
+    }
+},
+{
+    "pk": 12,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Studio d\u2019ongles",
+        "value_related_value": 1,
+        "value_name_en": "Nail Studio",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 13,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Consultants",
+        "value_related_value": 2,
+        "value_name_en": "Consultants",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 14,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Agences",
+        "value_related_value": 2,
+        "value_name_en": "Agencies",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 15,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Cliniques",
+        "value_related_value": 2,
+        "value_name_en": "Clinics",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 16,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Professionnels de la sant\u00e9",
+        "value_related_value": 2,
+        "value_name_en": "Health practioners",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 17,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Am\u00e9nagement paysager",
+        "value_related_value": 3,
+        "value_name_en": "Landscaping",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 18,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Plombiers",
+        "value_related_value": 3,
+        "value_name_en": "Plumbers",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 19,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "\u00c9lectriciens",
+        "value_related_value": 3,
+        "value_name_en": "Electricians",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 20,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "M\u00e9caniciens",
+        "value_related_value": 3,
+        "value_name_en": "Mecanics",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 21,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Magasins ou kiosks",
+        "value_related_value": 4,
+        "value_name_en": "Stores or Kiosk",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 22,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "\u00e9v\u00e9nements",
+        "value_related_value": 4,
+        "value_name_en": "Events",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 23,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Ventes mobile",
+        "value_related_value": 4,
+        "value_name_en": "Mobile Sales",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 24,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Toiture",
+        "value_related_value": 5,
+        "value_name_en": "Roofing",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 25,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Entrepreneur g\u00e9n\u00e9ral",
+        "value_related_value": 5,
+        "value_name_en": "General contractor",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 26,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Produits",
+        "value_related_value": 11,
+        "value_name_en": "Products",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 27,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Logiciel",
+        "value_related_value": 11,
+        "value_name_en": "Software",
+        "value_type": "STRING",
+        "value_input": 2
+    }
+},
+{
+    "pk": 28,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Pigiste",
+        "value_related_value": null,
+        "value_name_en": "Freelancer",
+        "value_type": "STRING",
+        "value_input": 3
+    }
+},
+{
+    "pk": 29,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Entreprise enregistr\u00e9e",
+        "value_related_value": null,
+        "value_name_en": "Registered Business",
+        "value_type": "STRING",
+        "value_input": 3
+    }
+},
+{
+    "pk": 30,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Incorpor\u00e9e",
+        "value_related_value": null,
+        "value_name_en": "Incorporated",
+        "value_type": "STRING",
+        "value_input": 3
+    }
+},
+{
+    "pk": 31,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Jeune",
+        "value_related_value": null,
+        "value_name_en": "Start up",
+        "value_type": "STRING",
+        "value_input": 3
+    }
+},
+{
+    "pk": 32,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Entreprise \u00e0 but non lucratif",
+        "value_related_value": null,
+        "value_name_en": "Non Profit Organization",
+        "value_type": "STRING",
+        "value_input": 3
+    }
+},
+{
+    "pk": 33,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Moins de 50 par mois",
+        "value_related_value": null,
+        "value_name_en": "Less than 50 per month",
+        "value_type": "STRING",
+        "value_input": 4
+    }
+},
+{
+    "pk": 34,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "50-100 par mois",
+        "value_related_value": null,
+        "value_name_en": "50-100 per month",
+        "value_type": "STRING",
+        "value_input": 4
+    }
+},
+{
+    "pk": 35,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "100-200 par mois",
+        "value_related_value": null,
+        "value_name_en": "100-200 per month",
+        "value_type": "STRING",
+        "value_input": 4
+    }
+},
+{
+    "pk": 36,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "200-500 par mois",
+        "value_related_value": null,
+        "value_name_en": "200-500 per month",
+        "value_type": "STRING",
+        "value_input": 4
+    }
+},
+{
+    "pk": 37,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "500+ par mois",
+        "value_related_value": null,
+        "value_name_en": "500+ per month",
+        "value_type": "STRING",
+        "value_input": 4
+    }
+},
+{
+    "pk": 38,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "1 \u00e0 50",
+        "value_related_value": null,
+        "value_name_en": "1 to 50",
+        "value_type": "STRING",
+        "value_input": 6
+    }
+},
+{
+    "pk": 39,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "51 \u00e0 250",
+        "value_related_value": null,
+        "value_name_en": "51 to 250",
+        "value_type": "STRING",
+        "value_input": 6
+    }
+},
+{
+    "pk": 40,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "251 \u00e0 500",
+        "value_related_value": null,
+        "value_name_en": "251 to 500",
+        "value_type": "STRING",
+        "value_input": 6
+    }
+},
+{
+    "pk": 41,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "500+",
+        "value_related_value": null,
+        "value_name_en": "500+",
+        "value_type": "STRING",
+        "value_input": 6
+    }
+},
+{
+    "pk": 42,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Bihebdomadaire",
+        "value_related_value": null,
+        "value_name_en": "Bi-Weekly",
+        "value_type": "STRING",
+        "value_input": 10
+    }
+},
+{
+    "pk": 43,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Mensuelle",
+        "value_related_value": null,
+        "value_name_en": "Monthly",
+        "value_type": "STRING",
+        "value_input": 10
+    }
+},
+{
+    "pk": 44,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Mensuelle",
+        "value_related_value": null,
+        "value_name_en": "Monthly",
+        "value_type": "STRING",
+        "value_input": 11
+    }
+},
+{
+    "pk": 45,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Trimestrielle",
+        "value_related_value": null,
+        "value_name_en": "Quarterly",
+        "value_type": "STRING",
+        "value_input": 11
+    }
+},
+{
+    "pk": 46,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Annuelle",
+        "value_related_value": null,
+        "value_name_en": "Annual",
+        "value_type": "STRING",
+        "value_input": 11
+    }
+},
+{
+    "pk": 47,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "1",
+        "value_related_value": null,
+        "value_name_en": "1",
+        "value_type": "INTEGER",
+        "value_input": null
+    }
+},
+{
+    "pk": 50,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "vrai",
+        "value_related_value": null,
+        "value_name_en": "true",
+        "value_type": "BOOLEAN",
+        "value_input": 12
+    }
+},
+{
+    "pk": 51,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "faux",
+        "value_related_value": null,
+        "value_name_en": "false",
+        "value_type": "BOOLEAN",
+        "value_input": 12
+    }
+},
+{
+    "pk": 52,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Mensuelle",
+        "value_related_value": null,
+        "value_name_en": "Monthly",
+        "value_type": "STRING",
+        "value_input": 13
+    }
+},
+{
+    "pk": 53,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Trimestrielle",
+        "value_related_value": null,
+        "value_name_en": "Quarterly",
+        "value_type": "STRING",
+        "value_input": 13
+    }
+},
+{
+    "pk": 54,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Semi Annuelle",
+        "value_related_value": null,
+        "value_name_en": "Semi Annual",
+        "value_type": "STRING",
+        "value_input": 13
+    }
+},
+{
+    "pk": 55,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Anuelle",
+        "value_related_value": null,
+        "value_name_en": "Annual",
+        "value_type": "STRING",
+        "value_input": 13
+    }
+},
+{
+    "pk": 56,
+    "model": "values.value",
+    "fields": {
+        "value_name_fr": "Recus",
+        "value_related_value": null,
+        "value_name_en": "Receipts",
+        "value_type": "INTEGER",
+        "value_input": 14
+    }
+}
+]

@@ -1,0 +1,52 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+settings = {
+  node_name: "cloudmeb",
+  memory: 512,
+  cpus: 1,
+  cpucap: 50,
+  ip: "192.168.10.10",
+  #box: "precise64",
+  box: "trusty64",
+  box_url: "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box",
+  hostname: "cloudmeb",
+  network_type: "private_network",
+  forward_port: true,
+  host_port: 8000,
+  guest_port: 80,
+  sync: true,
+  host_sync: "../",
+  guest_sync: "/home/cloudmeb/cloudmeb",
+  gui: false,
+  ssh: true
+}
+
+Vagrant.configure("2") do |config|
+  config.vm.define settings[:node_name] do |node|
+    node.vm.box = settings[:box]
+    node.vm.box_url = settings[:box_url]
+    node.vm.hostname = settings[:hostname]
+    node.vm.network settings[:network_type], ip: settings[:ip]
+
+    if settings[:forward_port] == true
+      node.vm.network "forwarded_port", guest: settings[:guest_port], host: settings[:host_port]
+    end
+
+    node.ssh.forward_agent = settings[:ssh]
+
+    if settings[:sync] == true
+      node.vm.synced_folder settings[:host_sync], settings[:guest_sync], type: "nfs"
+    end
+
+    node.vm.provider "virtualbox" do |vb|
+      vb.gui = settings[:gui]
+      vb.customize ["modifyvm", :id, "--name", settings[:node_name]]
+      vb.customize ["modifyvm", :id, "--memory", settings[:memory]]
+      vb.customize ["modifyvm", :id, "--cpus", settings[:cpus]]
+      vb.customize ["modifyvm", :id, "--cpuexecutioncap", settings[:cpucap]]
+    end
+  end
+
+  config.vm.provision "shell", path: "install.sh", keep_color: true
+end

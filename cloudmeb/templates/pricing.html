@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+	{% include "nav.html" with active_page="pricing" class_names="navbar-default" %}
+{% endblock %}
+
+{% block content %}
+<div class="container padded">
+	<h1 class="blue-heading text-center margin-top-heading">{% trans 'Pricing' %}</h1>
+	<h4 class="margin-bottom-heading untransformed-heading text-center">{% trans 'Keeping our pricing transparent and tailored to your needs' %}</h4>
+
+	<div class="row">
+        <div class="col-md-7 pricing">
+            <div class="products row">
+                <div class="col-md-8 col-sm-8 col-xs-12 details">
+                   <div class="row text-center">
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/xero.png">
+		                	<h4>{% trans 'Invoicing' %}</h4>
+		                </div>
+
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/receiptbank.png">
+		                	<h4>{% trans 'Receipts &amp; expenses' %}</h4>
+		                </div>
+
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/bluecloud.png">
+		                	<h4>{% trans '+More' %}</h4>
+		                </div>
+			        </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center price">
+                	{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>59</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {% trans 'Month' %}
+                </div>
+            </div>
+            <br />
+            <div class="services row">
+                <div class="col-md-8 col-sm-8 col-xs-12 details">
+                   <div class="row text-center">
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/training.png">
+		                	<h4>{% trans 'Accounting &amp; payroll' %}</h4>
+		                </div>
+
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/bookkeeping.png">
+		                	<h4>{% trans 'Training &amp; support' %}</h4>
+		                </div>
+
+		                <div class="col-md-4 col-sm-4 col-xs-4">
+		                	<img src="{{ STATIC_URL}}image/icons/greencloud.png">
+		                	<h4>{% trans '+More' %}</h4>
+		                </div>
+			        </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center price">
+                   {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>199</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {% trans 'Month' %}
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="col-md-4 col-md-offset-1 text-center">
+            <div class="border-box">
+                <h3>{% trans "Let's get started" %}</h3>
+                <a class="btn btn-default btn-plug btn-lg" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+			    	<span class="plug"></span> {% trans 'plug-in your business' %}
+			  	</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

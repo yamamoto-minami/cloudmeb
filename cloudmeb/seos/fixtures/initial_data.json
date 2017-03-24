@@ -1,0 +1,314 @@
+[
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Cloud-based accounting & bookkeeping software that can be customly integrated with other apps to simplify your small and midsize business processes.",
+        "seo_meta_title_en": "Xero: Online Accounting Software | Cloudmeb Canada",
+        "seo_meta_title_fr": "Xero: Logociel comptabilit\u00e9 en ligne | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "meilleure solution comptabilit\u00e9 infonuagique petite entreprise, logiciel comptabilit\u00e9 infonuagique,  logiciel comptabilit\u00e9 petite entreprise, comptabilit\u00e9 petite entreprise, meilleur logiciel comptabilit\u00e9 petite entreprise, app comptabilit\u00e9 androide, app comptabilit\u00e9 iphone, logiciel comptabilit\u00e9 canada, xero canada, xero comptabilit\u00e9",
+        "seo_meta_keywords_en": "best cloud accounting solution for a small businesses, cloud accounting software,  small business accounting software, small business accounting, best small business accounting software, android  accounting app, accounting iphone app, accounting software canada, xero canada, xero accounting",
+        "seo_meta_description_fr": "Logiciel de tenue de livres et comptabilit\u00e9 qui peut s'int\u00e9grer \u00e0 d'autres applications pour simplifier les processus de votre petite et moyenne entreprise"
+    },
+    "pk": 1
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Easy bookkeeping tools and services for small & medium-sized Canadian businesses. Your full-time bookkeeper at a part-time price.",
+        "seo_meta_title_en": "Bookkeping Services | Cloudmeb Canada",
+        "seo_meta_title_fr": "Services de tenue de livres | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "Tenue de livres petites entreprises, outils commerciaux, services aux entreprises, croissance des entreprises, comptabilit\u00e9, d\u00e9ductions, rapports de ventes, d\u00e9clarations de revenus",
+        "seo_meta_keywords_en": "small business bookkeeping, business tools, business services, grow business,  bookkeeping, deductions, sales reports, tax returns",
+        "seo_meta_description_fr": "Des outils et services de tenue de livres pour les petites et moyennes entreprises canadiennes. Un comptable \u00e0 temps plein pour la fraction du prix."
+    },
+    "pk": 2
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Cloudmeb Services",
+        "seo_meta_title_en": "Cloudmeb Services",
+        "seo_meta_title_fr": "Services Cloudmeb",
+        "seo_meta_keywords_fr": "Services Cloudmeb",
+        "seo_meta_keywords_en": "Cloudmeb Services",
+        "seo_meta_description_fr": "Services Cloudmeb"
+    },
+    "pk": 3
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Get the best advisory services in terms of strategic financial planning, budgeting, forecasting and much more. Grow your business now!",
+        "seo_meta_title_en": "Advisory Services - Business Solutions | Cloudmeb Canada",
+        "seo_meta_title_fr": "Services conseils - Solutions d'affaires | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "conseils, plainification strat\u00e9gie financi\u00e8re, pr\u00e9visions budg\u00e9taire, pr\u00e9visions, planification financi\u00e8re, solutions d'affaires, finance",
+        "seo_meta_keywords_en": "advisory, strategic financial planning, budgeting, forecasting,  financial planning, business solutions, finance",
+        "seo_meta_description_fr": "Obtenez les meilleurs conseils en planification financi\u00e8re, pr\u00e9visions budg\u00e9taires et financi\u00e8res, et plus. D\u00e9veloppez votre entreprise maintenant!!"
+    },
+    "pk": 4
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Take advantage of our thorough business analysis to determine which cloud software best fits your needs before moving your business processes to the cloud.",
+        "seo_meta_title_en": "Consultation Services - Cloud Software | Cloudmeb Canada",
+        "seo_meta_title_fr": "Service de consultation - Logiciel infonuagique | Cloudmeb",
+        "seo_meta_keywords_fr": "analyse d'affaires, consultants en affaires, croissance des entreprises, analyste commercial, gestion des affaires, processus d'affaires, analyse de logiciel, service de soutien",
+        "seo_meta_keywords_en": "business analysis, business consultants, business growth, business analyst, business management, business process, software analysis, support service",
+        "seo_meta_description_fr": "Prenez avantage de notre analyse compl\u00e8te pour d\u00e9terminer quel logiciel r\u00e9pond le mieux \u00e0 vos besoins avant de d\u00e9placer vos processus vers le nuage."
+    },
+    "pk": 5
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Manage your business operations under Canadian law with the best cloud tax software. Check out our tax compliance hassle-free solutions.",
+        "seo_meta_title_en": "Business Tax Compliance  - Audit & Services | Cloudmeb Canad",
+        "seo_meta_title_fr": "Conformit\u00e9 fiscale entreprise - audit et services | Cloudmeb",
+        "seo_meta_keywords_fr": "Conformit\u00e9 fiscale, T2, T5, RL3, revenus Canada, logiciel de calcul d'imp\u00f4t , nuage, conformit\u00e9 fiscale, gratuit, solutions, logiciel d'imp\u00f4t infonuagique",
+        "seo_meta_keywords_en": "tax Compliance, T2, T5, RL3, taxes Canada, tax software, cloud, tax compliance, free, solutions, cloud tax software",
+        "seo_meta_description_fr": "G\u00e9rez vos op\u00e9rations en vertu de la loi canadienne avec le meilleur logiciel d'imp\u00f4t infonuagique. Consultez nos solutions de conformit\u00e9 fiscale sans souci"
+    },
+    "pk": 6
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Discover Cloudmeb's fine-tuned business analysis, change management, configuration & integration processes for moving your business to the cloud.",
+        "seo_meta_title_en": "Business Cloud Configuration & Integration | Cloudmeb",
+        "seo_meta_title_fr": "Configuration nuage entreprise et int\u00e9gration | Cloudmeb",
+        "seo_meta_keywords_fr": "Analyse d'affaires, configuration, int\u00e9gration, formation, s\u00e9curit\u00e9 commerciale, rendement des affaires, gestion du changement",
+        "seo_meta_keywords_en": "Business Analysis, configuration, integration, training, business security, business performance, change management",
+        "seo_meta_description_fr": "D\u00e9couvrez les processus d'analyse pr\u00e9cise, de gestion du changement, configuration et int\u00e9gration Cloudmeb pour faire la transition vers le nuage."
+    },
+    "pk": 7
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Canadian-based Cloudmeb's legal services range from business incorporation and registration to audits, at either federal and provincial level.",
+        "seo_meta_title_en": "Incorporation Legal Services - Audit | Cloudmeb Canada",
+        "seo_meta_title_fr": "Incorporation, Services juridiques - Audit | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "services juridiques, r\u00e9seau juridique, incorporation canada, nuage, audit, inscription des entreprises canada",
+        "seo_meta_keywords_en": "legal services, legal network, incorporation canada, cloud, audit, business registration canada",
+        "seo_meta_description_fr": "Les services juridiques canadiens de Cloudmeb: de l'incorporation et l'enregistrement d'entreprise \u00e0 la v\u00e9rification, au niveau provincial et f\u00e9d\u00e9ral."
+    },
+    "pk": 8
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Accurate, on-time cloud-based payroll services for Canadian small- & midsized businesses.",
+        "seo_meta_title_en": "Payroll Services in the Cloud | Cloudmeb Canada",
+        "seo_meta_title_fr": "Services gestion de paie infonuagique  | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "Paie infonuagique, DAS automatiques, pr\u00e9cis, services de paie infonuagique, services de paie pour petites et moyennes entreprises, services de paie canada",
+        "seo_meta_keywords_en": "Cloud payroll, automatic remittances, accurate, cloud payroll services, payroll services for small and midsized businesses, payroll services canada",
+        "seo_meta_description_fr": "Services de gestion de paie infonuagique pr\u00e9cis et ponctuels pour les petites et moyennes entreprises canadiennes."
+    },
+    "pk": 9
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Our dedicated customer service and cloud solutions support takes your business to the next level.",
+        "seo_meta_title_en": "Cloud Business Solutions Support| Cloudmeb Canada",
+        "seo_meta_title_fr": "Soutien solutions infonuagiques d'entreprise| Cloudmeb ",
+        "seo_meta_keywords_fr": "assistance infonuagique, soutien d'int\u00e9gration, service \u00e0 la client\u00e8le",
+        "seo_meta_keywords_en": "cloud support, integration support, customer servcie",
+        "seo_meta_description_fr": "Notre \u00e9quipe de service \u00e0 la client\u00e8le et de soutien pour les solutions infonuagiques est d\u00e9vou\u00e9e \u00e0 amener votre entreprise au niveau sup\u00e9rieur."
+    },
+    "pk": 10
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Software support & training for growing your business in the cloud.",
+        "seo_meta_title_en": "Training Wheels for your Business Cloud | Cloudmeb Canada",
+        "seo_meta_title_fr": "Mentor pour votre entreprise infonuagique | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "Formation professionnelle, formation logiciel, productivit\u00e9 de l'entreprise, d\u00e9velopper son entreprise, soutien nuage informatique",
+        "seo_meta_keywords_en": "Business training, software training, business productivity, grow your business, cloud support",
+        "seo_meta_description_fr": "Logiciel de soutien et de formation pour votre entreprise au sein du nuage."
+    },
+    "pk": 11
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Get the best & complete package for online employee scheduling, time & attendance, and communication software. It's all in the cloud.",
+        "seo_meta_title_en": "Deputy: Best Employee Management App | Cloudmeb Canada",
+        "seo_meta_title_fr": "Deputy: Meilleure app gestion d'employ\u00e9s | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "feuille de temps, logiciel de d'horaire d'employ\u00e9s, deputy, calendrier des employ\u00e9s en ligne, temps, pr\u00e9sence, logiciel de communication, nuage informatique",
+        "seo_meta_keywords_en": "timesheet, employee scheduling software, deputy, online employee scheduling, time, attendance, communication software, cloud",
+        "seo_meta_description_fr": "Obtenez le meilleur logiciel pour g\u00e9rer le calendrier en ligne, le temps, les pr\u00e9sences et la communication. Tout est dans le nuage."
+    },
+    "pk": 12
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Easily manage all your business expense reports in the cloud, all in one place.",
+        "seo_meta_title_en": "Expensify: Your Receipts in the Cloud | Cloudmeb Canada",
+        "seo_meta_title_fr": "Expensify: Vos re\u00e7us dans le nuage | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "re\u00e7us, comptabilit\u00e9 bo\u00eete \u00e0 chaussure, app de d\u00e9penses, app de frais de d\u00e9placement, receipt bank, factures, re\u00e7us, magasin, t\u00e9l\u00e9chargement, cr\u00e9ation de rapports, comptes de d\u00e9penses",
+        "seo_meta_keywords_en": "receipts, shoebox solution, expense app, travel expenses app, receipt bank, bills, receipts, invoices, store, download, create reports, expense reports",
+        "seo_meta_description_fr": "G\u00e9rez facilement tous vos comptes de d\u00e9penses commerciaux avec le nuage, tout est l\u00e0."
+    },
+    "pk": 13
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Business analysis and metrics management tool to help you assess your key performance indicators (KPIs) better.",
+        "seo_meta_title_en": "Fathom: Management Reporting - Financial Tool | Cloudmeb",
+        "seo_meta_title_fr": "Fathom: Gestion des rapports - Outil financier | Cloudmeb",
+        "seo_meta_keywords_fr": "finance, gestion des rapports, outils d'analyse financi\u00e8re, \u00e9valuation des rendements d'affaires, suivi des tendances , plus performant, reporting, outils financiers, \u00e9valuation d'entreprise, rendement, suivi, tendances, performance, fathom",
+        "seo_meta_keywords_en": "finance, reporting management, financial analysis tools, assess business performance, monitor trends, perform better, reporting, financial tools, assess business, performance, monitor, trends, performance, fathom",
+        "seo_meta_description_fr": "Analyses d'affaires et outil de gestion des indicateurs pour vous aider \u00e0 mieux \u00e9valuer votre indicateur de rendement cl\u00e9 (IRC). "
+    },
+    "pk": 14
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Increase profitability and save time: manage all of your jobs and resources on-the-go. Track jobs in real time with quotes and invoices on mobile.",
+        "seo_meta_title_en": "GeoOp: Manage Jobs App | Cloudmeb Canada",
+        "seo_meta_title_fr": "GeoOp: App gestion de t\u00e2ches | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "solution infonuagique services r\u00e9sidentiels, gestion de t\u00e2ches, mobile, un seul endroit, suivi des t\u00e2ches, devis, facture, geoop",
+        "seo_meta_keywords_en": "residential services cloud solution, manage jobs, mobile, one place, track jobs, quote, invoice, geoop",
+        "seo_meta_description_fr": "Augmentez la rentabilit\u00e9, sauvez du temps: g\u00e9rez t\u00e2ches et ressources sur la route. Suivi des travaux en temps r\u00e9el, devis et factures sur le mobile."
+    },
+    "pk": 15
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Tracking time & timesheets has never been easier! With an intuitive interface and a powerful reporting. Harvest makes billing easy, accurate and fast.",
+        "seo_meta_title_en": "Harvest: Track Time Easy, Timesheet | Cloudmeb Canada",
+        "seo_meta_title_fr": "Harvest: Suivi du temps facile, feuille de temps | Cloudmeb",
+        "seo_meta_keywords_fr": "gestion feuille de temps, suivi des heures, syst\u00e8me de rapports, harvest, facturation",
+        "seo_meta_keywords_en": "timesheet management, tracking tim, reporting sistem, harvest, billing",
+        "seo_meta_description_fr": "Suivre le temps et les feuilles de temps est si facile avec l'interface intuitive et les rapports puissants. Harvest rend la facturation rapide et pr\u00e9cise."
+    },
+    "pk": 16
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Mapanything - anywhere! Map your Salesforce data with the most comprehensive geoanalytics app, work directly from the Map",
+        "seo_meta_title_en": "MapAnything: Geoanalytics App, Salesforce data | Cloudmeb",
+        "seo_meta_title_fr": "MapAnything: App g\u00e9oanalytique, donn\u00e9es Salesforce| Cloudmeb",
+        "seo_meta_keywords_fr": "comptabilit\u00e9 infonuagique, PME, app g\u00e9o-analytique, donn\u00e9es salesforce, g\u00e9ocodage",
+        "seo_meta_keywords_en": "cloud accounting, SMB, geoanalytics app, salesforce data, geocoding",
+        "seo_meta_description_fr": "Mapanything - partout! Cartographiez vos donn\u00e9es Salesforce avec l'application la plus compl\u00e8te de g\u00e9o-analytique, directement \u00e0 partir de Plan."
+    },
+    "pk": 17
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Cloud\u2010based payroll service & employee management software for Canadian small and midsize businesses.",
+        "seo_meta_title_en": "Payment Evolution: Payroll Software Canada | Cloudmeb",
+        "seo_meta_title_fr": "Payment Evolution: Logiciel de gestion de paie | Cloudmeb",
+        "seo_meta_keywords_fr": "logiciel gestion d'employ\u00e9s, remises automatiques, logiciel de paie simple petite entreprise, logiciel de paie facile \u00e0 utiliser, logiciel de paie canada, gestion des salaires infonuagique, caculateur de paie en ligne",
+        "seo_meta_keywords_en": "employee management software, automatic remittances, simple payroll software for small business, easy to use payroll software, payroll software canada, cloud payroll, online payroll calculator",
+        "seo_meta_description_fr": "Logiciel infonuagique de gestion de la paie et des employ\u00e9s pour les petites et moyennes entreprises canadiennes."
+    },
+    "pk": 18
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Receipt scanner & expense tracker: extracts key information from your bills, receipts and invoices.  Reduce clutter and be free.",
+        "seo_meta_title_en": "Receipt Bank: Cloud Receipt Scanning Software | Cloudmeb",
+        "seo_meta_title_fr": "Receipt Bank: Logiciel scanner re\u00e7us infonuagique | Cloudmeb",
+        "seo_meta_keywords_fr": "scanner de re\u00e7us, meilleur scanner de re\u00e7us, logiciel pour num\u00e9riser des re\u00e7us, service de num\u00e9risation de re\u00e7us, app de d\u00e9penses, suivi de d\u00e9penses",
+        "seo_meta_keywords_en": "receipt scanner, best receipt scanner, receipt scanning software, receipt scanner service, expense app, expense tracker",
+        "seo_meta_description_fr": "Un scanner de re\u00e7us et tracker de d\u00e9penses: vous pouvez extraire l'information cl\u00e9 de vos re\u00e7us et factures. Sauvez du temps et de l'espace."
+    },
+    "pk": 19
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "RingCentral Office\u2014an all-inclusive cloud phone system featuring HD video meetings, unified voice, fax, text, and audio conferencing.",
+        "seo_meta_title_en": "Ring Central: Cloud Telephony, Hosted PBX | Cloudmeb Canada",
+        "seo_meta_title_fr": "Ring Central: T\u00e9l\u00e9phonie infonuagique, PBX h\u00e9berg\u00e9 |Cloudmeb",
+        "seo_meta_keywords_fr": "T\u00e9l\u00e9phonie infonuagique, PBX h\u00e9berg\u00e9, RingCentral, syst\u00e8me t\u00e9l\u00e9phonique infonuagique, r\u00e9union video, voix int\u00e9gr\u00e9e, fax, texte, conf\u00e9rence audio, entreprise",
+        "seo_meta_keywords_en": "Cloud Telephony, Hosted PBX,RingCentral, cloud phone system, video meetings, unified voice, fax, text, audio conferencing, business",
+        "seo_meta_description_fr": "RingCentral Office\u2014un syst\u00e8me tout inclus de t\u00e9l\u00e9phonie infonuagique comprenant\u00a0: r\u00e9union vid\u00e9o HD, voix int\u00e9gr\u00e9e, fax, texte et conf\u00e9rence audio."
+    },
+    "pk": 20
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Grow sales faster & manage all your accounts and sales team in one place with the best cloud CRM app for Canadian small & midsized businesses.",
+        "seo_meta_title_en": "Salesforce: Grow Sales, CRM | App | Cloudmeb Canada",
+        "seo_meta_title_fr": "Salesforce: Croissance des ventes, CRM | App | Cloudmeb",
+        "seo_meta_keywords_fr": "Nuage informatique CRM pour petite entreprise canada, \u00e9cosyst\u00e8me infonuagique salesforce, salesforce canada, sales force,",
+        "seo_meta_keywords_en": "CRM cloud for small business canada, cloud ecosystem salesforce, salesforce canada, sales force,",
+        "seo_meta_description_fr": "Augmentez vos ventes et g\u00e9rez vos comptes et votre \u00e9quipe de vente au m\u00eame endroit avec la meilleure application CRM pour les entreprises."
+    },
+    "pk": 21
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Shopify is a cloud-based e-commerce software that empowers you to sell anything, anywhere.",
+        "seo_meta_title_en": "Shopify: Best e-commerce platform | Cloudmeb Canada",
+        "seo_meta_title_fr": "Shopify: Meilleure plateforme e-commerce | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "e-commerce, point de vente, th\u00e8mes, shopify, configurer magasin en ligne, vendre en ligne",
+        "seo_meta_keywords_en": "e-commerce, POS, themes, shopify, set up online store, sell online",
+        "seo_meta_description_fr": "Shopify est un logiciel e-commerce infonuagique qui vous permet de vendre n'importe quoi, n'importe o\u00f9."
+    },
+    "pk": 22
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Cloud-based paperless and easy-to-use payroll & employee management service for Canadian small & midsized businesses.",
+        "seo_meta_title_en": "Simplepay: Employee Management & Payroll | Cloudmeb Canada",
+        "seo_meta_title_fr": "Simplepay: Gestion d'employ\u00e9s et de paie | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "gestion des salaires, gestion des salaires infonuagiques, gestion du personnel",
+        "seo_meta_keywords_en": "payroll, cloud payroll, employee management",
+        "seo_meta_description_fr": "Service de gestion de la paie et des employ\u00e9s infonuagique facile \u00e0 utiliser et sans papier pour les petites moyennes entreprises canadiennes."
+    },
+    "pk": 23
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Vend is a retail POS software, inventory management, e-commerce & customer loyalty for iPad, Mac and PC. Easily manage and grow your business in the cloud.",
+        "seo_meta_title_en": "Vend: Cloud POS software | Cloudmeb",
+        "seo_meta_title_fr": "Vend: Logiciel PDV infonuagique | Cloudmeb",
+        "seo_meta_keywords_fr": "point de vente nuage informatique, nuage PDV restaurant, restaurant pdv logiciel, ipad pos, ipad pos syst\u00e8me, pos logiciel,  gestion inventaire, solutions de vente, windows vente pdv logiciel , logicel point de vente pour restaurant, programme fid\u00e9lit\u00e9 ",
+        "seo_meta_keywords_en": "Cloud POS, cloud pos restaurant, restaurant pos software, ipad pos, ipad pos system, pos software,  inventory management, retail solutions, windows retail pos software, pos software for restaurant, loyalty programs",
+        "seo_meta_description_fr": "Vend est un logiciel de vente POS, gestion d'inventaire, e-commerce et fid\u00e9lit\u00e9 pour iPad, Mac et PC. D\u00e9veloppez et g\u00e9rez facilement votre entreprise."
+    },
+    "pk": 24
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Smart mobile, cloud-based booking & scheduling app that helps you manage your business events better.",
+        "seo_meta_title_en": "Timely: Scheduling & Booking App | Cloudmeb Canada",
+        "seo_meta_title_fr": "Timely: App r\u00e9servations et calendrier | Cloudmeb Canada",
+        "seo_meta_keywords_fr": "Calendrier, logiciel r\u00e9servation, app r\u00e9servation",
+        "seo_meta_keywords_en": "Scheduling, booking software, booking app, ",
+        "seo_meta_description_fr": "Application infonuagique mobie et intelligente de r\u00e9servation et calendrier qui vous aide \u00e0 mieux g\u00e9rer vos \u00e9v\u00e9nements d'affaires."
+    },
+    "pk": 25
+},
+{
+    "model": "seos.seo",
+    "fields": {
+        "seo_meta_description_en": "Simple, fast, and friendly cloud-based payroll software for small and midsize businesses (SMBs) in North America.",
+        "seo_meta_title_en": "Wagepoint: Online Payroll for Small Businesses | Cloudmeb",
+        "seo_meta_title_fr": "Wagepoint: Gestion paie en ligne petite entreprise|Cloudmeb",
+        "seo_meta_keywords_fr": "gestion des salaires, gestion de paie automatis\u00e9e, logiciel de gestion de paie en ligne, gestion de paie infonuagique, calculateur de paie en ligne,  d\u00e9p\u00f4t direct gestion des salaires",
+        "seo_meta_keywords_en": "cloud payroll, automated payroll, online payroll software, cloud payroll, online payroll calculator,  payroll direct deposit",
+        "seo_meta_description_fr": "Logiciel infonuagique de gestion de paie simple, rapide et agr\u00e9able pour les petites et moyennes entreprises en Am\u00e9rique du Nord.   "
+    },
+    "pk": 26
+}
+]

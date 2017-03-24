@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+	{{ _('Cloudmeb site admin') }}
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name ">
+	<a href="{% url 'admin:index' %}">
+		{{ _('Cloudmeb administration') }}
+	</a>
+</h1>
+{% endblock %} 
+
+{% comment %}
+	{% block branding %}
+		<a class="navbar-brand" href="{% url 'admin:index' %}">
+			{{ _('Cloudmeb administration') }}
+		</a>
+	{% endblock %}
+{% endcomment %}
+
+{% block nav-global %}
+{% endblock %}

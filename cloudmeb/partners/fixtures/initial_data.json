@@ -1,0 +1,47 @@
+[
+{
+    "fields": {
+        "partner_services": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        ],
+        "partner_short_description_fr": "Cloudmeb Services",
+        "partner_products": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "partner_medium_description_fr": "Cloudmeb Services",
+        "partner_medium_description_en": "Cloudmeb Services",
+        "partner_short_description_en": "Cloudmeb Services",
+        "partner_description_fr": "Cloudmeb Services",
+        "page_ptr": 3,
+        "partner_description_en": "Cloudmeb Services",
+        "user_permissions": [],
+        "user_ptr": 4,
+        "groups": []
+    },
+    "pk": 1,
+    "model": "partners.partner"
+}
+]

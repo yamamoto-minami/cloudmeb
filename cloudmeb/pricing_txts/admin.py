@@ -1,0 +1,9 @@
+from django.contrib import admin
+from cloudmeb.pricing_txts.models import Pricing_txt
+from django.utils.translation import ugettext_lazy as _
+
+class Pricing_txtAdmin(admin.ModelAdmin):
+    fileds = ('Pricing_txt_name', 'Pricing_txt_header_title_en', 'Pricing_txt_header_title_fr', 'Pricing_txt_header_subtitle_en', 'Pricing_txt_header_subtitle_fr', 'Pricing_txt_product_title_en', 'Pricing_txt_product_title_fr', 'Pricing_txt_service_title_en', 'Pricing_txt_service_title_fr', 'Pricing_txt_showbtn_product_en', 'Pricing_txt_showbtn_product_fr', 'Pricing_txt_showbtn_service_en', 'Pricing_txt_showbtn_service_fr', 'Pricing_txt_monthly_title_en', 'Pricing_txt_monthly_title_fr', 'Pricing_txt_monthly_subtitle_en', 'Pricing_txt_monthly_subtitle_fr', 'Pricing_txt_monthly_btn_en', 'Pricing_txt_monthly_btn_fr', 'Pricing_txt_onetime_title_en', 'Pricing_txt_onetime_title_fr', 'Pricing_txt_onetime_subtitle_en', 'Pricing_txt_onetime_subtitle_fr', 'Pricing_txt_onetime_btn_en', 'Pricing_txt_onetime_btn_fr',)
+    list_display = ('Pricing_txt_name', 'Pricing_txt_header_title_en', 'Pricing_txt_header_title_fr', 'Pricing_txt_header_subtitle_en', 'Pricing_txt_header_subtitle_fr', 'Pricing_txt_product_title_en', 'Pricing_txt_product_title_fr', 'Pricing_txt_service_title_en', 'Pricing_txt_service_title_fr', 'Pricing_txt_showbtn_product_en', 'Pricing_txt_showbtn_product_fr', 'Pricing_txt_showbtn_service_en', 'Pricing_txt_showbtn_service_fr', 'Pricing_txt_monthly_title_en', 'Pricing_txt_monthly_title_fr', 'Pricing_txt_monthly_subtitle_en', 'Pricing_txt_monthly_subtitle_fr', 'Pricing_txt_monthly_btn_en', 'Pricing_txt_monthly_btn_fr', 'Pricing_txt_onetime_title_en', 'Pricing_txt_onetime_title_fr', 'Pricing_txt_onetime_subtitle_en', 'Pricing_txt_onetime_subtitle_fr', 'Pricing_txt_onetime_btn_en', 'Pricing_txt_onetime_btn_fr',)
+
+admin.site.register(Pricing_txt, Pricing_txtAdmin)  

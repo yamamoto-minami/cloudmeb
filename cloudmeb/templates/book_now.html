@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+    {% include "nav.html" with active_page="book_now" class_names="navbar-default customizing-navbar" %}
+{% endblock %}
+
+{% block content %}
+<div class="container padded">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/cloudmeb" data-processed="true" style="position: relative;null">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <iframe src="https://calendly.com/cloudmeb" width="100%" height="100%" frameborder="0" id="framebody"></iframe>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+    </div>
+</div>
+<div class="service-category-list" style="display: none;">
+    {% for service in services %}
+    <div class="footer-menu-category-list">
+        <p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+        <p class="service-slug">{{ service.solution_slug }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}

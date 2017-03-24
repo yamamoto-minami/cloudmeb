@@ -1,0 +1,78 @@
+[
+{
+    "fields": {
+        "avatar": "placeholders/100x100.gif",
+        "is_staff": true,
+        "date_joined": "2015-06-27T19:35:06.185Z",
+        "first_name": "Mathieu",
+        "password": "pbkdf2_sha256$20000$Y7RFVVz023Cb$YjnzkI0FtjIp18TRmRZs37NXFnDK/nFxFRrIvECjioc=",
+        "is_superuser": true,
+        "is_active": true,
+        "last_name": "Benard",
+        "groups": [],
+        "last_login": "2015-07-01T14:04:54.516Z",
+        "slug": "mathieu-benard",
+        "user_permissions": [],
+        "email": "mathieu.benard@onrise.ca"
+    },
+    "model": "users.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "avatar": "placeholders/100x100.gif",
+        "is_staff": true,
+        "date_joined": "2015-06-27T19:51:39Z",
+        "first_name": "Dora",
+        "password": "pbkdf2_sha256$20000$UGqeCrt46w7G$Qew+UmunVZ39VK2HArByQnvBu8kpbkxeUpSEGtU7joI=",
+        "is_superuser": true,
+        "is_active": true,
+        "last_name": "Stancu",
+        "groups": [],
+        "last_login": null,
+        "slug": "dora-stancu",
+        "user_permissions": [],
+        "email": "dora.stancu@onrise.ca"
+    },
+    "model": "users.user",
+    "pk": 2
+},
+{
+    "fields": {
+        "avatar": "placeholders/100x100.gif",
+        "is_staff": true,
+        "date_joined": "2015-06-27T19:52:36Z",
+        "first_name": "Marc-Eric",
+        "password": "pbkdf2_sha256$20000$AKCCAbhABB1f$tO33o1drW8V/4s5A86WfaRuIIBd4TISOz575dPPZ6zg=",
+        "is_superuser": true,
+        "is_active": true,
+        "last_name": "Blanchette",
+        "groups": [],
+        "last_login": "2015-07-01T01:40:26.681Z",
+        "slug": "marc-eric-blanchette",
+        "user_permissions": [],
+        "email": "marc@cloudmeb.com"
+    },
+    "model": "users.user",
+    "pk": 3
+},
+{
+    "fields": {
+        "avatar": "placeholders/100x100.gif",
+        "is_staff": false,
+        "date_joined": "2015-06-27T21:59:11Z",
+        "first_name": "Cloudmeb",
+        "password": "pbkdf2_sha256$20000$a9BM7QlcITUZ$QQtkcecEax4zkF7fLygLKMq0YyvonAknKM460iPR0Mc=",
+        "is_superuser": false,
+        "is_active": false,
+        "last_name": "Services",
+        "groups": [],
+        "last_login": null,
+        "slug": "cloudmeb-services",
+        "user_permissions": [],
+        "email": "info@cloudmeb.com"
+    },
+    "model": "users.user",
+    "pk": 4
+}
+]

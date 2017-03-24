@@ -1,0 +1,108 @@
+{% for input in inputs %}
+    <div class="form-group form-group-customizing {% if global and not input.input_display %}hidden{% endif %}">
+    <!-- <div class="form-group"> -->
+    {% if input.input_type == "MULTI_OPTIONS" or input.input_type == "OPTIONS" %}
+        <label for="{{ input.input_name }}">
+            {% if global %}{{ input.input_question }}{% else %}{{ input.input_label }}{% endif %}
+        </label>
+        <select class="selectpicker {% if input.input_type == "OPTIONS" %}radio-select{% endif %}"
+            name="{{ input.input_name }}"
+            id="{{ input.input_salesforce_id }}"
+            multiple
+            {% if input.input_type == "OPTIONS" %}
+            data-max-options="1"
+            {% endif %}
+            data-style="btn-{{ class }}"
+            data-width="100%"
+            {% if input.input_related_input.input_id %}
+            data-related-input-id="{{input.input_related_input.input_id }}"
+            {% endif %}
+            data-input-id="{{input.input_id }}">
+            {% for value in input.values.all %}
+                <option
+                    {% if input.input_default_value == value %}
+                    selected
+                    {% endif %}
+                    value="{{ value.value_value }}"
+                    data-value-id="{{ value.value_id }}"
+                    data-related-value-id="{{ value.value_related_value.value_id }}">
+                    {{ value.value_name }}
+                </option>
+            {% endfor %}
+        </select>
+    {% elif input.input_type == "RADIO" %}
+        <label for="{{ input.input_name }}">
+            {% if global %}{{ input.input_question }}{% else %}{{ input.input_label }}{% endif %}
+        </label>
+        <br />
+        {% for value in input.values.all %}
+            <div class="radio radio-{{ class }} radio-inline">
+                <input id="{{ input.input_salesforce_id }}"
+                    name="{{ input.input_name }}"
+                    class="styled"
+                    type="radio"
+                    {% if input.input_default_value == value %}
+                    checked
+                    {% endif %}
+                    value="{{ value.value_value }}"
+                    data-value-id="{{ value.value_id }}"
+                    data-related-value-id="{{ value.value_related_value.value_id }}"
+                    {% if input.input_related_input.input_id %}
+                    data-related-input-id="{{input.input_related_input.input_id }}"
+                    {% endif %}
+                    data-input-id="{{input.input_id }}">
+                <label>
+                    {{ value.value_name }}
+                </label>
+            </div>
+        {% endfor %}
+    {% elif input.input_type == "CHECKBOX" %}
+        <label for="{{ input.input_name }}">
+            {% if global %}{{ input.input_question }}{% else %}{{ input.input_label }}{% endif %}
+        </label>
+        <br />
+        {% for value in input.values.all %}
+            <div class="checkbox checkbox-{{ class }} checkbox-single">
+                <input id="{{ input.input_salesforce_id }}"
+                    class="styled"
+                    type="checkbox"
+                    id="{{ input.input_salesforce_id }}"
+                    name="{{ input.input_name }}"
+                    value="{{ value.input.input_default_value.value_value }}"
+                    data-value-id="{{ value.value_id }}"
+                    data-related-value-id="{{ value.value_related_value.value_id }}"
+                    {% if input.input_related_input.input_id %}
+                    data-related-input-id="{{input.input_related_input.input_id }}"
+                    {% endif %}
+                    data-input-id="{{input.input_id }}">
+                <label>
+                    {{ value.value_name }}
+                </label>
+            </div>
+        {% endfor %}
+    {% elif input.input_type == "NUMBER" %}
+        <label for="{{ input.input_name }}">
+            {% if global %}{{ input.input_question }}{% else %}{{ input.input_label }}{% endif %}
+        </label> 
+        <br>
+        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+        <div id="count-number">
+            <span class="glyphicon glyphicon-minus"></span>
+            <input type="text"
+                onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"
+                class="form-control {{ class }}"
+                id="{{ input.input_salesforce_id }}"
+                name="{{ input.input_name }}"
+                placeholder="{{ input.input_placeholder }}"
+                value="{{ input.input_default_value.value_value }}"
+                data-value-id="{{ value.value_id }}"
+                {% if input.input_related_input.input_id %}
+                data-related-input-id="{{input.input_related_input.input_id }}"
+                {% endif %}
+                data-input-id="{{input.input_id }}"
+                data-related-value-id="{{ value.value_related_value.value_id }}">
+            <span class="glyphicon glyphicon-plus"></span>
+        </div>
+    {% endif %}
+    </div>
+{% endfor %}

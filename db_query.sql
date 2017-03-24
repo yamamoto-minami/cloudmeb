@@ -1,0 +1,1 @@
+SELECT pp.product_id, ss.solution_name_en, cc.category_name_en, cc.category_id FROM categories_category AS cc JOIN solutions_solution_solution_categories AS sssc ON (cc.category_id = sssc.category_id) JOIN solutions_solution AS ss ON (ss.solution_id = sssc.solution_id) JOIN products_product AS pp ON (pp.solution_ptr_id = ss.solution_Id) ORDER BY pp.product_id, cc.category_id;

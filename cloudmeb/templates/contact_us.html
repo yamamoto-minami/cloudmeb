@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+    {% include "nav.html" with active_page="contact_us" class_names="navbar-default customizing-navbar" %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="contact-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-1">
+                        <h1 class="blue-heading margin-top-heading text-center">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.12.shared_txt_name_fr }}{% else%}{{ shared_txts.12.shared_txt_name_en }}{% endifequal %}</h1>
+                    </div>
+                    <div class=col-md-3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid contact-form-background">
+    <div class="container padded">
+        <div class="row">
+            <form class="col-md-4 col-md-offset-1 contact-form contact-form-content">
+                <h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.9.shared_txt_name_fr }}{% else%}{{ shared_txts.9.shared_txt_name_en }}{% endifequal %}</h3>
+                <div class="form-group">
+                    <label for="fname">{% trans 'Your name' %}</label>
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <input type="text" class="form-control info" id="fname" name="fname" placeholder="{% trans 'Name' %}">
+                </div>
+    
+                <!--<div class="form-group">
+                    <label for="lname">{% trans 'Your last name' %}</label>
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <input type="text" class="form-control info" id="lname" name="lname" placeholder="{% trans 'Enter your last name' %}">
+                </div>-->
+    
+                <div class="form-group">
+                    <label for="subject">{% trans 'The phone' %}</label>
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <input type="text" class="form-control info" id="subject" name="subject" placeholder="{% trans 'Phone' %}">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">{% trans 'Your email' %}</label>
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <input type="email" class="form-control info" id="email" name="email" placeholder="{% trans 'E-mail' %}">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">{% trans 'The message' %}</label>
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <textarea rows="10" class="form-control info" id="message" name="message" placeholder="{% trans 'Message' %}"></textarea>
+                </div>
+    
+                <br />
+                <div class="send-btn-tab">
+                    <button class="btn btn-default btn-send btn-block btn-lg" type="button" title="{% trans 'send' %}">
+                        {% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.8.shared_txt_name_fr }}{% else%}{{ shared_txts.8.shared_txt_name_en }}{% endifequal %}
+                    </button>
+                </div>
+            </form>
+    
+            <div class="col-md-4 col-md-offset-1 text-center">
+                <div class="border-box contact-us">
+                    <h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.10.shared_txt_name_fr }}{% else%}{{ shared_txts.10.shared_txt_name_en }}{% endifequal %}</h3>
+                    <a class="btn btn-default btn-lg btn-phone" role="button" href="tel://1-800-355-4936" title="{% trans 'Toll free number' %} 1-(800)-355-4936">
+                        +1 800 355 4936
+                        <h4 class="blue-heading untransformed-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.11.shared_txt_name_fr }}{% else%}{{ shared_txts.11.shared_txt_name_en }}{% endifequal %}</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service-category-list" style="display: none;">
+    {% for service in services %}
+    <div class="footer-menu-category-list">
+        <p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+        <p class="service-slug">{{ service.solution_slug }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}

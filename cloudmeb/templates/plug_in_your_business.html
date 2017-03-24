@@ -1,0 +1,1021 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+{% include "nav.html" with active_page="plug_in_your_business" class_names="navbar-scroll" %}
+{% endblock %}
+
+{% block content %}
+<div class="container price-popuper">
+    <!--<div class="price-popup">
+        <div class="alert fade in animated bounceInDown">
+            <p class="new-monthly">Your new monthly price is <span class="unit">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}</span><span class="value">1000</span><span class="unit">{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</span></p>
+            <p class="new-onetime">Your new one time price is <span class="unit">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}</span><span class="value">1000</span><span class="unit">{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</span></p>
+        </div>
+    </div>-->
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="contact-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-1">
+                        <h1 class="blue-heading margin-top-heading text-center">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_header_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_header_title_en }}{% endifequal %}</h1>
+                        <p class="pricing-txt-banner">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_header_subtitle_fr }}{% else%}{{ pricing_txt.Pricing_txt_header_subtitle_en }}{% endifequal %}</p>
+                    </div>
+                    <div class=col-md-3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hero-unit configurator-steps">
+    <h1>{% trans 'plug-in your business' %}</h1>
+
+    <ul class="nav nav-pills pills-customizing container">
+        <li class="disabled"><a href="#" title="{% trans 'previous' %}">{% trans 'previous' %}</a></li>
+        <li data-step="1" class=""><a href="#{% trans 'step-one' %}" data-toggle="tab" title="% trans 'your business needs' %}">{% trans 'your business needs' %}</a></li>
+        <li data-step="2"><a href="#{% trans 'step-two' %}" data-toggle="tab" title="{% trans 'cloudmeb&trade; solution' %}">{% trans 'cloudmeb&trade; solution' %}</a></li>
+        <li data-step="3"><a href="#{% trans 'step-three' %}" data-toggle="tab" title="% trans 'quote estimation' %}">{% trans 'quote estimation' %}</a></li>
+        <li><a href="#" title="{% trans 'next' %}">{% trans 'next' %}</a></li>
+    </ul>
+</div>
+
+
+<div class="container-fluid">
+    <div class="tab-content row">
+        <div class="tab-pane main-page row" id="{% trans 'step-one' %}">
+            <div class="container first-step-padding">
+                <!--<h1 class="blue-heading text-center">{% trans 'Every business is different' %}</h1>
+                <div class="col-md-6 col-md-offset-3">
+                    <h4 class="text-center margin-bottom-heading untransformed-heading">
+                        {% blocktrans %}
+                        Cloudmeb&trade; offers {{ solutions_length }} products and services, let’s narrow them down for you.
+                        {% endblocktrans %}
+                    </h4>
+                </div>-->
+
+                <form class="global info col-md-12">
+                    {% include "inputs.html" with inputs=inputs global=True class="info" %}
+
+                    <div class="form-group next-section-btn-customizing">
+                        <label></label>
+                        <a class="btn btn-default btn-send next-step-btn btn-block btn-lg" role="button" href="#{% trans 'step-two' %}" data-toggle="tab" title="{% trans 'see your solution' %}">
+                            {% trans 'see your solution' %} <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane main-page second-step-bg" id="{% trans 'step-two' %}">
+            <div class="container">
+                <!--<h1 class="blue-heading text-center">{% trans 'Our recommendations for your business' %}</h1>
+                <div class="col-md-12">
+                    <h4 class="text-center margin-bottom-heading untransformed-heading">
+                        {% trans 'Configure your products and services by clicking on the <span class="expand-icon"></span> icon' %}
+                    </h4>
+                </div>-->
+
+                <div class="configurator-solutions-wrapper">
+                    <div class="configurator-solutions main-solutions products row">
+                        <h2>{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_product_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_product_title_en }}{% endifequal %}</h2>
+
+                        <div class="col-md-12 empty hidden">
+                            <h4 class="untransformed-heading">{% trans 'You have no selected products' %}</h4>
+                        </div>
+
+                        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1">
+                            {% for product in products %}
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                {% spaceless %}
+                                <div itemscope itemtype="http://schema.org/Product"
+                                     class="product"
+                                     data-solution-id="product-{{ product.solution_id }}"
+                                     data-featured="{{ product.product_featured|yesno:'true,false' }}"
+                                     data-tags='[{% for value in product.solution_values.all %}"{{ value.value_value}}"{% if not forloop.last %}, {% endif %}{% endfor %}]'
+                                     data-categories='[{% for category in product.solution_categories.all %}"{{ category.category_name }}"{% if not forloop.last %}, {% endif %}{% endfor %}]'
+                                     data-pricing-formula="{{ product.price_formula }}">
+                                    {% endspaceless %}
+                                    <div class="product-individual">
+                                        <div class="individual-head">
+                                            <img src="{{ product.solution_icon.url }}" alt="{{ product.solution_name }}" itemprop="logo" />
+                                            <h4 itemprop="name">{{ product.solution_name }}</h4>
+                                            <h5 itemprop="alternateName">{{ product.solution_tagline }}</h5>
+                                        </div>
+                                        <div class="clear-tag"></div>
+                                        <div class="individual-content">
+                                            <p class="desktop-medium-description">{{ product.solution_medium_description }}</p>
+                                            <p class="mobile-short-description">{{ product.solution_short_description }}</p>
+                                        </div>
+                                        <div class="price">
+                                            {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} <label>/ {{ product.get_price_frequency_display }}</label>
+                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="actions products-services-checked-remove-btn">
+                                            <a class="btn btn-default btn-transparent btn-lg remove-btn" role="button">
+                                                <span class="glyphicon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-individual-settingon">
+                                        <div class="settingon-content">
+                                            <div class="actions settingon-customizing-action">
+                                                <a class="btn btn-default btn-transparent btn-lg setup-btn active {% if not product.price_inputs.all %} disabled {% endif %}" role="button" title="{% trans 'set up' %}">
+                                                    {% trans 'Setup' %}
+                                                </a>
+                                                <a class="btn btn-default btn-transparent btn-lg swap-btn" role="button" title="{% trans 'swap' %}"
+                                                   data-toggle="modal" data-target="#swap-products-modal"
+                                                   data-swap-tab="{{ product.solution_categories.all.0|slugify }}-swap-products">
+                                                    {% trans 'Swap' %}
+                                                </a>
+                                            </div>
+                                            <div class="configure-disable">
+                                                <p>{% trans 'Not available' %}</p>
+                                            </div>
+                                            <div class="configure active">
+                                                {% if product.price_inputs.all %}
+                                                <form class="scoped info">
+                                                    {% include "inputs-setup.html" with inputs=product.price_inputs.all global=False class="info" %}
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info checkbox-single">
+                                                            <input class="styled apply-global" type="checkbox" name="applyGloball" value="true" checked>
+                                                            <label>{% trans 'Apply to all products and services' %}</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                {% endif %}
+                                                <div class="actions">
+                                                    <a class="btn btn-default btn-transparent btn-lg apply-btn" role="button" title="{% trans 'apply' %}">
+                                                        {% trans 'apply' %}
+                                                    </a>
+                                                    <a class="btn btn-default btn-transparent btn-lg cancelup-btn" role="button" title="{% trans 'cancel' %}">
+                                                        {% trans 'cancel' %}
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12 show-more-tag">
+                            <a class="btn btn-default btn-transparent btn-add-more btn-block btn-lg" role="button" data-toggle="modal" data-target="#add-more-products-modal" title="{% trans 'add more products' %}">
+                                {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_showbtn_product_fr }}{% else%}{{ pricing_txt.Pricing_txt_showbtn_product_en }}{% endifequal %}<span class="product-length">{{ products | length }}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="configurator-solutions-wrapper">
+                    <div class="configurator-solutions main-solutions services row">
+                        <h2 style="margin-top: 70px;">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_service_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_service_title_en }}{% endifequal %}</h2>
+
+                        <div class="col-md-12 empty hidden">
+                            <h4 class="untransformed-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_service_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_service_title_en }}{% endifequal %}</h4>
+                        </div>
+
+                        <div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1">
+                            {% for partner_service in partner_services %}
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                {% spaceless %}
+                                <div itemscope itemtype="http://schema.org/Service"
+                                     class="service"
+                                     data-solution-id="service-{{ partner_service.partner_service_service.solution_id }}"
+                                     data-featured="{{ partner_service.partner_service_featured|yesno:'true,false' }}"
+                                     data-tags='[{% for value in partner_service.partner_service_service.solution_values.all %}"{{ value.value_value }}"{% if not forloop.last %}, {% endif %}{% endfor %}]'
+                                     data-categories='[{% for category in partner_service.partner_service_service.solution_categories.all %}"{{ category.category_name }}"{% if not forloop.last %}, {% endif %}{% endfor %}]'
+                                     data-pricing-formula="{{ partner_service.price_formula }}">
+                                    {% endspaceless %}
+                                    <div class="product-individual">
+                                        <div class="individual-head">
+                                            <img src="{{ partner_service.partner_service_service.solution_icon.url }}"
+                                                 alt="{{ partner_service.partner_service_service.solution_name }}" />
+                                            <h4 itemprop="name">{{ partner_service.partner_service_service.solution_name }}</h4>
+                                            <h5 itemprop="alternateName">{{ partner_service.partner_service_service.solution_tagline }}</h5>
+                                        </div>
+                                        <div class="clear-tag"></div>
+                                        <div class="individual-content">
+                                            <p class="desktop-medium-description">{{ partner_service.partner_service_service.solution_medium_description }}</p>
+                                            <p class="mobile-short-description">{{ partner_service.partner_service_service.solution_short_description }}</p>
+                                        </div>
+                                        <div class="price">
+                                            {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} <label>/ {{ partner_service.get_price_frequency_display }}</label>
+                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="actions products-services-checked-remove-btn">
+                                            <a class="btn btn-default btn-transparent btn-lg remove-btn" role="button" title="{% trans 'remove' %}">
+                                                <span class="glyphicon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-individual-settingon">
+                                        <div class="settingon-content">
+                                            <div class="actions settingon-customizing-action">
+                                                <a class="btn btn-default btn-transparent btn-lg setup-btn active {% if not partner_service.price_inputs.all %} disabled {% endif %}" role="button" title="{% trans 'set up' %}">
+                                                    {% trans 'Setup' %}
+                                                </a>
+                                                <a class="btn btn-default btn-transparent btn-lg swap-btn" role="button" title="{% trans 'swap' %}"
+                                                   data-toggle="modal" data-target="#swap-services-modal"
+                                                   data-swap-tab="{{ partner_service.partner_service_service.solution_categories.all.0|slugify }}-swap-services">
+                                                    {% trans 'Swap' %}
+                                                </a>
+                                            </div>
+                                            <div class="configure-disable">
+                                                <p>{% trans 'Not available' %}</p>
+                                            </div>
+                                            <div class="configure active">
+                                                {% if partner_service.price_inputs.all %}
+                                                <form class="scoped info">
+                                                    {% include "inputs-setup.html" with inputs=partner_service.price_inputs.all global=False class="success" %}
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info checkbox-single">
+                                                            <input class="styled apply-global" type="checkbox" name="applyGloball" value="true" checked>
+                                                            <label>{% trans 'Apply to all products and services' %}</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                {% endif %}
+                                                <div class="actions">
+                                                    <a class="btn btn-default btn-transparent btn-lg apply-btn" role="button" title="{% trans 'apply' %}">
+                                                        {% trans 'apply' %}
+                                                    </a>
+                                                    <a class="btn btn-default btn-transparent btn-lg cancelup-btn" role="button" title="{% trans 'cancel' %}">
+                                                        {% trans 'cancel' %}
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12 show-more-tag">
+                            <a class="btn btn-default btn-transparent btn-add-more btn-block btn-lg" role="button" title="{% trans 'add more services' %}"
+                               data-toggle="modal" data-target="#add-more-services-modal">
+                                {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_showbtn_service_fr }}{% else%}{{ pricing_txt.Pricing_txt_showbtn_service_en }}{% endifequal %}<span class="product-length">{{ partner_services | length }}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row second-step-btn">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <a class="btn btn-default btn-send prev-step-btn btn-block btn-lg" role="button" href="#{% trans 'step-one' %}" data-toggle="tab" title="{% trans 'previous' %}">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> {% trans 'previous' %}
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6 next-step-to-third">
+                        <a class="btn btn-default btn-send next-step-btn btn-block btn-lg" role="button" href="#{% trans 'step-three' %}" data-toggle="tab" title="{% trans 'next' %}">
+                            {% trans 'next' %} <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane main-page" id="{% trans 'step-three' %}">
+            <!--<h1 class="blue-heading text-center">{% trans 'Preliminary quote' %}</h1>
+            <div class="col-md-12">
+                <h4 class="text-center margin-bottom-heading untransformed-heading">
+                    {% trans 'All of our prices are estimated in Canadian dollars' %}
+                </h4>
+            </div>-->
+
+            <div class="row configurator-solutions-basket basket-customizing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="display: none;">
+                            <div class="products">
+                                <h2>{% trans 'Products' %}</h2>
+
+                                <div class="empty hidden">
+                                    <h4 class="untransformed-heading">{% trans 'You have no selected products' %}</h4>
+                                </div>
+
+                                {% for product in products %}
+                                <div class="product row"
+                                     data-solution-id="product-{{ product.solution_id }}"
+                                     data-categories-id='[{% for category in product.solution_categories.all %}"{{ category.category_name }}"{% if not forloop.last %}, {% endif %}{% endfor %}]' >
+                                    <div class="col-md-8 col-sm-8 col-xs-8 details">
+                                        <h4>{{ product.solution_name }}</h4>
+                                        <h5>{{ product.solution_tagline }}</h5>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4 text-center price"
+                                         data-price-frequency="{{ product.get_price_frequency_display }}"
+                                         data-price-frequency-id="{{ product.price_frequency }}"
+                                         data-price-currency="{{ product.get_price_currency_display }}">
+                                        {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / <br />
+                                        {{ product.get_price_frequency_display }}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <div class="services">
+                                <h2>{% trans 'Services' %}</h2>
+
+                                <div class="empty hidden">
+                                    <h4 class="untransformed-heading">{% trans 'You have no selected services' %}</h4>
+                                </div>
+
+                                {% for partner_service in partner_services %}
+                                <div class="service row"
+                                     data-solution-id="service-{{ partner_service.partner_service_service.solution_id }}"
+                                     data-categories-id='[{% for category in partner_service.partner_service_service.solution_categories.all %}"{{ category.category_name_en }}"{% if not forloop.last %}, {% endif %}{% endfor %}]'>
+                                    <div class="col-md-8 col-sm-8 col-xs-8 details">
+                                        <h4>{{ partner_service.partner_service_service.solution_name }}</h4>
+                                        <h5>{{ partner_service.partner_service_service.solution_tagline }}</h5>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4 text-center price"
+                                         data-price-frequency="{{ partner_service.get_price_frequency_display }}"
+                                         data-price-frequency-id="{{ partner_service.price_frequency }}"
+                                         data-price-currency="{{ partner_service.get_price_currency_display }}">
+                                        {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / <br />
+                                        {{ partner_service.get_price_frequency_display }}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <br class="visible-lg-block visible-md-block" />
+                            <a class="visible-lg-block visible-md-block btn btn-default btn-send prev-step-btn btn-block btn-lg" role="button" href="#{% trans 'step-two' %}"
+                               data-toggle="tab" alt="{% trans 'previous' %}">
+                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> {% trans 'previous' %}
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="border-box pricing-totals desktop">
+                                <div class="col-md-6 col-sm-6 col-xs-12 wheelbox-area">
+                                    <img src="{{ STATIC_URL }}image/cloubmeb-whitemark.png" class="img-responsive">
+                                    <div class="check-icon">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 wheelbox-area">
+                                    <img src="{{ STATIC_URL }}image/cloubmeb-whitemark.png" class="img-responsive">
+                                    <div class="wheelbox">
+                                        <div class="wheel one">
+                                            <div class="wheel-inner">
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="wheel two">
+                                            <div class="wheel-inner">
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="col-md-6 col-sm-6 col-xs-6">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_title_en }}{% endifequal %}</h3>
+                                <h3 class="col-md-6 col-sm-6 col-xs-6">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_title_en }}{% endifequal %}</h3>
+                                <div class="order price-text">
+                                    <h5 class="col-md-6 col-sm-6 col-xs-6">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_subtitle_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_subtitle_en }}{% endifequal %}</h5>
+                                    <h5 class="col-md-6 col-sm-6 col-xs-6">{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_subtitle_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_subtitle_en }}{% endifequal %}</h5>
+                                    <div class="clear-tag"></div>
+                                </div>
+                                <div class="price-button-tag">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <a class="btn btn-default btn-send btn-cloud btn-block btn-lg"
+                                           type="button" data-toggle="modal" data-target="#user-info-modal" alt="{% trans 'submit for quote' %}">
+                                            {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_btn_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_btn_en }}{% endifequal %}
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <a class="btn btn-default btn-send btn-cloud btn-block btn-lg"
+                                           type="button" data-toggle="modal" data-target="#user-info-modal" alt="{% trans 'submit for quote' %}">
+                                            {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_btn_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_btn_en }}{% endifequal %}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mobile">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="calc-price">
+                                            <div class="wheelbox-area">
+                                                <img src="{{ STATIC_URL }}image/cloubmeb-whitemark.png" class="img-responsive">
+                                                <div class="check-icon">
+                                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_title_en }}{% endifequal %}</h3>
+                                            <h4 class="onetime">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span></span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</h4>
+                                            <h6 class="onetime"></h6>
+                                            <h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_subtitle_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_subtitle_en }}{% endifequal %}</h5>
+                                            <a class="btn btn-default btn-send btn-cloud btn-block btn-lg"
+                                               type="button" data-toggle="modal" data-target="#user-info-modal" alt="{% trans 'submit for quote' %}">
+                                                {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_onetime_btn_fr }}{% else%}{{ pricing_txt.Pricing_txt_onetime_btn_en }}{% endifequal %}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="calc-price">
+                                            <div class="wheelbox-area">
+                                                <img src="{{ STATIC_URL }}image/cloubmeb-whitemark.png" class="img-responsive">
+                                                <div class="wheelbox">
+                                                    <div class="wheel one">
+                                                        <div class="wheel-inner">
+                                                            <div class="bar"></div>
+                                                            <div class="bar"></div>
+                                                            <div class="bar"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wheel two">
+                                                        <div class="wheel-inner">
+                                                            <div class="bar"></div>
+                                                            <div class="bar"></div>
+                                                            <div class="bar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_title_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_title_en }}{% endifequal %}</h3>
+                                            <h4 class="monthly">{% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span></span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %}</h4>
+                                            <h6 class="monthly"></h6>
+                                            <h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_subtitle_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_subtitle_en }}{% endifequal %}</h5>
+                                            <a class="btn btn-default btn-send btn-cloud btn-block btn-lg"
+                                               type="button" data-toggle="modal" data-target="#user-info-modal" alt="{% trans 'submit for quote' %}">
+                                                {% ifequal LANGUAGE_CODE 'fr' %}{{ pricing_txt.Pricing_txt_monthly_btn_fr }}{% else%}{{ pricing_txt.Pricing_txt_monthly_btn_en }}{% endifequal %}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-box next-steps">
+                                <h3>{% trans "What's next ?" %}</h3>
+
+                                <h4 data-step="1">{% trans 'We will review your business needs and contact you to do a quick call' %}</h4>
+                                <h4 data-step="2">{% trans 'Receive an official quote from cloudmeb tailored to your business' %}</h4>
+                                <h4 data-step="3">{% trans 'Choose a partner that best fits your needs and let your digital journey begin' %}</h4>
+                            </div>
+
+                            <br class="visible-sm-block visible-xs-block" />
+                            <a class="visible-sm-block visible-xs-block btn btn-default btn-send prev-step-btn btn-block btn-lg" role="button" href="#{% trans 'step-two' %}"
+                               data-toggle="tab" alt="{% trans 'previous' %}">
+                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> {% trans 'previous' %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swap products modal -->
+<div class="modal fade swap-modal" data-backdrop="static" id="swap-products-modal" tabindex="-1" role="dialog"
+     aria-labelledby="swap-products-label">
+    <div class="modal-dialog modal-full-width" role="document">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <h3 class="modal-title text-center blue-heading" id="swap-products-label">{% trans 'Swap product' %}</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="tab-content">
+                    {% for category, products in product_categories.items %}
+                    <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-swap-products">
+                        <div class="configurator-solutions products row">
+                            {% for product in products %}
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product" data-solution-id="product-{{ product.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ product.solution_icon.url }}" alt="{{ product.solution_name }}" />
+                                        <h4>{{ product.solution_name }}</h4>
+                                        <p>{{ product.solution_medium_description }}</p>
+
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ product.get_price_frequency_display }}
+                                            </div>
+
+                                            <a class="btn btn-default btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span><span class="action-name">{% trans 'select' %}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn btn-default btn-transparent btn-swap btn-block btn-lg" role="button"
+                   data-dismiss="modal" alt="{% trans 'swap product' %}">
+                    <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> {% trans 'swap product' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swap services modal -->
+<div class="modal fade swap-modal" data-backdrop="static" id="swap-services-modal" tabindex="-1" role="dialog"
+     aria-labelledby="swap-services-label">
+    <div class="modal-dialog modal-full-width" role="document">
+        <div class="modal-content container">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}" title="{% trans 'Close' %}">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <h3 class="modal-title text-center blue-heading" id="swap-services-label">{% trans 'Swap service' %}</h3>
+            </div>
+
+            <div class="modal-body">
+                <div class="tab-content">
+                    {% for category, services in service_categories.items %}
+                    <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-swap-services">
+                        <div class="configurator-solutions products row">
+                            {% for service in services %}
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="service" data-solution-id="service-{{ service.partner_service_service.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ service.partner_service_service.solution_icon.url }}" alt="{{ service.partner_service_service.solution_name }}" />
+                                        <h4>{{ service.partner_service_service.solution_name }}</h4>
+                                        <p>{{ service.partner_service_service.solution_medium_description }}</p>
+
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ service.get_price_frequency_display }}
+                                            </div>
+
+                                            <a class="btn btn-default btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span><span class="action-name">{% trans 'select' %}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a class="btn btn-default btn-transparent btn-swap btn-block btn-lg" role="button"
+                   data-dismiss="modal" alt="{% trans 'swap service' %}">
+                    <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> {% trans 'swap service' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add more products modal -->
+<div class="modal fade add-more-modal" data-backdrop="static" id="add-more-products-modal" tabindex="-1" role="dialog"
+     aria-labelledby="add-more-products-label">
+    <div class="modal-dialog modal-full-width" role="document">
+        <div class="modal-content container" style="width: 874px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}" title="{% trans 'Close' %}">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <h3 class="modal-title text-center blue-heading" id="add-more-products-label">{% trans 'Add more products' %}</h3>
+            </div>
+
+            <div class="modal-body product-body">
+                <div class="category-carousel-wrapper" style="display: none;">
+                    <a class="btn btn-default next-prev-btn" data-direction="prev" role="button" title="{% trans 'previous' %}">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+
+                    <div class="products category-carousel">
+                        {% for category, products in product_categories.items %}
+                        <a class="btn btn-default {% if forloop.first %}active{% endif %}" href="#{{ category|slugify }}-products" data-toggle="tab" role="button" data-index="{{ forloop.counter0 }}" title="{{ category }}">
+                            {{ category }}
+                        </a>
+                        {% endfor %}
+                    </div>
+
+                    <a class="btn btn-default next-prev-btn" data-direction="next" role="button" title="{% trans 'next' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <ul class="tab-content add-more-content" style="display: none;">
+                    {% for category, products in product_categories.items %}
+                    <li class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-products">
+                        <ul class="configurator-solutions products row">
+                            {% for product in products %}
+                            <li class="product-inner" style="width: 317px;">
+                                <div class="product" data-solution-id="product-{{ product.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ product.solution_icon.url }}" alt="{{ product.solution_name }}" />
+                                        <h4>{{ product.solution_name }}</h4>
+                                        <p>{{ product.solution_tagline }}</p>
+                                        <div class="col-md-12 description-tag">
+                                            <p itemprop="description">{{ product.solution_short_description }}</p>
+                                        </div>
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span><label>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ product.get_price_frequency_display }}</label>
+                                                <p class="sort-alphabet">{% for category in product.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-service-checked">
+                                            <a class="btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                    <!--{% for category, products in product_categories.items %}
+                    <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-products">
+                        <div class="configurator-solutions products row">
+                            {% for product in products %}
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="product" data-solution-id="product-{{ product.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ product.solution_icon.url }}" alt="{{ product.solution_name }}" />
+                                        <h4>{{ product.solution_name }}</h4>
+                                        <p>{{ product.solution_medium_description }}</p>
+
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ product.get_price_frequency_display }}
+                                            </div>
+
+                                            <a class="btn btn-default btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span><span class="action-name">{% trans 'select' %}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}-->
+                </ul>
+                <div class="product-scroll-tag" style="overflow-x: scroll">
+                    <ul class="tab-content add-more-content-real"></ul>
+                </div>
+            </div>
+
+            <div class="modal-footer modal-footer-customizing">
+                <div class="selected-info">
+                    <p class="sele-title">Selected: <span class="selected-numer">1</span></p>
+                    <p class="sele-payment">Payments: <span class="selected-price">40$</span><label style="color: #c0c4c9;">/mo</label></p>
+                </div>
+                <div class="add-button">
+                    <a class="btn btn-default btn-transparent btn-add-more btn-block btn-lg" role="button"
+                       data-dismiss="modal" alt="{% trans 'add selected products' %}">
+                        {% trans 'save' %}
+                    </a>
+                </div>
+                <div class="pagnation-list">
+                    <ul></ul>
+                </div>
+                <div class="pagnation-list-full">
+                    <ul></ul>
+                </div>
+            </div>
+            <!--<div class="left-right-nav">
+                <div class="left-nav">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="right-nav">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<!-- Add more services modal -->
+<div class="modal fade add-more-modal" data-backdrop="static" id="add-more-services-modal" tabindex="-1" role="dialog"
+     aria-labelledby="add-more-services-label">
+    <div class="modal-dialog modal-full-width" role="document">
+        <div class="modal-content container" style="width: 874px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <h3 class="modal-title text-center blue-heading" id="add-more-services-label">{% trans 'Add more services' %}</h3>
+            </div>
+
+            <div class="modal-body service-body">
+                <div class="category-carousel-wrapper" style="display: none;">
+                    <a class="btn btn-default next-prev-btn" data-direction="prev" role="button" title="{% trans 'previous' %}">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+
+                    <div class="services category-carousel">
+                        {% for category, services in service_categories.items %}
+                        <a class="btn btn-default {% if forloop.first %}active{% endif %}" href="#{{ category|slugify }}-services" data-toggle="tab" role="button" data-index="{{ forloop.counter0 }}" title="{{ category }}">
+                            {{ category }}
+                        </a>
+                        {% endfor %}
+                    </div>
+
+                    <a class="btn btn-default next-prev-btn" data-direction="next" role="button" title="{% trans 'next' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <ul class="tab-content add-more-content" style="display: none;">
+                    {% for category, services in service_categories.items %}
+                    <li class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-services">
+                        <ul class="configurator-solutions services row">
+                            {% for service in services %}
+                            <li class="product-inner" style="width: 317px;">
+                                <div class="service" data-solution-id="service-{{ service.partner_service_service.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ service.partner_service_service.solution_icon.url }}" alt="{{ service.partner_service_service.solution_name }}" />
+                                        <h4>{{ service.partner_service_service.solution_name }}</h4>
+                                        <p>{{ service.partner_service_service.solution_tagline }}</p>
+
+                                        <div class="col-md-12 description-tag">
+                                            <p itemprop="description">{{ service.partner_service_service.solution_short_description }}</p>
+                                        </div>
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span><label>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ service.get_price_frequency_display }}</label>
+                                                <p class="sort-alphabet">{% for category in service.partner_service_service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-service-checked">
+                                            <a class="btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endfor %}
+                    <!--{% for category, services in service_categories.items %}
+                    <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category|slugify }}-services">
+                        <div class="configurator-solutions services row">
+                            {% for service in services %}
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="service" data-solution-id="service-{{ service.partner_service_service.solution_id }}">
+                                    <div class="face text-center">
+                                        <img src="{{ service.partner_service_service.solution_icon.url }}" alt="{{ service.partner_service_service.solution_name }}" />
+                                        <h4>{{ service.partner_service_service.solution_name }}</h4>
+                                        <p>{{ service.partner_service_service.solution_medium_description }}</p>
+
+                                        <div class="solution-footer">
+                                            <div class="price">
+                                                {% ifequal LANGUAGE_CODE "en" %}${% endifequal %}<span>99</span>{% ifequal LANGUAGE_CODE "fr" %}${% endifequal %} / {{ service.get_price_frequency_display }}
+                                            </div>
+
+                                            <a class="btn btn-default btn-transparent btn-radio btn-block btn-lg"
+                                               data-selected="false"
+                                               type="button" href="#" alt="{% trans 'select' %}">
+                                                <span class="glyphicon"></span><span class="action-name">{% trans 'select' %}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}-->
+                </ul>
+                <div class="product-scroll-tag" style="overflow-x: scroll">
+                    <ul class="tab-content add-more-content-real"></ul>
+                </div>
+            </div>
+
+            <div class="modal-footer modal-footer-customizing">
+                <div class="selected-info">
+                    <p class="sele-title">Selected: <span class="selected-numer">1</span></p>
+                    <p class="sele-payment">Payments: <span class="selected-price">40$</span><label style="color: #c0c4c9;">/one</label></p>
+                </div>
+                <div class="add-button">
+                    <a class="btn btn-default btn-transparent btn-add-more btn-block btn-lg" role="button"
+                       data-dismiss="modal" alt="{% trans 'add selected services' %}">
+                        {% trans 'save' %}
+                    </a>
+                </div>
+                <div class="pagnation-list">
+                    <ul></ul>
+                </div>
+                <div class="pagnation-list-full">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User info modal -->
+<div class="modal fade" id="user-info-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="user-info-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}" title="{% trans 'Close' %}">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+
+                <h3 class="modal-title text-center blue-heading" id="user-info-label">{% trans 'Submit your information' %}</h3>
+            </div>
+
+            <div class="modal-body partner-popup-body-customizing">
+                <form class="user-info info">
+                    <div class="form-group hidden">
+                        <label for="locale">{% trans 'Your preferred language' %}</label>
+
+                        <select class="selectpicker" name="00NG000000E0LzC" id="00NG000000E0LzC" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>5">
+                            <option selected>
+                                {% ifequal LANGUAGE_CODE "fr" %} Francais {% else%} English {% endifequal %}
+                            </option>
+                        </select>
+                    </div>
+
+                    <p>Contacts</p>
+                    <div class="form-group hidden">
+                        <label for="recordType">{% trans 'Record type' %}</label>
+                        <select class="selectpicker" name="recordType" id="recordType" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>5">
+                            <option value="012G0000001NNDT" selected>
+                                Prospect
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group hidden">
+                        <label for="lead_source">{% trans 'Lead Source' %}</label>
+                        <select class="selectpicker" name="lead_source" id="lead_source" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>5">
+                            <option value="Web" selected>
+                                Web
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group hidden products">
+                        <label for="00NG000000F94lW">{% trans 'Products' %}</label>
+                        <select class="selectpicker" name="00NG000000F94lW" id="00NG000000F94lW" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>5">
+                            {% for product in products %}
+                            <option value="{{ product.solution_name_en }}" data-value-id="product-{{ product.solution_id }}">
+                                {{ product.solution_name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group hidden products-configuration">
+                        <label for="00NG000000F94oL">{% trans 'Products configuration' %}</label>
+                        <textarea class="form-control info" id="00NG000000F94oL" name="00NG000000F94oL"></textarea>
+                    </div>
+
+                    <div class="form-group hidden services">
+                        <label for="00NG000000F8Vrx">{% trans 'Services' %}</label>
+                        <select class="selectpicker" name="00NG000000F8Vrx" id="00NG000000F8Vrx" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>2">
+                            {% for partner_service in partner_services %}
+                            <option value="{{ partner_service.partner_service_service.solution_name_en }}" data-value-id="service-{{ partner_service.partner_service_service.solution_id }}">
+                                {{ partner_service.partner_service_service.solution_name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group hidden services-configuration">
+                        <label for="00NG000000F94oQ">{% trans 'Services configuration' %}</label>
+                        <textarea class="form-control info" id="00NG000000F94oQ" name="00NG000000F94oQ"></textarea>
+                    </div>
+
+                    <div class="form-group hidden categories">
+                        <label for="00NG000000EmdCd">{% trans 'Categories' %}</label>
+                        <select class="selectpicker" name="00NG000000EmdCd" id="00NG000000EmdCd" multiple data-style="btn-info" data-width="100%"
+                                data-selected-text-format="count>2">
+                            {% for category in categories %}
+                            <option>
+                                {{ category.category_name_en }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="form-group hidden">
+                        <label for="00NG000000DZdP3">{% trans 'Configurator completed' %}</label>
+                        <input type="checkbox" class="form-control info" id="00NG000000DZdP3" name="00NG000000DZdP3" value="1" checked>
+                    </div>
+
+                    <div class="form-group hidden" id="MONTHLY">
+                        <label for="00NG000000F9Bfp">{% trans 'Total monthly' %}</label>
+                        <input type="number" class="form-control info" id="00NG000000F9Bfp" name="00NG000000F9Bfp" value="0">
+                    </div>
+
+                    <div class="form-group hidden" id="ANNUAL">
+                        <label for="00NG000000F9C4S">{% trans 'Total annual' %}</label>
+                        <input type="number" class="form-control info" id="00NG000000F9C4S" name="00NG000000F9C4S" value="0">
+                    </div>
+
+                    <div class="form-group hidden" id="ONE_TIME">
+                        <label for="00NG000000F9C4S">{% trans 'Total one time' %}</label>
+                        <input type="number" class="form-control info" id="00NG000000F9Bfu" name="00NG000000F9Bfu" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="first_name">{% trans 'Your first name' %}</label>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <input type="text" class="form-control info" id="first_name" name="first_name" placeholder="{% trans 'Enter your first name' %}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">{% trans 'Your last name' %}</label>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <input type="text" class="form-control info" id="last_name" name="last_name" placeholder="{% trans 'Enter your last name' %}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">{% trans 'Company name' %}</label>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <input type="text" class="form-control info" id="company" name="company" placeholder="{% trans 'Enter your company name' %}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">{% trans 'Email address' %}</label>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <input type="email" class="form-control info" id="email" name="email" placeholder="{% trans 'Enter your email address' %}">
+                    </div>
+
+                    <!--<div class="form-group">
+                        <label for="phone">{% trans 'Phone number' %}</label>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <input type="phone" class="form-control info" id="phone" name="phone" placeholder="{% trans 'Enter your phone number' %}">
+                    </div>-->
+
+                </form>
+            </div>
+
+            <div class="modal-footer row">
+                <!--<div class="col-md-6 col-sm-6 col-xs-6">
+                    <a class="btn btn-default btn-dismiss-modal btn-block btn-lg"
+                       type="button" data-dismiss="modal" aria-label="{% trans 'Close' %}" alt="{% trans 'Cancel' %}">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {% trans 'Cancel' %}
+                    </a>
+                </div>-->
+
+                <div class="col-md-6 col-md-offset-3">
+                    <a class="btn btn-default btn-submit-modal btn-block btn-lg partner-submit-customizing"
+                       type="button" alt="{% trans 'Cancel' %}">
+                        </span> {% trans 'Submit' %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="service-category-list" style="display: none;">
+    {% for service in services %}
+    <div class="footer-menu-category-list">
+        <p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+        <p class="service-slug">{{ service.solution_slug }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}
+

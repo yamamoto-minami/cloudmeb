@@ -1,0 +1,456 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+{% include "nav.html" with active_page="become_a_partner" class_names="navbar-scroll" %}
+{% endblock %}
+
+{% block content %}
+<div class="hero-unit hero-overlayed">
+	<div class="lead container text-center">
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-1"></div>
+				<div class=" col-md-7  mobile-head-txt">
+					<h1 class="strong-heading">{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_header_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_header_title_en }}{% endifequal %}</h1>
+					<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_header_subtitle_fr }}{% else%}{{ become_partner_txt.become_partner_txt_header_subtitle_en }}{% endifequal %}</h3>
+					<a class="btn btn-default btn-apply btn-lg banner-btn" role="button"
+					   data-toggle="modal" data-target="#partner-info-modal" alt="{% trans 'apply' %}">
+						{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.6.shared_txt_name_fr }}{% else%}{{ shared_txts.6.shared_txt_name_en }}{% endifequal %}
+					</a>
+				</div>
+				<div class=" col-md-4"></div>
+			</div>
+		</div>
+	</div>
+	<img src="{{ STATIC_URL }}image/hero-partner.png" alt="{% trans 'become a partner' %}" />
+</div>
+
+<div class="container-fluid collaborate">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-11 col-md-offset-1">
+				<h1>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_title_en }}{% endifequal %}</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-3 col-md-push-8 col-sm-4 col-sm-push-8">
+				<div class="row partner-process">
+					<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_title_en }}{% endifequal %}</h5>
+					<div class="submit">
+						<img src="{{ STATIC_URL }}image/submit.png" class="img-responsive"/>
+						<span>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtitle1_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtitle1_en }}{% endifequal %}</span>
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtext1_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtext1_en }}{% endifequal %}
+						</p>
+					</div>
+					<div class="review">
+						<img src="{{ STATIC_URL }}image/review.png" class="img-responsive"/>
+						<span>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtitle2_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtitle2_en }}{% endifequal %}</span>
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtext2_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtext2_en }}{% endifequal %}
+						</p>
+					</div>
+					<div class="start">
+						<img src="{{ STATIC_URL }}image/start.png" class="img-responsive"/>
+						<span>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtitle3_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtitle3_en }}{% endifequal %}</span>
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_step_subtext3_fr }}{% else%}{{ become_partner_txt.become_partner_txt_step_subtext3_en }}{% endifequal %}
+						</p>
+					</div>
+					<div class="apply">
+						<a class="btn btn-default btn-apply btn-apply-transparent btn-lg apply-customizing" role="button"
+						   data-toggle="modal" data-target="#partner-info-modal" alt="{% trans 'apply' %}">
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.6.shared_txt_name_fr }}{% else%}{{ shared_txts.6.shared_txt_name_en }}{% endifequal %}
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-pull-3 col-sm-8 col-sm-pull-4">
+				<div class="collaborate-text">
+					<div class="benefits">
+						<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level1_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level1_title_en }}{% endifequal %}</h3>
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level1_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level1_text_en }}{% endifequal %}
+						</p>
+						<div class="sequel-txt">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/benefits-1.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level11_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level11_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level11_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level11_text_en }}{% endifequal %}
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/benefits-2.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level12_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level12_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level12_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level12_text_en }}{% endifequal %}
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/benefits-3.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level13_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level13_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level13_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level13_text_en }}{% endifequal %}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="customers">
+						<h3>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level2_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level2_title_en }}{% endifequal %}</h3>
+						<p>
+							{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level2_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level2_text_en }}{% endifequal %}
+						</p>
+						<div class="sequel-txt">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/expand-1.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level21_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level21_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level21_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level21_text_en }}{% endifequal %}
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/expand-2.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level22_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level22_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level22_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level22_text_en }}{% endifequal %}
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<img src="{{ STATIC_URL }}image/expand-3.png" class="img-responsive"/>
+									<h5>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level23_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level23_title_en }}{% endifequal %}</h5>
+									<p>
+										{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_content_level23_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_content_level23_text_en }}{% endifequal %}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="integration">
+						<h3>{% trans 'Integration & Cloud design' %}</h3>
+						<p>
+							{% blocktrans %}
+							Xero can be used a 1000 different ways with a vast selection of add-ons and the possibilities become endless, even confusing.
+							{% endblocktrans %}
+						</p>
+						<div class="sequel-txt">
+							<p>
+								{% blocktrans %}
+								Our Cloud Solution Designers will analyze and provide a clear functional integrated system to match your client's needs.
+								{% endblocktrans %}
+							</p>
+							<p>
+								{% blocktrans %}
+								Concentrate on your core business and offer clear end-to-end solutions to clients without the headaches. Lets grow together in a win-win situation.
+								{% endblocktrans %}
+							</p>
+						</div>
+					</div>
+					-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% if testimonials %}
+<div class="container-fluid text-center testemonials">
+	<h1>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_say_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_say_title_en }}{% endifequal %}</h1>
+
+	<div class="container">
+		<div class="owl-carousel" id="testemonial-carousel">
+			{% for testimonial in testimonials %}
+			<div class="flip {% if forloop.first %} current {% endif %}" data-index="{{ forloop.counter0 }}">
+				<div class="card">
+					<div class="face front">
+						<p>
+							“{{ testimonial.testimonial_body }}”
+						</p>
+					</div>
+					<div class="face back">
+						<div class="row">
+							{% for solution in testimonial.testimonial_solutions.all|slice:'8' %}
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<img src="{{ solution.solution_icon.url }}" alt="{{ solution.solution_name }}" title="{{ solution.solution_name }}" data-toggle="tooltip" data-placement="top"/>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+				<div class="name-info">
+					<img src="{{ testimonial.testimonial_mugshot.url }}" alt="{{ testimonial.testimonial_full_name }}"
+						 title="{{ testimonial.testimonial_full_name }}" data-toggle="tooltip" data-placement="right" />
+					<p>{{ testimonial.testimonial_full_name }} </p>
+					<p>{{ testimonial.testimonial_position }}, {{ testimonial.testimonial_company_name }}</p>
+					<ul class="solution-tag">
+						<li class="solu-txt">Solutions</li>
+						<li>
+							<ul>
+								{% for solution in testimonial.testimonial_solutions.all|slice:'4' %}
+								<li><img src="{{ solution.solution_icon.url }}" alt="{{ solution.solution_name }}" title="{{ solution.solution_name }}" data-toggle="tooltip" data-placement="top"/></li>
+								{% endfor %}
+								<!--<li><img src="{{ STATIC_URL }}image/solution-1.png" class="img-responsive"/></li>
+								<li><img src="{{ STATIC_URL }}image/solution-2.png" class="img-responsive"/></li>
+								<li><img src="{{ STATIC_URL }}image/solution-3.png" class="img-responsive"/></li>-->
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endif %}
+<!--
+<div class="container-fluid text-center process">
+	<h1>{% trans 'becoming a partner' %}</h1>
+
+	<div class="container">
+		<div class="row one-two-three partner">
+			<div class="col-md-4">
+				<div data-step="1">
+					<h3>{% trans 'Submit' %}</h3>
+					<p>
+						{% blocktrans %}
+						Submit your application by telling us what products you know and the services you would like to offer.
+						{% endblocktrans %}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div data-step="2">
+					<h3>{% trans 'Review' %}</h3>
+					<p>
+						{% blocktrans %}
+						We will review your application and contact you to ensure you meet Cloudmeb&trade; standards.
+						{% endblocktrans %}
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div data-step="3">
+					<h3>{% trans 'Start' %}</h3>
+					<p>
+						{% blocktrans %}
+						Once approved, start receiving new clients and using Cloudmeb&trade; to manage your assigned accounts.
+						{% endblocktrans %}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a class="btn btn-default btn-apply btn-apply-transparent btn-lg" role="button" 
+		data-toggle="modal" data-target="#partner-info-modal" alt="{% trans 'apply' %}">
+    	<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> {% trans 'apply' %}
+  	</a>
+</div>
+-->
+
+<div class="container-fluid partner-form">
+	<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-12">
+					<div class="form-area">
+						<h4>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_form_title_fr }}{% else%}{{ become_partner_txt.become_partner_txt_form_title_en }}{% endifequal %}</h4>
+						<p>{% ifequal LANGUAGE_CODE 'fr' %}{{ become_partner_txt.become_partner_txt_form_text_fr }}{% else%}{{ become_partner_txt.become_partner_txt_form_text_en }}{% endifequal %}</p>
+						<form class="contact-second-form-content">
+							<div class="form-group">
+								<label for="fname">{% trans 'Your name' %}</label>
+								<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								<input type="text" class="form-control info" id="fname" name="fname" placeholder="{% trans 'Name' %}">
+							</div>
+							<div class="form-group">
+								<label for="company">{% trans 'Your company' %}</label>
+								<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								<input type="text" class="form-control info" id="company" name="company" placeholder="{% trans 'Company' %}">
+							</div>
+							<div class="form-group">
+								<label for="email">{% trans 'Your email' %}</label>
+								<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								<input type="email" class="form-control info" id="email" name="email" placeholder="{% trans 'E-mail' %}">
+							</div>
+							<div class="form-group">
+								<label for="phone">{% trans 'Your phone' %}</label>
+								<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								<input type="text" class="form-control info" id="phone" name="phone" placeholder="{% trans 'Phone number' %}">
+							</div>
+							<div class="">
+								<button class="" type="button" title="{% trans 'send' %}">{% ifequal LANGUAGE_CODE 'fr' %}{{ shared_txts.7.shared_txt_name_fr }}{% else%}{{ shared_txts.7.shared_txt_name_en }}{% endifequal %}</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Partner info modal -->
+<div class="modal fade" data-backdrop="static" id="partner-info-modal" tabindex="-1" role="dialog" aria-labelledby="partner-info-label">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content partner-modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="{% trans 'Close' %}" title="{% trans 'Close' %}">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
+
+				<h3 class="modal-title text-center blue-heading partner-popup-header-customizing" id="partner-info-label">{% trans 'Apply to become a partner' %}</h3>
+				<h3 class="modal-title text-center blue-heading partner-popup-header-customizing">{% trans 'Cloudmeb&trade; trusted advisor network' %}</h3>
+			</div>
+
+			<div class="modal-body partner-popup-body-customizing">
+				<form class="user-info info">
+					<div class="form-group hidden">
+						<label for="locale">{% trans 'Your preferred language' %}</label>
+
+						<select class="selectpicker" name="00NG000000E0LzC" id="00NG000000E0LzC" multiple data-style="btn-info" data-width="100%"
+								data-selected-text-format="count>5">
+							<option selected>
+								{% ifequal LANGUAGE_CODE "fr" %} Francais {% else%} English {% endifequal %}
+							</option>
+						</select>
+					</div>
+
+					<div class="form-group hidden">
+						<label for="recordType">{% trans 'Record type' %}</label>
+						<select class="selectpicker" name="recordType" id="recordType" multiple data-style="btn-info" data-width="100%"
+								data-selected-text-format="count>5">
+							<option value="012G0000001NN8i" selected>
+								Partner Network
+							</option>
+						</select>
+					</div>
+
+					<div class="form-group hidden">
+						<label for="lead_source">{% trans 'Lead Source' %}</label>
+						<select class="selectpicker" name="lead_source" id="lead_source" multiple data-style="btn-info" data-width="100%"
+								data-selected-text-format="count>5">
+							<option value="Web" selected>
+								Web
+							</option>
+						</select>
+					</div>
+
+					<p>Contacts</p>
+
+					<div class="apply-contact">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="form-group">
+									<label for="first_name">{% trans 'Your first name' %}</label>
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+									<input type="text" class="form-control info" id="first_name" name="first_name" placeholder="{% trans 'First name' %}">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="form-group">
+									<label for="last_name">{% trans 'Your last name' %}</label>
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+									<input type="text" class="form-control info" id="last_name" name="last_name" placeholder="{% trans 'Last name' %}">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="form-group">
+									<label for="email">{% trans 'Email address' %}</label>
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+									<input type="email" class="form-control info" id="email" name="email" placeholder="{% trans 'Email address' %}">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="form-group">
+									<label for="phone">{% trans 'Phone number' %}</label>
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+									<input type="phone" class="form-control info" id="phone" name="phone" placeholder="{% trans 'Phone number' %}">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="company">{% trans 'Company name' %}</label>
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+									<input type="text" class="form-control info" id="company" name="company" placeholder="{% trans 'Company name' %}">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>Products</p>
+
+					<div class="apply-products">
+						<div class="row">
+							<div class="col-md-9 col-sm-12 col-xs-12">
+								<div class="form-group">
+									<label for="00NG000000F94lW">{% trans 'Products' %}</label>
+									<select class="selectpicker" name="00NG000000F94lW" id="00NG000000F94lW" multiple data-style="btn-info" data-width="100%"
+											data-selected-text-format="count>5">
+										{% for product in products %}
+										<option value="{{ product.solution_name_en }}" data-value-id="{{ product.solution_id }}">
+											{{ product.solution_name }}
+										</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>Services</p>
+
+					<div class="apply-services">
+						<div class="row">
+							<div class="col-md-9 col-sm-12 col-xs-12">
+								<div class="form-group">
+									<label for="00NG000000F8Vrx">{% trans 'Services' %}</label>
+									<select class="selectpicker" name="00NG000000F8Vrx" id="00NG000000F8Vrx" multiple data-style="btn-info" data-width="100%"
+											data-selected-text-format="count>2">
+										{% for service in services %}
+										<option value="{{ service.solution_name_en }}" data-value-id="{{ service.solution_id }}">
+											{{ service.solution_name }}
+										</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer row partner-popup-footer-customizing">
+				<!--<div class="col-md-6 col-sm-6 col-xs-6">
+                    <a class="btn btn-default btn-dismiss-modal btn-block btn-lg"
+                        type="button" data-dismiss="modal" aria-label="{% trans 'Close' %}" alt="{% trans 'Cancel' %}">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {% trans 'Cancel' %}
+                    </a>
+                </div>-->
+
+				<div class="col-md-6 col-md-offset-3">
+					<a class="btn btn-default btn-submit-modal btn-block btn-lg partner-submit-customizing"
+					   type="button" alt="{% trans 'Submit' %}">
+						{% trans 'Submit' %}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="service-category-list" style="display: none;">
+	{% for service in services %}
+	<div class="footer-menu-category-list">
+		<p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+		<p class="service-slug">{{ service.solution_slug }}</p>
+	</div>
+	{% endfor %}
+</div>
+{% endblock%}

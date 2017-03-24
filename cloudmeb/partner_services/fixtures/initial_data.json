@@ -1,0 +1,111 @@
+[
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [
+            4
+        ],
+        "partner_service_service": 1,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 2
+    },
+    "pk": 1
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [
+            13
+        ],
+        "partner_service_service": 2,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 18
+    },
+    "pk": 2
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [],
+        "partner_service_service": 3,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 19
+    },
+    "pk": 3
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [
+            3,
+            4
+        ],
+        "partner_service_service": 4,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 20
+    },
+    "pk": 4
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [],
+        "partner_service_service": 5,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 21
+    },
+    "pk": 5
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [],
+        "partner_service_service": 6,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 22
+    },
+    "pk": 6
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [
+            8,
+            10
+        ],
+        "partner_service_service": 7,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 23
+    },
+    "pk": 7
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [],
+        "partner_service_service": 8,
+        "partner_service_partner": 1,
+        "partner_service_featured": false,
+        "price_ptr": 24
+    },
+    "pk": 8
+},
+{
+    "model": "partner_services.partnerservice",
+    "fields": {
+        "price_inputs": [],
+        "partner_service_service": 9,
+        "partner_service_partner": 1,
+        "partner_service_featured": true,
+        "price_ptr": 25
+    },
+    "pk": 9
+}
+]

@@ -1,0 +1,202 @@
+[
+{
+    "fields": {
+        "category_name_en": "Accounting",
+        "category_short_name_fr": "Comptabilit\u00e9",
+        "category_short_name_en": "Accounting",
+        "category_name_fr": "Comptabilit\u00e9"
+    },
+    "model": "categories.category",
+    "pk": 1
+},
+{
+    "fields": {
+        "category_name_en": "Expenses",
+        "category_short_name_fr": "D\u00e9penses",
+        "category_short_name_en": "Expenses",
+        "category_name_fr": "D\u00e9penses"
+    },
+    "model": "categories.category",
+    "pk": 2
+},
+{
+    "fields": {
+        "category_name_en": "Point of Sale",
+        "category_short_name_fr": "Point de vente",
+        "category_short_name_en": "Point of Sale",
+        "category_name_fr": "Point de vente"
+    },
+    "model": "categories.category",
+    "pk": 3
+},
+{
+    "fields": {
+        "category_name_en": "Timesheets",
+        "category_short_name_fr": "Feuilles de temps",
+        "category_short_name_en": "Timesheets",
+        "category_name_fr": "Feuilles de temps"
+    },
+    "model": "categories.category",
+    "pk": 4
+},
+{
+    "fields": {
+        "category_name_en": "Project and Tasks",
+        "category_short_name_fr": "Projets et t\u00e2ches",
+        "category_short_name_en": "Project and Tasks",
+        "category_name_fr": "Projets et t\u00e2ches"
+    },
+    "model": "categories.category",
+    "pk": 5
+},
+{
+    "fields": {
+        "category_name_en": "Payroll",
+        "category_short_name_fr": "Paie",
+        "category_short_name_en": "Payroll",
+        "category_name_fr": "Paie"
+    },
+    "model": "categories.category",
+    "pk": 6
+},
+{
+    "fields": {
+        "category_name_en": "Jobs",
+        "category_short_name_fr": "Travail",
+        "category_short_name_en": "Jobs",
+        "category_name_fr": "Travail"
+    },
+    "model": "categories.category",
+    "pk": 7
+},
+{
+    "fields": {
+        "category_name_en": "Appointments",
+        "category_short_name_fr": "Rendez-vous",
+        "category_short_name_en": "Appointments",
+        "category_name_fr": "Rendez-vous"
+    },
+    "model": "categories.category",
+    "pk": 8
+},
+{
+    "fields": {
+        "category_name_en": "e-commerce",
+        "category_short_name_fr": "e-commerce",
+        "category_short_name_en": "e-commerce",
+        "category_name_fr": "e-commerce"
+    },
+    "model": "categories.category",
+    "pk": 9
+},
+{
+    "fields": {
+        "category_name_en": "CRM",
+        "category_short_name_fr": "CRM",
+        "category_short_name_en": "CRM",
+        "category_name_fr": "CRM"
+    },
+    "model": "categories.category",
+    "pk": 10
+},
+{
+    "fields": {
+        "category_name_en": "Website",
+        "category_short_name_fr": "Site Web",
+        "category_short_name_en": "Website",
+        "category_name_fr": "Site Web"
+    },
+    "model": "categories.category",
+    "pk": 11
+},
+{
+    "fields": {
+        "category_name_en": "Hosted Telephony",
+        "category_short_name_fr": "T\u00e9l\u00e9phonie h\u00e9berg\u00e9e",
+        "category_short_name_en": "Hosted Telephony",
+        "category_name_fr": "T\u00e9l\u00e9phonie h\u00e9berg\u00e9e"
+    },
+    "model": "categories.category",
+    "pk": 12
+},
+{
+    "fields": {
+        "category_name_en": "Set up and Integration",
+        "category_short_name_fr": "Configuration et Int\u00e9gration",
+        "category_short_name_en": "Set up and Integration",
+        "category_name_fr": "Configuration et Int\u00e9gration"
+    },
+    "model": "categories.category",
+    "pk": 13
+},
+{
+    "fields": {
+        "category_name_en": "Compliance",
+        "category_short_name_fr": "Conformit\u00e9",
+        "category_short_name_en": "Compliance",
+        "category_name_fr": "Conformit\u00e9"
+    },
+    "model": "categories.category",
+    "pk": 14
+},
+{
+    "fields": {
+        "category_name_en": "Advisory",
+        "category_short_name_fr": "Conseils",
+        "category_short_name_en": "Advisory",
+        "category_name_fr": "Conseils"
+    },
+    "model": "categories.category",
+    "pk": 15
+},
+{
+    "fields": {
+        "category_name_en": "Bookkeeping",
+        "category_short_name_fr": "Tenue de livres",
+        "category_short_name_en": "Bookkeeping",
+        "category_name_fr": "Tenue de livres"
+    },
+    "model": "categories.category",
+    "pk": 16
+},
+{
+    "fields": {
+        "category_name_en": "Support",
+        "category_short_name_fr": "Soutien",
+        "category_short_name_en": "Support",
+        "category_name_fr": "Soutien"
+    },
+    "model": "categories.category",
+    "pk": 17
+},
+{
+    "fields": {
+        "category_name_en": "social media",
+        "category_short_name_fr": "M\u00e9dias sociaux",
+        "category_short_name_en": "social media",
+        "category_name_fr": "M\u00e9dias sociaux"
+    },
+    "model": "categories.category",
+    "pk": 18
+},
+{
+    "fields": {
+        "category_name_en": "Incorporation",
+        "category_short_name_fr": "Incorporation",
+        "category_short_name_en": "Incorporation",
+        "category_name_fr": "Incorporation"
+    },
+    "model": "categories.category",
+    "pk": 19
+},
+{
+    "fields": {
+        "category_name_en": "Reporting",
+        "category_short_name_fr": "Rapports Financier",
+        "category_short_name_en": "Advanced Reporting",
+        "category_name_fr": "Rapports"
+    },
+    "model": "categories.category",
+    "pk": 20
+}
+]

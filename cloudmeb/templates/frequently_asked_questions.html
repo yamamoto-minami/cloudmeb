@@ -1,0 +1,604 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+    {% include "nav.html" with active_page="frequently_asked_questions" class_names="navbar-default customizing-navbar" %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="contact-header faq-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1 class="blue-heading margin-bottom-heading margin-top-heading text-center">{% trans 'Frequently Asked Questions' %}</h1>
+                    </div>
+                    <div class=col-md-5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid contact-form-background faq-padding">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 col-md-push-7">
+                    <div class="navigation">
+                        <h5>Navigation<img src="{{ STATIC_URL }}image/span.png" /></h5>
+                        <p class="cloud-mean active">{% trans 'What is the cloud ?' %}</p>
+                        <p class="fixed-provide">{% trans 'Do I need to sign up for a fixed period ?' %}</p>
+                        <p class="important-mean">{% trans 'Why is accounting so important ?' %}</p>
+                        <p class="only-xero">{% trans 'Why only xero for accounting ?' %}</p>
+                        <p class="else-offer">{% trans 'What else do you offer ?' %}</p>
+                        <p class="choose">{% trans 'Why should I choose cloudmeb ?' %}</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-pull-3 faq-content">
+                    <div class="cloud-mean">
+                        <h2>{% trans 'What is the cloud ?' %}</h2>
+                        <h5>{% trans 'Accessibility' %}</h5>
+                        <p>
+                            {% blocktrans %}
+                            The term "cloud" is everywhere.
+                            {% endblocktrans %}
+                        </p>
+                        <p>
+                            {% blocktrans %}
+                            In the simplest terms, cloud means storing and accessing data and programs over the Internet instead of your computer's hard drive.
+                            {% endblocktrans %}
+                        </p>
+                        <p>
+                            {% blocktrans %}
+                            The cloud is just a metaphor for the Internet.
+                            {% endblocktrans %}
+                        </p>
+                        <h5>{% trans 'Security' %}</h5>
+
+                        <p>
+                            {% blocktrans %}
+                            Bank level Security : Your data is secured in state-of-the art data centers and replicated in several disaster recovery sites.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            The cloud is actually more secure than your PC and your information is never shared with third parties.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            All cloudmeb solutions use 256-bit SSL encryption.
+                            {% endblocktrans %}
+                        </p>
+                        <h5>{% trans 'Updates &amp; Integrations' %}</h5>
+
+                        <p>
+                            {% blocktrans %}
+                            Cloud technology allows you to have access to the latest software version without having to download or upgrade anything.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            Integrations provide you the power to connect all your data into a fluid process across cloud platforms.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            You can now leverage each cloud for their specialty instead of finding one that tries do it all.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class="fixed-provide">
+                        <h2>{% trans 'Do I need to sign up for a fixed period ?' %}</h2>
+                        <p>
+                            {% blocktrans %}
+                            No. We don’t like being stuffed in a box, and neither should our clients. It’s about what you and what your business requires.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Fill out our configuration tool and let us quote you for what you only need.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            There’s no point in paying for something you won’t use. We will not lock you into a contract and you cancel at any time.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            We believe in your transformation, not contracts.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class="important-mean">
+                        <h2>{% trans 'Why is accounting so important ?' %}</h2>
+                        <p>
+                            {% blocktrans %}
+                            Let's face it. Business run on cash and the accounting system is the only accurate source of truth on how you are doing.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            It is the heart of your business.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            As an owner, this is where you need to be managing your cash flow.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Today, the time gap between an owner and their accountant is long and time consuming. 
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Your numbers have already changed by the time he reports back to you.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            It's time you Take back control of your numbers.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class="only-xero">
+                        <h2>{% trans 'Why only xero for accounting ?' %}</h2>
+                        <p>
+                            {% blocktrans %}
+                            Xero is the industry leader in providing creative accounting software.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Cloudmeb has chosen xero as their exclusive partner for all transformations.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            The platform is powerful, simple and provides owners with all the tools to manage their business.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            It's simplistic design is for you first and accountants second.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Operate your business in real time so you can stay on top.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class="else-offer">
+                        <h2>{% trans 'What else do you offer ?' %}</h2>
+                        <p>
+                            {% blocktrans %}
+                            Sure, having your accounting system in the cloud is nice but you do more than that.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            We provide solutions that integrate with Xero to cover all your needs.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Cloudmeb specializes in CRM, time management, marketing and web design.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            Our goal is to give you the tools that will assist you in streamlining your process.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            We want you to grow and have all the latest integrations to keep it simple.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                    <div class="choose">
+                        <h2>{% trans 'Why should I choose cloudmeb ?' %}</h2>
+                        <p>
+                            {% blocktrans %}
+                            Cloudmeb is a full turnkey solution to help you achieve your transformation and sustain it.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            We will reduce your time spent on managing your business so you can concentrate on growing instead.
+                            {% endblocktrans %}
+                        </p>
+    
+                        <p>
+                            {% blocktrans %}
+                            You will be supported by your dedicated team of:
+                            {% endblocktrans %}
+                        </p>
+    
+                        <ul>
+                            <li>{% trans 'Cloud solution advisors' %}</li>
+                            <li>{% trans 'Systems advisors' %}</li>
+                            <li>{% trans 'Conversion and integration specialists' %}</li>
+                            <li>{% trans 'Xero bookkeepers' %}</li>
+                            <li>{% trans 'Certified Xero accountants' %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="container padded">
+    <div class="panel-group faq" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-what-is-the-cloud">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-what-is-the-cloud"
+                        aria-expanded="true"
+                        aria-controls="collapse-what-is-the-cloud" 
+                        alt="{% trans 'What is the cloud ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'What is the cloud ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-what-is-the-cloud" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-what-is-the-cloud">
+                <div class="panel-body">
+                    <div class="col-md-4 text-center">
+                        <h5 class="accessibility">{% trans 'Accessibility' %}</h5>
+
+                        <p>
+                            {% blocktrans %}
+                            The term "cloud" is everywhere.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            In the simplest terms, cloud means storing and accessing data and programs over the Internet instead of your computer's hard drive.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            The cloud is just a metaphor for the Internet.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <h5 class="security">{% trans 'Security' %}</h5>
+
+                        <p>
+                            {% blocktrans %}
+                            Bank level Security : Your data is secured in state-of-the art data centers and replicated in several disaster recovery sites.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            The cloud is actually more secure than your PC and your information is never shared with third parties.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            All cloudmeb solutions use 256-bit SSL encryption.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <h5 class="updates-and-integrations">{% trans 'Updates &amp; Integrations' %}</h5>
+
+                        <p>
+                            {% blocktrans %}
+                            Cloud technology allows you to have access to the latest software version without having to download or upgrade anything.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            Integrations provide you the power to connect all your data into a fluid process across cloud platforms.
+                            {% endblocktrans %}
+                        </p>
+
+                        <p>
+                            {% blocktrans %}
+                            You can now leverage each cloud for their specialty instead of finding one that tries do it all.
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-do-i-need-to-sign-up-for-a-fixed-period">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-do-i-need-to-sign-up-for-a-fixed-period"
+                        aria-expanded="false"
+                        aria-controls="collapse-do-i-need-to-sign-up-for-a-fixed-period" 
+                        alt="{% trans 'Do I need to sign up for a fixed period ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'Do I need to sign up for a fixed period ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-do-i-need-to-sign-up-for-a-fixed-period" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-do-i-need-to-sign-up-for-a-fixed-period">
+                <div class="panel-body">
+                    <p>
+                        {% blocktrans %}
+                        No. We don’t like being stuffed in a box, and neither should our clients. It’s about what you and what your business requires.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Fill out our configuration tool and let us quote you for what you only need.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        There’s no point in paying for something you won’t use. We will not lock you into a contract and you cancel at any time.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        We believe in your transformation, not contracts.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-why-is-accounting-so-important">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-why-is-accounting-so-important"
+                        aria-expanded="false"
+                        aria-controls="collapse-why-is-accounting-so-important" 
+                        alt="{% trans 'Why is accounting so important ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'Why is accounting so important ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-why-is-accounting-so-important" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-why-is-accounting-so-important">
+                <div class="panel-body">
+                    <p>
+                        {% blocktrans %}
+                        Let's face it. Business run on cash and the accounting system is the only accurate source of truth on how you are doing.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        It is the heart of your business.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        As an owner, this is where you need to be managing your cash flow.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Today, the time gap between an owner and their accountant is long and time consuming. 
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Your numbers have already changed by the time he reports back to you.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        It's time you Take back control of your numbers.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-why-only-xero-for-accounting">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-why-only-xero-for-accounting"
+                        aria-expanded="false"
+                        aria-controls="collapse-why-only-xero-for-accounting" 
+                        alt="{% trans 'Why only xero for accounting ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'Why only xero for accounting ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-why-only-xero-for-accounting" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-why-only-xero-for-accounting">
+                <div class="panel-body">
+                    <p>
+                        {% blocktrans %}
+                        Xero is the industry leader in providing creative accounting software.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Cloudmeb has chosen xero as their exclusive partner for all transformations.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        The platform is powerful, simple and provides owners with all the tools to manage their business.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        It's simplistic design is for you first and accountants second.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Operate your business in real time so you can stay on top.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-what-else-do-you-offer">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-what-else-do-you-offer"
+                        aria-expanded="false"
+                        aria-controls="collapse-what-else-do-you-offer" 
+                        alt="{% trans 'What else do you offer ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'What else do you offer ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-what-else-do-you-offer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-what-else-do-you-offer">
+                <div class="panel-body">
+                    <p>
+                        {% blocktrans %}
+                        Sure, having your accounting system in the cloud is nice but you do more than that.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        We provide solutions that integrate with Xero to cover all your needs.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Cloudmeb specializes in CRM, time management, marketing and web design.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        Our goal is to give you the tools that will assist you in streamlining your process.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        We want you to grow and have all the latest integrations to keep it simple.
+                        {% endblocktrans %}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading-why-should-i-choose-cloudmeb">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse-why-should-i-choose-cloudmeb"
+                        aria-expanded="false"
+                        aria-controls="collapse-why-should-i-choose-cloudmeb" 
+                        alt="{% trans 'Why should I choose cloudmeb ?' %}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        {% trans 'Why should I choose cloudmeb ?' %}
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse-why-should-i-choose-cloudmeb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-why-should-i-choose-cloudmeb">
+                <div class="panel-body">
+                    <p>
+                        {% blocktrans %}
+                        Cloudmeb is a full turnkey solution to help you achieve your transformation and sustain it.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        We will reduce your time spent on managing your business so you can concentrate on growing instead.
+                        {% endblocktrans %}
+                    </p>
+
+                    <p>
+                        {% blocktrans %}
+                        You will be supported by your dedicated team of:
+                        {% endblocktrans %}
+                    </p>
+
+                    <ul>
+                        <li>{% trans 'Cloud solution advisors' %}</li>
+                        <li>{% trans 'Systems advisors' %}</li>
+                        <li>{% trans 'Conversion and integration specialists' %}</li>
+                        <li>{% trans 'Xero bookkeepers' %}</li>
+                        <li>{% trans 'Certified Xero accountants' %}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<div class="service-category-list" style="display: none;">
+    {% for service in services %}
+    <div class="footer-menu-category-list">
+        <p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+        <p class="service-slug">{{ service.solution_slug }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+    {% include "nav.html" with active_page="404" class_names="navbar-default" %}
+{% endblock %}
+
+{% block content %}
+	<div class="container padded text-center">
+		<h1 class="blue-heading margin-top-heading">404</h1>
+		<h4>{% trans 'The page you requested does not exist!' %}</h4>
+	</div>
+{% endblock %}

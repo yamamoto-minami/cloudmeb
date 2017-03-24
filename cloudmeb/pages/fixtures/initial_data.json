@@ -1,0 +1,210 @@
+[
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 1,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 1
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 2,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 2
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 3,
+        "page_name": "DYNAMIC_PARTNER"
+    },
+    "pk": 3
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 4,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 4
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 5,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 5
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 6,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 6
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 7,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 7
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 8,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 8
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 9,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 9
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 10,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 10
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 11,
+        "page_name": "DYNAMIC_SERVICE"
+    },
+    "pk": 11
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 12,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 12
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 13,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 13
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 14,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 14
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 15,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 15
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 16,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 16
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 17,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 17
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 18,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 18
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 19,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 19
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 20,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 20
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 21,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 21
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 22,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 22
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 23,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 23
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 24,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 24
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 25,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 25
+},
+{
+    "model": "pages.page",
+    "fields": {
+        "seo_ptr": 26,
+        "page_name": "DYNAMIC_PRODUCT"
+    },
+    "pk": 26
+}
+]

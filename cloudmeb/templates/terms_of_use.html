@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+	{% include "nav.html" with active_page="terms_of_use" class_names="navbar-default" %}
+{% endblock %}
+{% block content %}
+<div class="container padded">
+
+	<div class="row legal-text">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 class="blue-heading margin-bottom-heading margin-top-heading text-center">{% trans "Terms of use" %}</h1>
+
+			<h2 class="untransformed-heading">{% trans 'Introduction and Acceptance' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Welcome to the Cloudmeb&trade; website located at http://www.Cloudmeb&trade;.com/ (the “Website”) which includes all subdomains present and future. We hope you enjoy your visit and / or use of the Website. By visiting and / or using the Website you agree to be bound by the terms of the present agreement, known as the Terms of use.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Website is owned and operated by meb Inc., a duly incorporated company in the province of Québec, Canada. Where the present Terms of use refer to “Cloudmeb&trade;”, it may refer to the Website or meb Inc. (and / or its officers, directors, employees, agents or representatives) or both, depending on the context.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Terms of use were last modified on September 10, 2015. Cloudmeb&trade; reserves the right, at any time and without prior notice, to modify or replace any of the Terms of use. Any changes to the Terms of use can be found at this URL. It is your responsibility to check the Terms of use periodically for changes. Your use of the Website following the posting of any changes to the Terms of use constitutes acceptance of those changes.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The Terms of use should be read in conjunction with the privacy policy, as both these documents govern your use of the Website.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					In these Terms of use, a Website visitor or user may be referred to as “you”. Cloudmeb&trade; may sometimes be referred to as “we” or “us”. 
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'General Code of Conduct for Use of the Website' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					By visiting and / or using the Website, you agree to:
+				{% endblocktrans %}
+
+				<ol>
+					<li>{% trans 'Not use the Website in any manner that in any way violates these Terms of use;' %}</li>
+					<li>{% trans 'Not use the Website in any manner that violates any intellectual property rights of any third party;' %}</li>
+					<li>{% trans 'Not use the Website in any manner to propagate spam, including but not limited to unsolicited advertising or bulk electronic mail or messages, including to link to a spam or phishing website;' %}</li>
+					<li>{% trans 'Not use the Website in any manner to propagate software viruses, Trojan horses, worms, or any other malicious or non-malicious computer code, files, or programs that are designed or intended to disrupt, damage, limit or interfere with the proper function of any software, hardware, or telecommunications equipment in any form whether belonging to Cloudmeb&trade; or a third party, or to damage or obtain unauthorized access to any system, data, password or other information (whether Personal Information or not) of Cloudmeb&trade; or any other third party;' %}</li>
+					<li>{% trans 'Not: (1) take any action that imposes or may impose (as determined by Cloudmeb&trade; in its sole discretion) an unreasonable or disproportionately large load on Cloudmeb&trade;’s (or its third party providers’) infrastructures; (2) interfere or attempt to interfere with the proper functioning of the Website or any activities conducted on the Website; (3) bypass any measures Cloudmeb&trade; may use to prevent or restrict access to the Website or any element thereof; (4) use manual or automated software, devices, or other processes to “crawl” or “spider” any page of the Website; or (5) harvest or scrape any content from the Website in an unreasonable manner;' %}</li>
+					<li>{% trans 'Use the Website in compliance with all applicable local, state / provincial, national, and international laws.' %}</li>
+				</ol>
+			</p>
+
+
+			<h2 class="untransformed-heading">{% trans 'No Offer to Contract' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					The Website features descriptions of services and products offered by Cloudmeb&trade; These descriptions of services and products are for information purposes only and shall in no way constitute a formal offer to contract from Cloudmeb&trade; to perform the services or offer them for a particular price. A formal offer to contract which describes services for a particular price is only available directly from Cloudmeb&trade; after you participate in a formal assessment, and any other discussions or procedures required by Cloudmeb&trade; to determine your needs for services. Once Cloudmeb&trade; has completed your assessment, we will send you a formal quotation that outlines the services and / or products that are suitable for your needs and the price for these services and / or products, as well as any other modalities we deem necessary. The quotation may be available by email, written letter or electronically, or some combination thereof. Your acceptance of the quotation shall constitute formation of a contract between you and meb inc, and shall govern your relationship with meb inc, superseding any aspect of the present Terms of use as required.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Financial and Accounting Information on the Website' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					You acknowledge that from time to time, Cloudmeb&trade; may include on the Website information of a financial and / or accounting nature, particularly on social media (Twitter, Facebook, Linkedin). This financial and / or accounting information is intended for information purposes only, and is in no way intended to be acted upon by you without consulting a professional financial or accounting advisor.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Without limiting the generality of the Disclaimer of Warranties found further in these Terms of use, in no way shall meb inc shall be liable under any theory of law or equity, for any loss or damage, pecuniary or otherwise, direct or indirect, arising from your use of the financial or accounting information available on the Website.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'External Links' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					From time to time Cloudmeb&trade; may provide links to other websites or services. Links from the Website may take you to websites or services not covered by these Terms of use. When you access third party resources on the Internet in this manner, you do so at your own risk. Cloudmeb&trade; provides those links as a convenience to you and Cloudmeb&trade; takes no responsibility for your use of those other websites or services or protection of your privacy (including collection of your personal information) on those other websites or services. We encourage you to check the Terms of use and / or Privacy Policy of any website or service you visit.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; does not make any claim or warranty whatsoever about the content of those websites or services to which we link, or any products or services available through those third parties. Without limiting the generality of the foregoing, we have linked to several accounting services and / or software sites. While Cloudmeb&trade; acknowledges that generally we would recommend these services and / or software, we make absolutely no claim or warranty that they are appropriate for your particular business or use. Recommendations for your use of these services and / or software may be made after your initial assessment.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					In no way will Cloudmeb&trade; be held responsible for any damages, direct or indirect, pecuniary or non-pecuniary: (1) for your use of websites or other services that may be linked to from the Website or the information thereon; (2) for any virus, Trojan horse, worm or other similar destructive file received as a result of your use of those websites or services; (3) caused by or in connection with, use of or reliance on any content, or products or services (whether free or for purchase) available on or through any linked-to website or service; or (4) for the actions of the operators of any such website or service.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Copyright and Intellectual Property Rights' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					The content, arrangement and layout of the Website, including, but not limited to, the trademarks, photos, logos, videos, audio, images, text (in the form of plain text, HTML, or PDFs) and computer code are proprietary to Cloudmeb&trade;, either owned or under license, and may not be copied, imitated, reproduced, displayed, distributed, transmitted, decompiled or otherwise used without the express permission of Cloudmeb&trade;, or as permitted by the functionality of the Website. Any unauthorized use of the content, arrangement or layout of the Website, computer code, images, logos, videos, audio or trademarks found in the Website or any derivative works thereof may violate civil or criminal laws, including but not limited to intellectual property laws, and Cloudmeb&trade; may take action accordingly.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The above paragraph further applies to third party property used as part of the Website, including but not limited to third party computer code. For the purposes of the present section, “computer code” includes source code, frameworks, CSS or JavaScript files, templates, modules, or any similar files.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Interruption of Service' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					From time to time, the Website may be unavailable for brief periods of time for maintenance and / or modifications to the Website. While we will endeavour to make this unavailability as brief as possible, Cloudmeb&trade shall not be held liable for any damages, pecuniary or non-pecuniary, resulting from the interruption of the normal functioning of the Website, and disclaims any responsibility thereto.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Termination of the Website' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					You agree that Cloudmeb&trade;, in their sole discretion, with or without cause, has the right (but not the obligation) to block your IP address, or otherwise terminate your access to or use of the Website (or any part thereof), immediately and without notice, for any reason, including, without limitation, if Cloudmeb&trade; believes that you have acted inconsistently with the letter or spirit of the Terms of use.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; may also, in their sole discretion and at any time, discontinue providing the Website, or any part thereof, with or without notice. Furthermore, you agree that the Cloudmeb&trade; shall not be liable to you or any third party for any damages, pecuniary or non-pecuniary, resulting from termination of your access to the Website, or from Cloudmeb&trade; termination of the Website or any part thereof.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					All provisions of these Terms of use which by their nature should survive termination, shall survive termination of the Website, including without limitation, intellectual property ownership provisions, disclaimers, indemnity and limitations of liability.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Disclaimer of Warranties' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					You expressly understand and agree that your use of the Website, the information thereon (whether provided by Cloudmeb&trade; or third parties), or any activity arising from the use of the Website or the information thereon is at your sole risk. The Website, or any third party materials, are provided on an “as is” and “as available” basis, and you will be solely responsible for any damage to your computer system or loss of data that results from the download, stream or access of any material obtained through the use of the Website or any other functionalities of the Website, or damages (financial or otherwise) resulting from your use of the Website, the information thereon, or any activity arising from the use of the Website or the information thereon.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					The information or resources provided through the Website, written or produced by Cloudmeb&trade; staff, freelance writers or other subcontractors (whether paid or voluntary) are known to be as accurate as possible at the time of writing or production, and every effort has been made to ensure that the information from the Website is as accurate and up-to-date as possible. However, certain information may change, and errors or omissions may occur, and Cloudmeb&trade; shall not be responsible for any loss or damage, financial or otherwise, resulting from changes or errors in information, or any omission, on the Website.
+				{% endblocktrans %}
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, warranties of title and non-infringement, warranties that the Website and any third party materials will be uninterrupted, error-free, accurate, reliable and free from virus and other harmful components, and the implied warranties of merchantability and fitness for a particular purpose. Cloudmeb&trade;, and its directors, employees, agents, suppliers, partners and subcontractors (whether paid or voluntary) do not warrant that: (i) the Website will be secure or available at any particular time or location; (ii) any defects or errors or omissions will be corrected; (iii) any content or software available at or through the Website is free of viruses or other harmful components; or (iv) the results of using the Website will meet your requirements.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Limitation Of Liability' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					You expressly understand and agree that Cloudmeb&trade; and / or its partners shall not be liable for any direct, indirect, incidental, special, consequential, punitive or exemplary damages, including, but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses, in contract, tort, strict liability, negligence, general civil liability or any other cause of action under legal or equitable theory, relating to the Website, the information on the Website, the use of the Website, activities arising from your use of the Website, your submission of any information (including Personal Information) to the Website, or any third party materials on the Website. This limitation of liability applies, without limitation, to any damages or injury caused by any error, omission or other failure of performance by Cloudmeb&trade;, its affiliates, business partners, agents or other subcontractors (whether paid or voluntary); any interruption, defect or delay in operation or transmission, including communication line failure; any computer virus; and any theft, destruction or alteration of, or unauthorized access to or use of, any electronic records.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Indemnity' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Notwithstanding any other term of the Terms of use or any act or failure to act by Cloudmeb&trade; or its agents or subcontractors (whether paid or voluntary), you agree to indemnify, defend and hold harmless Cloudmeb&trade; and its officers, directors, owners, partners, partnerships, principals, employees, affiliates and other related entities, servants, agents, representatives, successors, assigns and subcontractors where applicable (whether paid or voluntary) from and against any damages, liabilities, costs and expenses (including attorneys’ fees), claims or demands, arising out of (i) your use of or connection to the Website or the information or products thereon; (ii) your participation in any activities arising from the Website or the information thereon; (iii) your violation of, or failure to perform your obligations under the Terms of use; or (iv) your violation of any rights of a third party.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Governing Laws and Jurisdiction' %}</h2>
+
+			<p>
+				{% blocktrans %}
+					Use of the Website shall be governed by and construed in accordance with the laws of the Province of Quebec, Canada, in force at the time without regard to conflict of law provisions. You agree that any legal action or proceeding between you and Cloudmeb&trade; shall be brought exclusively in the courts located in the judicial district of Montreal, Quebec, Canada.
+				{% endblocktrans %}
+			</p>
+
+			<h2 class="untransformed-heading">{% trans 'Miscellaneous Provisions' %}</h2>
+
+			<p>
+				<ol>
+					<li>{% trans 'The Terms of use, in conjunction with the Privacy Policy, constitute the entire agreement between you and Cloudmeb&trade; with respect to your use of the Website, superseding any prior agreements between you and Cloudmeb&trade;.' %}</li>
+					<li>{% trans '   Cloudmeb&trade; shall not be liable for any failure to perform its obligations under the present Terms of use where such failure results from any cause beyond Cloudmeb&trade;’s reasonable control, including, but not limited to, mechanical, electronic or communications failure or degradation.' %}</li>
+					<li>{% trans ' If any provision of the Terms of use or Privacy Policy is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavour to give effect to the parties’ intentions as reflected in the provision, and the other provisions of the Terms of use or Privacy Policy, as the case may be, shall remain in full force and effect.' %}</li>
+					<li>{% trans ' The parties acknowledge having expressly required that the Terms of use and the Privacy Policy are to be drawn up in the English language. Les parties aux présentes reconnaissent avoir expressément exigé que les présentes Conditions d’utilisation et la Politique de confidentialité soient rédigées en anglais. Any other language versions of the Terms of use or the Privacy Policy are provided for information purposes and convenience only and may not be 100% accurate. In case of discrepancy between the English and any other language version of the Terms of use or the Privacy Policy, you agree that the English language version shall be the controlling version.' %}</li>
+					<li>{% trans '  The section titles in the Terms of use and Privacy Policy are for convenience only and have no legal or contractual effect.' %}</li>
+				</ol>
+			</p>
+
+			<p>
+				{% blocktrans %}
+					Cloudmeb&trade; 2015
+				{% endblocktrans %}
+			</p>
+		</div>
+	</div>
+</div>
+{% endblock%}

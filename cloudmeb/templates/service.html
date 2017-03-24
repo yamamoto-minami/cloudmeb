@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block nav %}
+    {% include "nav.html" with active_page="solutions" class_names="navbar-scroll" %}
+{% endblock %}
+
+{% block content %}
+<div itemscope itemtype="http://schema.org/Service">
+    <!--<div class="hero-unit hero-overlayed">
+        <div class="lead container text-center">
+            <h1 class="strong-heading" itemprop="name">{{ service.solution_name }}</h1>
+            <h3 itemprop="alternateName">{{ service.solution_tagline }}</h3>
+                <a class="btn btn-default btn-plug btn-lg" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+                    <span class="plug"></span> {% trans 'plug-in your business' %}
+                </a>
+        </div>
+        <img src="{{ service.solution_banner.url }}" itemprop="image" alt="{{ service.solution_name }}"/>
+    </div>-->
+
+    <div class="hero-unit hero-overlayed solutions-banner read-more-banner">
+    	<div class="lead container text-center">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-1"></div>
+    				<div class="col-md-6">
+                        <img class="media-object detail-logo" src="{{ service.solution_icon.url }}" alt="{{ service.solution_name }}" itemprop="image" style="height: 70px; border-radius: 15px;">
+    					<h1 class="strong-heading" itemprop="name">{{ service.solution_name }}</h1>
+    					<h3 itemprop="alternateName">{{ service.solution_tagline }}</h3>
+    					<a class="btn btn-default btn-plug btn-lg banner-btn" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+    						{% trans 'Plug in your business' %}
+    					</a>
+    				</div>
+    				<div class="col-md-5 right-img">
+    				      <p itemprop="description">{{ service.solution_short_description }}</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+        <img src="{{ service.solution_banner.url }}" itemprop="image" alt="{{ service.solution_name }}" style="opacity: 0.1;"/>
+    </div>
+
+    <div class="container-fluid read-more-body">
+        <div class="container">
+            <!--<div class="row text-center margin-top-heading">
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="{{ request.build_absolute_uri }}" itemprop="url" title="{{ service.solution_name }}">
+                        <img src="{{ service.solution_icon.url }}" alt="{{ service.solution_name }}"/>
+                    </a>
+                    <h2 class="strong-heading">{% trans 'About' %} {{ service.solution_name }}</h2>
+                    <p itemprop="description">{{ service.solution_description }}</p>
+                    <br />
+                </div>
+            </div>-->
+            <div class="col-md-7 col-md-offset-1">
+                <h4 class="read-more-feature">Features</h4>
+                {% for benefit in service.solution_benefits.all %}
+                <div class="media row new-benefits-item" data-id="{{ benefit.id }}">
+                    <div class="col-md-12">
+                        <h4 class="media-heading strong-heading">{{ benefit.benefit_name }}</h4>
+                        <br />
+                        <div class="feature-content-detail">
+                            <img src="{{ benefit.benefit_image.url }}" alt="">
+                            <p>{{ benefit.benefit_description }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+                <div class="read-more-submit">
+                    <h4 class="title">Still have questions about this product?</h4>
+                    <form class="contact-second-form-content">
+                        <div class="form-group">
+                            <label for="fname">{% trans 'Your name' %}</label>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <input type="text" class="form-control info" id="fname" name="fname" placeholder="{% trans 'Name' %}">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">{% trans 'Your company' %}</label>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <input type="text" class="form-control info" id="company" name="company" placeholder="{% trans 'Company' %}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">{% trans 'Your email' %}</label>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <input type="email" class="form-control info" id="email" name="email" placeholder="{% trans 'E-mail' %}">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">{% trans 'Your phone' %}</label>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                            <input type="text" class="form-control info" id="phone" name="phone" placeholder="{% trans 'Phone number' %}">
+                        </div>
+                        <div class="">
+                            <button class="" type="button" title="{% trans 'send' %}">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--<div class="row text-center">
+                <br />
+                <br />
+                <div class="col-md-8 col-md-offset-2">
+                    <a class="btn btn-default btn-plug btn-lg" role="button" href="/{{ LANGUAGE_CODE }}{% trans '/plug-in-your-business/' %}#{% trans 'step-one' %}" title="{% trans 'plug-in your business' %}">
+                        <span class="plug"></span> {% trans 'plug-in your business' %}
+                    </a>
+                    <br />
+                    <br />
+                </div>
+            </div>-->
+
+            <br />
+            <br />
+        </div>
+    </div>
+</div>
+<div class="service-category-list" style="display: none;">
+    {% for service in services %}
+    <div class="footer-menu-category-list">
+        <p class="category">{% for category in service.solution_categories.all %}{{ category.category_name }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+        <p class="service-slug">{{ service.solution_slug }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
